@@ -1,0 +1,4 @@
+framework module TestScenario {
+  header "TestScenario-Swift.h"
+  requires objc
+}

@@ -1,0 +1,11 @@
+framework module TestScenarioUtils {
+  umbrella header "TestScenarioUtils.h"
+
+  export *
+  module * { export * }
+}
+
+module TestScenarioUtils.Swift {
+    header "TestScenarioUtils-Swift.h"
+    requires objc
+}
