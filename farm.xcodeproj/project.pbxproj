@@ -14,13 +14,29 @@
 		45544BC524AB06BB00ECDF86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45544BC324AB06BB00ECDF86 /* Main.storyboard */; };
 		45544BC724AB06BF00ECDF86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45544BC624AB06BF00ECDF86 /* Assets.xcassets */; };
 		45544BCA24AB06BF00ECDF86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45544BC824AB06BF00ECDF86 /* LaunchScreen.storyboard */; };
-		459FABCC24C7869D00613F0D /* TestScenarioUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459FABC924C7869D00613F0D /* TestScenarioUI.framework */; };
-		459FABCD24C7869D00613F0D /* TestScenarioUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459FABCA24C7869D00613F0D /* TestScenarioUtils.framework */; };
-		459FABCE24C7869D00613F0D /* TestScenario.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459FABCB24C7869D00613F0D /* TestScenario.framework */; };
 		459FABD124C8066300613F0D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459FABD024C8066300613F0D /* LoginViewController.swift */; };
 		459FABD624C806EB00613F0D /* NibInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459FABD524C806EB00613F0D /* NibInstantiatable.swift */; };
 		459FABD824C807BC00613F0D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 459FABD724C807BC00613F0D /* Login.storyboard */; };
+		459FABDB24C81E2000613F0D /* TestScenario.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459FABCB24C7869D00613F0D /* TestScenario.framework */; };
+		459FABDC24C81E2000613F0D /* TestScenario.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 459FABCB24C7869D00613F0D /* TestScenario.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		459FABDE24C81E2100613F0D /* TestScenarioUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459FABC924C7869D00613F0D /* TestScenarioUI.framework */; };
+		459FABDF24C81E2100613F0D /* TestScenarioUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 459FABC924C7869D00613F0D /* TestScenarioUI.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		459FABDD24C81E2000613F0D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				459FABDF24C81E2100613F0D /* TestScenarioUI.framework in Embed Frameworks */,
+				459FABDC24C81E2000613F0D /* TestScenario.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		45544BBA24AB06BB00ECDF86 /* farm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = farm.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,9 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				459FABCD24C7869D00613F0D /* TestScenarioUtils.framework in Frameworks */,
-				459FABCC24C7869D00613F0D /* TestScenarioUI.framework in Frameworks */,
-				459FABCE24C7869D00613F0D /* TestScenario.framework in Frameworks */,
+				459FABDB24C81E2000613F0D /* TestScenario.framework in Frameworks */,
+				459FABDE24C81E2100613F0D /* TestScenarioUI.framework in Frameworks */,
 				055BD79050CB15C2CDA67A6A /* Pods_farm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,6 +171,7 @@
 				45544BB724AB06BB00ECDF86 /* Frameworks */,
 				45544BB824AB06BB00ECDF86 /* Resources */,
 				F5272380A83EC82B1D4641AF /* [CP] Embed Pods Frameworks */,
+				459FABDD24C81E2000613F0D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
