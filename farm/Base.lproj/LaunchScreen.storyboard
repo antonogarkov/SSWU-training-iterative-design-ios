@@ -17,13 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="LFN-Eh-TVl">
-                                <rect key="frame" x="41.5" y="262" width="331" height="372.5"/>
+                                <rect key="frame" x="41.5" y="228" width="331" height="372.5"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" name="BrandYellow"/>
                         <constraints>
                             <constraint firstItem="LFN-Eh-TVl" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.8" id="6iQ-Mf-bvn"/>
-                            <constraint firstItem="LFN-Eh-TVl" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="aMo-zc-5De"/>
+                            <constraint firstItem="LFN-Eh-TVl" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-34" id="aMo-zc-5De"/>
                             <constraint firstItem="LFN-Eh-TVl" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="cw3-cp-nsN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
