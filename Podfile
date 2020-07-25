@@ -19,3 +19,9 @@ target 'StorybookApp' do
 
   common
 end
+
+target 'StorybookAppUITests' do
+  project 'farm.xcodeproj'
+
+  common
+end

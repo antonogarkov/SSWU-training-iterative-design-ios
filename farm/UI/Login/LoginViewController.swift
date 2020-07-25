@@ -12,14 +12,14 @@ public final class LoginViewController: UIViewController {
 
         let goButtonTouch: () -> Void
         let didChangeMail: (String) -> Void
-        let didChangePasswword: (String) -> Void
+        let didChangePassword: (String) -> Void
 
         static let defaultValue = Props(
             mail: "",
             password: "",
             goButtonTouch: {},
             didChangeMail: { _ in },
-            didChangePasswword: { _ in }
+            didChangePassword: { _ in }
         )
     }
 
@@ -58,9 +58,22 @@ extension LoginViewController: UITextFieldDelegate {
         case mailTextField:
             props.didChangeMail(textField.text ?? "")
         case passwordTextField:
-            props.didChangePasswword(textField.text ?? "")
+            props.didChangePassword(textField.text ?? "")
         default:
             break
         }
+    }
+
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        switch textField {
+        case mailTextField:
+            passwordTextField.becomeFirstResponder()
+        case passwordTextField:
+            self.view.endEditing(true)
+        default:
+            break
+        }
+
+        return true
     }
 }

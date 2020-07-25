@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		055BD79050CB15C2CDA67A6A /* Pods_farm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E0FB7B2F64EC8FD05FFA7E /* Pods_farm.framework */; };
+		0135FEC2014F0BEF999AF9D2 /* Pods_farm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F09D1F825211B54CE2AEFB5E /* Pods_farm.framework */; };
+		227557214044115354431FF1 /* Pods_StorybookAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A380952ED0DCB13F59DC0E8 /* Pods_StorybookAppUITests.framework */; };
 		450D8A4E24C9769B004EAE80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450D8A4D24C9769B004EAE80 /* AppDelegate.swift */; };
 		450D8A5A24C9769B004EAE80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 450D8A5824C9769B004EAE80 /* LaunchScreen.storyboard */; };
 		450D8A6524C9769B004EAE80 /* StorybookAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450D8A6424C9769B004EAE80 /* StorybookAppUITests.swift */; };
@@ -20,6 +21,10 @@
 		459FABD624C806EB00613F0D /* NibInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459FABD524C806EB00613F0D /* NibInstantiatable.swift */; };
 		459FABD824C807BC00613F0D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 459FABD724C807BC00613F0D /* Login.storyboard */; };
 		45C0316B24CC3449000F32D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45544BC624AB06BF00ECDF86 /* Assets.xcassets */; };
+		45C0316C24CCA0B2000F32D0 /* LoginScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C2041C24CC07B700CF45D1 /* LoginScenario.swift */; };
+		45C0316D24CCA79C000F32D0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459FABD024C8066300613F0D /* LoginViewController.swift */; };
+		45C0316E24CCA8A9000F32D0 /* NibInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459FABD524C806EB00613F0D /* NibInstantiatable.swift */; };
+		45C0316F24CCB2C8000F32D0 /* TestScenario.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459FABCB24C7869D00613F0D /* TestScenario.framework */; };
 		45C2041624CC00C000CF45D1 /* TestScenario.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459FABCB24C7869D00613F0D /* TestScenario.framework */; };
 		45C2041724CC00C000CF45D1 /* TestScenario.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 459FABCB24C7869D00613F0D /* TestScenario.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45C2041924CC00C300CF45D1 /* TestScenarioUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459FABC924C7869D00613F0D /* TestScenarioUI.framework */; };
@@ -29,7 +34,7 @@
 		45C2041E24CC093600CF45D1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459FABD024C8066300613F0D /* LoginViewController.swift */; };
 		45C2041F24CC0A1600CF45D1 /* NibInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459FABD524C806EB00613F0D /* NibInstantiatable.swift */; };
 		45C2042024CC0A3C00CF45D1 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 459FABD724C807BC00613F0D /* Login.storyboard */; };
-		4F0984017B1958100612FE70 /* Pods_StorybookApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B49A6C4B2B78FB0D2B004C /* Pods_StorybookApp.framework */; };
+		F39434B6BF1E050E17A64983 /* Pods_StorybookApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 620395F4D433661D05C83696 /* Pods_StorybookApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,7 @@
 
 /* Begin PBXFileReference section */
 		11779560AADD4480A215F304 /* Pods-StorybookApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StorybookApp.release.xcconfig"; path = "Target Support Files/Pods-StorybookApp/Pods-StorybookApp.release.xcconfig"; sourceTree = "<group>"; };
+		2A380952ED0DCB13F59DC0E8 /* Pods_StorybookAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StorybookAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		450D8A4B24C9769B004EAE80 /* Farm Storybook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Farm Storybook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		450D8A4D24C9769B004EAE80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		450D8A5924C9769B004EAE80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -80,11 +86,13 @@
 		459FABD524C806EB00613F0D /* NibInstantiatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibInstantiatable.swift; sourceTree = "<group>"; };
 		459FABD724C807BC00613F0D /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		45C2041C24CC07B700CF45D1 /* LoginScenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScenario.swift; sourceTree = "<group>"; };
+		620395F4D433661D05C83696 /* Pods_StorybookApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StorybookApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CA9BE7ABAE96BE8B79F48EB /* Pods-StorybookApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StorybookApp.debug.xcconfig"; path = "Target Support Files/Pods-StorybookApp/Pods-StorybookApp.debug.xcconfig"; sourceTree = "<group>"; };
+		6D92ED40116491A656401E7F /* Pods-StorybookAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StorybookAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-StorybookAppUITests/Pods-StorybookAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		853527406ADAEB51FC4FEA98 /* Pods-farm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-farm.release.xcconfig"; path = "Target Support Files/Pods-farm/Pods-farm.release.xcconfig"; sourceTree = "<group>"; };
+		E333BE1A10F9BE9812DE83E6 /* Pods-StorybookAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StorybookAppUITests.release.xcconfig"; path = "Target Support Files/Pods-StorybookAppUITests/Pods-StorybookAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E760F3CC69CCBD84D387650E /* Pods-farm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-farm.debug.xcconfig"; path = "Target Support Files/Pods-farm/Pods-farm.debug.xcconfig"; sourceTree = "<group>"; };
-		E8B49A6C4B2B78FB0D2B004C /* Pods_StorybookApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StorybookApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8E0FB7B2F64EC8FD05FFA7E /* Pods_farm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_farm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F09D1F825211B54CE2AEFB5E /* Pods_farm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_farm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +102,7 @@
 			files = (
 				45C2041924CC00C300CF45D1 /* TestScenarioUI.framework in Frameworks */,
 				45C2041624CC00C000CF45D1 /* TestScenario.framework in Frameworks */,
-				4F0984017B1958100612FE70 /* Pods_StorybookApp.framework in Frameworks */,
+				F39434B6BF1E050E17A64983 /* Pods_StorybookApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +111,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				45C2041B24CC018500CF45D1 /* TestScenarioUtils.framework in Frameworks */,
+				45C0316F24CCB2C8000F32D0 /* TestScenario.framework in Frameworks */,
+				227557214044115354431FF1 /* Pods_StorybookAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				055BD79050CB15C2CDA67A6A /* Pods_farm.framework in Frameworks */,
+				0135FEC2014F0BEF999AF9D2 /* Pods_farm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +227,8 @@
 				853527406ADAEB51FC4FEA98 /* Pods-farm.release.xcconfig */,
 				6CA9BE7ABAE96BE8B79F48EB /* Pods-StorybookApp.debug.xcconfig */,
 				11779560AADD4480A215F304 /* Pods-StorybookApp.release.xcconfig */,
+				6D92ED40116491A656401E7F /* Pods-StorybookAppUITests.debug.xcconfig */,
+				E333BE1A10F9BE9812DE83E6 /* Pods-StorybookAppUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -224,8 +236,9 @@
 		D03CD518BDE4F1B55FE838F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F8E0FB7B2F64EC8FD05FFA7E /* Pods_farm.framework */,
-				E8B49A6C4B2B78FB0D2B004C /* Pods_StorybookApp.framework */,
+				620395F4D433661D05C83696 /* Pods_StorybookApp.framework */,
+				2A380952ED0DCB13F59DC0E8 /* Pods_StorybookAppUITests.framework */,
+				F09D1F825211B54CE2AEFB5E /* Pods_farm.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -242,7 +255,7 @@
 				450D8A4824C9769B004EAE80 /* Frameworks */,
 				450D8A4924C9769B004EAE80 /* Resources */,
 				45C2041824CC00C000CF45D1 /* Embed Frameworks */,
-				8FEBFCD638BFBAF1117CFBC8 /* [CP] Embed Pods Frameworks */,
+				E166F4002D60D17A4FB3DA4C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,9 +270,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 450D8A6C24C9769B004EAE80 /* Build configuration list for PBXNativeTarget "StorybookAppUITests" */;
 			buildPhases = (
+				D0F930953E77F800298EA2C4 /* [CP] Check Pods Manifest.lock */,
 				450D8A5C24C9769B004EAE80 /* Sources */,
 				450D8A5D24C9769B004EAE80 /* Frameworks */,
 				450D8A5E24C9769B004EAE80 /* Resources */,
+				6A7EFD31728FFFA1107E954B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -279,7 +294,7 @@
 				45544BB624AB06BB00ECDF86 /* Sources */,
 				45544BB724AB06BB00ECDF86 /* Frameworks */,
 				45544BB824AB06BB00ECDF86 /* Resources */,
-				F5272380A83EC82B1D4641AF /* [CP] Embed Pods Frameworks */,
+				8F8892D86F68D02A6C5C13CC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -385,24 +400,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8FEBFCD638BFBAF1117CFBC8 /* [CP] Embed Pods Frameworks */ = {
+		6A7EFD31728FFFA1107E954B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StorybookApp/Pods-StorybookApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-StorybookAppUITests/Pods-StorybookAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StorybookApp/Pods-StorybookApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-StorybookAppUITests/Pods-StorybookAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StorybookApp/Pods-StorybookApp-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StorybookAppUITests/Pods-StorybookAppUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F5272380A83EC82B1D4641AF /* [CP] Embed Pods Frameworks */ = {
+		8F8892D86F68D02A6C5C13CC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -417,6 +432,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-farm/Pods-farm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0F930953E77F800298EA2C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StorybookAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E166F4002D60D17A4FB3DA4C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StorybookApp/Pods-StorybookApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StorybookApp/Pods-StorybookApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StorybookApp/Pods-StorybookApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F8ED33933766FB04FFA0B649 /* [CP] Check Pods Manifest.lock */ = {
@@ -459,7 +513,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45C0316D24CCA79C000F32D0 /* LoginViewController.swift in Sources */,
 				450D8A6524C9769B004EAE80 /* StorybookAppUITests.swift in Sources */,
+				45C0316E24CCA8A9000F32D0 /* NibInstantiatable.swift in Sources */,
+				45C0316C24CCA0B2000F32D0 /* LoginScenario.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,6 +610,7 @@
 		};
 		450D8A6924C9769B004EAE80 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D92ED40116491A656401E7F /* Pods-StorybookAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -577,6 +635,7 @@
 		};
 		450D8A6A24C9769B004EAE80 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E333BE1A10F9BE9812DE83E6 /* Pods-StorybookAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
