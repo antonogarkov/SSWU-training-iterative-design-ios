@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		055BD79050CB15C2CDA67A6A /* Pods_farm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E0FB7B2F64EC8FD05FFA7E /* Pods_farm.framework */; };
 		450D8A4E24C9769B004EAE80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450D8A4D24C9769B004EAE80 /* AppDelegate.swift */; };
-		450D8A5724C9769B004EAE80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 450D8A5624C9769B004EAE80 /* Assets.xcassets */; };
 		450D8A5A24C9769B004EAE80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 450D8A5824C9769B004EAE80 /* LaunchScreen.storyboard */; };
 		450D8A6524C9769B004EAE80 /* StorybookAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450D8A6424C9769B004EAE80 /* StorybookAppUITests.swift */; };
 		45544BBE24AB06BB00ECDF86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45544BBD24AB06BB00ECDF86 /* AppDelegate.swift */; };
@@ -20,11 +19,17 @@
 		459FABD124C8066300613F0D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459FABD024C8066300613F0D /* LoginViewController.swift */; };
 		459FABD624C806EB00613F0D /* NibInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459FABD524C806EB00613F0D /* NibInstantiatable.swift */; };
 		459FABD824C807BC00613F0D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 459FABD724C807BC00613F0D /* Login.storyboard */; };
+		45C0316B24CC3449000F32D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45544BC624AB06BF00ECDF86 /* Assets.xcassets */; };
 		45C2041624CC00C000CF45D1 /* TestScenario.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459FABCB24C7869D00613F0D /* TestScenario.framework */; };
 		45C2041724CC00C000CF45D1 /* TestScenario.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 459FABCB24C7869D00613F0D /* TestScenario.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45C2041924CC00C300CF45D1 /* TestScenarioUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459FABC924C7869D00613F0D /* TestScenarioUI.framework */; };
 		45C2041A24CC00C300CF45D1 /* TestScenarioUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 459FABC924C7869D00613F0D /* TestScenarioUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45C2041B24CC018500CF45D1 /* TestScenarioUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459FABCA24C7869D00613F0D /* TestScenarioUtils.framework */; };
+		45C2041D24CC07B700CF45D1 /* LoginScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C2041C24CC07B700CF45D1 /* LoginScenario.swift */; };
+		45C2041E24CC093600CF45D1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459FABD024C8066300613F0D /* LoginViewController.swift */; };
+		45C2041F24CC0A1600CF45D1 /* NibInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459FABD524C806EB00613F0D /* NibInstantiatable.swift */; };
+		45C2042024CC0A3C00CF45D1 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 459FABD724C807BC00613F0D /* Login.storyboard */; };
+		4F0984017B1958100612FE70 /* Pods_StorybookApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B49A6C4B2B78FB0D2B004C /* Pods_StorybookApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,9 +58,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		11779560AADD4480A215F304 /* Pods-StorybookApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StorybookApp.release.xcconfig"; path = "Target Support Files/Pods-StorybookApp/Pods-StorybookApp.release.xcconfig"; sourceTree = "<group>"; };
 		450D8A4B24C9769B004EAE80 /* Farm Storybook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Farm Storybook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		450D8A4D24C9769B004EAE80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		450D8A5624C9769B004EAE80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		450D8A5924C9769B004EAE80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		450D8A5B24C9769B004EAE80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		450D8A6024C9769B004EAE80 /* StorybookAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StorybookAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,8 +79,11 @@
 		459FABD024C8066300613F0D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		459FABD524C806EB00613F0D /* NibInstantiatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibInstantiatable.swift; sourceTree = "<group>"; };
 		459FABD724C807BC00613F0D /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		45C2041C24CC07B700CF45D1 /* LoginScenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScenario.swift; sourceTree = "<group>"; };
+		6CA9BE7ABAE96BE8B79F48EB /* Pods-StorybookApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StorybookApp.debug.xcconfig"; path = "Target Support Files/Pods-StorybookApp/Pods-StorybookApp.debug.xcconfig"; sourceTree = "<group>"; };
 		853527406ADAEB51FC4FEA98 /* Pods-farm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-farm.release.xcconfig"; path = "Target Support Files/Pods-farm/Pods-farm.release.xcconfig"; sourceTree = "<group>"; };
 		E760F3CC69CCBD84D387650E /* Pods-farm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-farm.debug.xcconfig"; path = "Target Support Files/Pods-farm/Pods-farm.debug.xcconfig"; sourceTree = "<group>"; };
+		E8B49A6C4B2B78FB0D2B004C /* Pods_StorybookApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StorybookApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8E0FB7B2F64EC8FD05FFA7E /* Pods_farm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_farm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -86,6 +94,7 @@
 			files = (
 				45C2041924CC00C300CF45D1 /* TestScenarioUI.framework in Frameworks */,
 				45C2041624CC00C000CF45D1 /* TestScenario.framework in Frameworks */,
+				4F0984017B1958100612FE70 /* Pods_StorybookApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,9 +121,9 @@
 			isa = PBXGroup;
 			children = (
 				450D8A4D24C9769B004EAE80 /* AppDelegate.swift */,
-				450D8A5624C9769B004EAE80 /* Assets.xcassets */,
 				450D8A5824C9769B004EAE80 /* LaunchScreen.storyboard */,
 				450D8A5B24C9769B004EAE80 /* Info.plist */,
+				45C2041C24CC07B700CF45D1 /* LoginScenario.swift */,
 			);
 			path = StorybookApp;
 			sourceTree = "<group>";
@@ -206,6 +215,8 @@
 			children = (
 				E760F3CC69CCBD84D387650E /* Pods-farm.debug.xcconfig */,
 				853527406ADAEB51FC4FEA98 /* Pods-farm.release.xcconfig */,
+				6CA9BE7ABAE96BE8B79F48EB /* Pods-StorybookApp.debug.xcconfig */,
+				11779560AADD4480A215F304 /* Pods-StorybookApp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -214,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				F8E0FB7B2F64EC8FD05FFA7E /* Pods_farm.framework */,
+				E8B49A6C4B2B78FB0D2B004C /* Pods_StorybookApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -225,10 +237,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 450D8A6B24C9769B004EAE80 /* Build configuration list for PBXNativeTarget "StorybookApp" */;
 			buildPhases = (
+				1FA79744553F81E146BE9220 /* [CP] Check Pods Manifest.lock */,
 				450D8A4724C9769B004EAE80 /* Sources */,
 				450D8A4824C9769B004EAE80 /* Frameworks */,
 				450D8A4924C9769B004EAE80 /* Resources */,
 				45C2041824CC00C000CF45D1 /* Embed Frameworks */,
+				8FEBFCD638BFBAF1117CFBC8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -324,7 +338,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				450D8A5A24C9769B004EAE80 /* LaunchScreen.storyboard in Resources */,
-				450D8A5724C9769B004EAE80 /* Assets.xcassets in Resources */,
+				45C0316B24CC3449000F32D0 /* Assets.xcassets in Resources */,
+				45C2042024CC0A3C00CF45D1 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +363,45 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1FA79744553F81E146BE9220 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StorybookApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FEBFCD638BFBAF1117CFBC8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StorybookApp/Pods-StorybookApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StorybookApp/Pods-StorybookApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StorybookApp/Pods-StorybookApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F5272380A83EC82B1D4641AF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -394,7 +448,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45C2041E24CC093600CF45D1 /* LoginViewController.swift in Sources */,
 				450D8A4E24C9769B004EAE80 /* AppDelegate.swift in Sources */,
+				45C2041F24CC0A1600CF45D1 /* NibInstantiatable.swift in Sources */,
+				45C2041D24CC07B700CF45D1 /* LoginScenario.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +507,7 @@
 /* Begin XCBuildConfiguration section */
 		450D8A6724C9769B004EAE80 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CA9BE7ABAE96BE8B79F48EB /* Pods-StorybookApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -472,6 +530,7 @@
 		};
 		450D8A6824C9769B004EAE80 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11779560AADD4480A215F304 /* Pods-StorybookApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

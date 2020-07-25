@@ -1,5 +1,66 @@
 import UIKit
+import SkyFloatingLabelTextField
+
+extension LoginViewController: StoryboardInstantiatable {
+    static var storyboardName: String { "Login" }
+}
 
 public final class LoginViewController: UIViewController {
-    
+    struct Props {
+        let mail: String
+        let password: String
+
+        let goButtonTouch: () -> Void
+        let didChangeMail: (String) -> Void
+        let didChangePasswword: (String) -> Void
+
+        static let defaultValue = Props(
+            mail: "",
+            password: "",
+            goButtonTouch: {},
+            didChangeMail: { _ in },
+            didChangePasswword: { _ in }
+        )
+    }
+
+    private var props = Props.defaultValue
+
+    @IBOutlet private weak var goButton: UIButton!
+    @IBOutlet private weak var mailTextField: SkyFloatingLabelTextField!
+    @IBOutlet private weak var passwordTextField: SkyFloatingLabelTextField!
+
+    func render(props: Props) {
+        self.props = props
+        if isViewLoaded {
+            mailTextField.text = props.mail
+            passwordTextField.text = props.password
+        }
+    }
+
+    public override func viewDidLoad() {
+        super.viewDidLoad()
+
+        goButton.layer.borderColor = UIColor(named: "BrandBlue")?.cgColor
+        goButton.layer.borderWidth = 1
+        goButton.layer.cornerRadius = 22
+
+        render(props: props)
+    }
+
+    @IBAction func didTouchGoButton(_ sender: Any) {
+        props.goButtonTouch()
+    }
+}
+
+extension LoginViewController: UITextFieldDelegate {
+    public func textFieldDidEndEditing(_ textField: UITextField) {
+        switch textField {
+        case mailTextField:
+            props.didChangeMail(textField.text ?? "")
+        case passwordTextField:
+            props.didChangePasswword(textField.text ?? "")
+        default:
+            break
+        }
+    }
 }

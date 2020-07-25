@@ -11,7 +11,7 @@
         <!--Login View Controller-->
         <scene sceneID="SaL-C2-2ft">
             <objects>
-                <viewController id="YMJ-rF-88K" customClass="LoginViewController" customModule="farm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="YMJ-rF-88K" customClass="LoginViewController" customModule="Farm_Storybook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Eit-7s-iRb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,6 +38,9 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Your e-mooooil"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="YMJ-rF-88K" id="9fq-1r-QRg"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DTF-Tn-4kw" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
                                         <rect key="frame" x="0.0" y="74" width="335" height="39"/>
@@ -46,25 +49,23 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Passwooord"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="YMJ-rF-88K" id="iUc-8c-5Bb"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hiD-bz-nmV">
-                                <rect key="frame" x="60" y="431" width="255" height="30"/>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hiD-bz-nmV">
+                                <rect key="frame" x="60" y="431" width="255" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="C7B-Xh-Bnc"/>
+                                </constraints>
                                 <state key="normal" title="GOOOOOOO">
                                     <color key="titleColor" name="BrandBlue"/>
                                 </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" name="BrandBlue"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="22"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTouchGoButton:" destination="YMJ-rF-88K" eventType="touchUpInside" id="kxN-t8-ruo"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" name="BrandYellow"/>
@@ -83,6 +84,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tRl-aL-65z"/>
                     </view>
+                    <connections>
+                        <outlet property="goButton" destination="hiD-bz-nmV" id="QC1-kX-dLl"/>
+                        <outlet property="mailTextField" destination="qJL-Cg-k9g" id="b00-w2-11j"/>
+                        <outlet property="passwordTextField" destination="DTF-Tn-4kw" id="hgP-Ya-GxV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tia-sQ-0X4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
