@@ -8,30 +8,44 @@
 
 /* Begin PBXBuildFile section */
 		055BD79050CB15C2CDA67A6A /* Pods_farm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E0FB7B2F64EC8FD05FFA7E /* Pods_farm.framework */; };
+		450D8A4E24C9769B004EAE80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450D8A4D24C9769B004EAE80 /* AppDelegate.swift */; };
+		450D8A5724C9769B004EAE80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 450D8A5624C9769B004EAE80 /* Assets.xcassets */; };
+		450D8A5A24C9769B004EAE80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 450D8A5824C9769B004EAE80 /* LaunchScreen.storyboard */; };
+		450D8A6524C9769B004EAE80 /* StorybookAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450D8A6424C9769B004EAE80 /* StorybookAppUITests.swift */; };
 		45544BBE24AB06BB00ECDF86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45544BBD24AB06BB00ECDF86 /* AppDelegate.swift */; };
 		45544BC024AB06BB00ECDF86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45544BBF24AB06BB00ECDF86 /* SceneDelegate.swift */; };
 		45544BC224AB06BB00ECDF86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45544BC124AB06BB00ECDF86 /* ViewController.swift */; };
-		45544BC524AB06BB00ECDF86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45544BC324AB06BB00ECDF86 /* Main.storyboard */; };
 		45544BC724AB06BF00ECDF86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45544BC624AB06BF00ECDF86 /* Assets.xcassets */; };
 		45544BCA24AB06BF00ECDF86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45544BC824AB06BF00ECDF86 /* LaunchScreen.storyboard */; };
 		459FABD124C8066300613F0D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459FABD024C8066300613F0D /* LoginViewController.swift */; };
 		459FABD624C806EB00613F0D /* NibInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459FABD524C806EB00613F0D /* NibInstantiatable.swift */; };
 		459FABD824C807BC00613F0D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 459FABD724C807BC00613F0D /* Login.storyboard */; };
-		459FABDB24C81E2000613F0D /* TestScenario.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459FABCB24C7869D00613F0D /* TestScenario.framework */; };
-		459FABDC24C81E2000613F0D /* TestScenario.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 459FABCB24C7869D00613F0D /* TestScenario.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		459FABDE24C81E2100613F0D /* TestScenarioUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459FABC924C7869D00613F0D /* TestScenarioUI.framework */; };
-		459FABDF24C81E2100613F0D /* TestScenarioUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 459FABC924C7869D00613F0D /* TestScenarioUI.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		45C2041624CC00C000CF45D1 /* TestScenario.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459FABCB24C7869D00613F0D /* TestScenario.framework */; };
+		45C2041724CC00C000CF45D1 /* TestScenario.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 459FABCB24C7869D00613F0D /* TestScenario.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		45C2041924CC00C300CF45D1 /* TestScenarioUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459FABC924C7869D00613F0D /* TestScenarioUI.framework */; };
+		45C2041A24CC00C300CF45D1 /* TestScenarioUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 459FABC924C7869D00613F0D /* TestScenarioUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		45C2041B24CC018500CF45D1 /* TestScenarioUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459FABCA24C7869D00613F0D /* TestScenarioUtils.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		450D8A6124C9769B004EAE80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45544BB224AB06BB00ECDF86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 450D8A4A24C9769B004EAE80;
+			remoteInfo = StorybookApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
-		459FABDD24C81E2000613F0D /* Embed Frameworks */ = {
+		45C2041824CC00C000CF45D1 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				459FABDF24C81E2100613F0D /* TestScenarioUI.framework in Embed Frameworks */,
-				459FABDC24C81E2000613F0D /* TestScenario.framework in Embed Frameworks */,
+				45C2041A24CC00C300CF45D1 /* TestScenarioUI.framework in Embed Frameworks */,
+				45C2041724CC00C000CF45D1 /* TestScenario.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,11 +53,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		450D8A4B24C9769B004EAE80 /* Farm Storybook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Farm Storybook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		450D8A4D24C9769B004EAE80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		450D8A5624C9769B004EAE80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		450D8A5924C9769B004EAE80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		450D8A5B24C9769B004EAE80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		450D8A6024C9769B004EAE80 /* StorybookAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StorybookAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		450D8A6424C9769B004EAE80 /* StorybookAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorybookAppUITests.swift; sourceTree = "<group>"; };
+		450D8A6624C9769B004EAE80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45544BBA24AB06BB00ECDF86 /* farm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = farm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45544BBD24AB06BB00ECDF86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45544BBF24AB06BB00ECDF86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		45544BC124AB06BB00ECDF86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		45544BC424AB06BB00ECDF86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		45544BC624AB06BF00ECDF86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45544BC924AB06BF00ECDF86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45544BCB24AB06BF00ECDF86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,12 +80,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		450D8A4824C9769B004EAE80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45C2041924CC00C300CF45D1 /* TestScenarioUI.framework in Frameworks */,
+				45C2041624CC00C000CF45D1 /* TestScenario.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		450D8A5D24C9769B004EAE80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45C2041B24CC018500CF45D1 /* TestScenarioUtils.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		45544BB724AB06BB00ECDF86 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				459FABDB24C81E2000613F0D /* TestScenario.framework in Frameworks */,
-				459FABDE24C81E2100613F0D /* TestScenarioUI.framework in Frameworks */,
 				055BD79050CB15C2CDA67A6A /* Pods_farm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,10 +108,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		450D8A4C24C9769B004EAE80 /* StorybookApp */ = {
+			isa = PBXGroup;
+			children = (
+				450D8A4D24C9769B004EAE80 /* AppDelegate.swift */,
+				450D8A5624C9769B004EAE80 /* Assets.xcassets */,
+				450D8A5824C9769B004EAE80 /* LaunchScreen.storyboard */,
+				450D8A5B24C9769B004EAE80 /* Info.plist */,
+			);
+			path = StorybookApp;
+			sourceTree = "<group>";
+		};
+		450D8A6324C9769B004EAE80 /* StorybookAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				450D8A6424C9769B004EAE80 /* StorybookAppUITests.swift */,
+				450D8A6624C9769B004EAE80 /* Info.plist */,
+			);
+			path = StorybookAppUITests;
+			sourceTree = "<group>";
+		};
 		45544BB124AB06BB00ECDF86 = {
 			isa = PBXGroup;
 			children = (
 				45544BBC24AB06BB00ECDF86 /* farm */,
+				450D8A4C24C9769B004EAE80 /* StorybookApp */,
+				450D8A6324C9769B004EAE80 /* StorybookAppUITests */,
 				45544BBB24AB06BB00ECDF86 /* Products */,
 				459FABC824C7866D00613F0D /* ThirdParty */,
 				7B8FA95FB4F6127F3965BB78 /* Pods */,
@@ -87,6 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				45544BBA24AB06BB00ECDF86 /* farm.app */,
+				450D8A4B24C9769B004EAE80 /* Farm Storybook.app */,
+				450D8A6024C9769B004EAE80 /* StorybookAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,7 +158,6 @@
 				45544BBD24AB06BB00ECDF86 /* AppDelegate.swift */,
 				45544BBF24AB06BB00ECDF86 /* SceneDelegate.swift */,
 				45544BC124AB06BB00ECDF86 /* ViewController.swift */,
-				45544BC324AB06BB00ECDF86 /* Main.storyboard */,
 				45544BC624AB06BF00ECDF86 /* Assets.xcassets */,
 				45544BC824AB06BF00ECDF86 /* LaunchScreen.storyboard */,
 				45544BCB24AB06BF00ECDF86 /* Info.plist */,
@@ -162,6 +221,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		450D8A4A24C9769B004EAE80 /* StorybookApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 450D8A6B24C9769B004EAE80 /* Build configuration list for PBXNativeTarget "StorybookApp" */;
+			buildPhases = (
+				450D8A4724C9769B004EAE80 /* Sources */,
+				450D8A4824C9769B004EAE80 /* Frameworks */,
+				450D8A4924C9769B004EAE80 /* Resources */,
+				45C2041824CC00C000CF45D1 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StorybookApp;
+			productName = StorybookApp;
+			productReference = 450D8A4B24C9769B004EAE80 /* Farm Storybook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		450D8A5F24C9769B004EAE80 /* StorybookAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 450D8A6C24C9769B004EAE80 /* Build configuration list for PBXNativeTarget "StorybookAppUITests" */;
+			buildPhases = (
+				450D8A5C24C9769B004EAE80 /* Sources */,
+				450D8A5D24C9769B004EAE80 /* Frameworks */,
+				450D8A5E24C9769B004EAE80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				450D8A6224C9769B004EAE80 /* PBXTargetDependency */,
+			);
+			name = StorybookAppUITests;
+			productName = StorybookAppUITests;
+			productReference = 450D8A6024C9769B004EAE80 /* StorybookAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		45544BB924AB06BB00ECDF86 /* farm */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 45544BCE24AB06BF00ECDF86 /* Build configuration list for PBXNativeTarget "farm" */;
@@ -171,7 +266,6 @@
 				45544BB724AB06BB00ECDF86 /* Frameworks */,
 				45544BB824AB06BB00ECDF86 /* Resources */,
 				F5272380A83EC82B1D4641AF /* [CP] Embed Pods Frameworks */,
-				459FABDD24C81E2000613F0D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -188,10 +282,17 @@
 		45544BB224AB06BB00ECDF86 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1150;
+				LastSwiftUpdateCheck = 1160;
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = SigmaSoftware;
 				TargetAttributes = {
+					450D8A4A24C9769B004EAE80 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					450D8A5F24C9769B004EAE80 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 450D8A4A24C9769B004EAE80;
+					};
 					45544BB924AB06BB00ECDF86 = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -211,11 +312,29 @@
 			projectRoot = "";
 			targets = (
 				45544BB924AB06BB00ECDF86 /* farm */,
+				450D8A4A24C9769B004EAE80 /* StorybookApp */,
+				450D8A5F24C9769B004EAE80 /* StorybookAppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		450D8A4924C9769B004EAE80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				450D8A5A24C9769B004EAE80 /* LaunchScreen.storyboard in Resources */,
+				450D8A5724C9769B004EAE80 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		450D8A5E24C9769B004EAE80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		45544BB824AB06BB00ECDF86 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -223,7 +342,6 @@
 				459FABD824C807BC00613F0D /* Login.storyboard in Resources */,
 				45544BCA24AB06BF00ECDF86 /* LaunchScreen.storyboard in Resources */,
 				45544BC724AB06BF00ECDF86 /* Assets.xcassets in Resources */,
-				45544BC524AB06BB00ECDF86 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +390,22 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		450D8A4724C9769B004EAE80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				450D8A4E24C9769B004EAE80 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		450D8A5C24C9769B004EAE80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				450D8A6524C9769B004EAE80 /* StorybookAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		45544BB624AB06BB00ECDF86 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -286,13 +420,21 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		450D8A6224C9769B004EAE80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 450D8A4A24C9769B004EAE80 /* StorybookApp */;
+			targetProxy = 450D8A6124C9769B004EAE80 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
-		45544BC324AB06BB00ECDF86 /* Main.storyboard */ = {
+		450D8A5824C9769B004EAE80 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				45544BC424AB06BB00ECDF86 /* Base */,
+				450D8A5924C9769B004EAE80 /* Base */,
 			);
-			name = Main.storyboard;
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 		45544BC824AB06BF00ECDF86 /* LaunchScreen.storyboard */ = {
@@ -306,6 +448,98 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		450D8A6724C9769B004EAE80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ThirdParty",
+				);
+				INFOPLIST_FILE = StorybookApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.private.StorybookApp;
+				PRODUCT_NAME = "Farm Storybook";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		450D8A6824C9769B004EAE80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ThirdParty",
+				);
+				INFOPLIST_FILE = StorybookApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.private.StorybookApp;
+				PRODUCT_NAME = "Farm Storybook";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		450D8A6924C9769B004EAE80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ThirdParty",
+				);
+				INFOPLIST_FILE = StorybookAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.private.StorybookAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StorybookApp;
+			};
+			name = Debug;
+		};
+		450D8A6A24C9769B004EAE80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ThirdParty",
+				);
+				INFOPLIST_FILE = StorybookAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.private.StorybookAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StorybookApp;
+			};
+			name = Release;
+		};
 		45544BCC24AB06BF00ECDF86 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -439,7 +673,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sigma.farm.farm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -462,13 +696,31 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sigma.farm.farm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		450D8A6B24C9769B004EAE80 /* Build configuration list for PBXNativeTarget "StorybookApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				450D8A6724C9769B004EAE80 /* Debug */,
+				450D8A6824C9769B004EAE80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		450D8A6C24C9769B004EAE80 /* Build configuration list for PBXNativeTarget "StorybookAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				450D8A6924C9769B004EAE80 /* Debug */,
+				450D8A6A24C9769B004EAE80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		45544BB524AB06BB00ECDF86 /* Build configuration list for PBXProject "farm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

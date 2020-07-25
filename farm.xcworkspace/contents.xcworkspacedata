@@ -5,9 +5,6 @@
       location = "absolute:/Users/antonogarkov/Documents/Presentations/FARM/SSWU_training/farm/farm.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:farm.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
