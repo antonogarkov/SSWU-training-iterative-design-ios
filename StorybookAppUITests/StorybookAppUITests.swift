@@ -26,86 +26,52 @@ class StorybookAppUITests: XCTestCase {
 
         let loginScenario = ActivateScenario(scenario: LoginScenario.self)
 
-//        XCTAssert(app/*@START_MENU_TOKEN@*/.textFields["emailFIeld"]/*[[".textFields[\"Your e-mooooil\"]",".textFields[\"emailFIeld\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.value as? String == loginScenario.makeProps().mail)
-//        XCTAssert(app/*@START_MENU_TOKEN@*/.textFields["passwordField"]/*[[".textFields[\"Passwooord\"]",".textFields[\"passwordField\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.value as? String == loginScenario.makeProps().password)
+        app.textFields["emailFIeld"].tap()
 
-        app/*@START_MENU_TOKEN@*/.textFields["emailFIeld"]/*[[".textFields[\"Your e-mooooil\"]",".textFields[\"emailFIeld\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.writeOnKeyboard(text: "email")
 
-        let eKey = app/*@START_MENU_TOKEN@*/.keys["e"]/*[[".keyboards.keys[\"e\"]",".keys[\"e\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
-        eKey.tap()
+        app.keys["more"].tap()
 
-        let mKey = app/*@START_MENU_TOKEN@*/.keys["m"]/*[[".keyboards.keys[\"m\"]",".keys[\"m\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
-        mKey.tap()
+        app.keys["@"].tap()
 
-        let aKey = app/*@START_MENU_TOKEN@*/.keys["a"]/*[[".keyboards.keys[\"a\"]",".keys[\"a\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
-        aKey.tap()
+        app.keys["more"].tap()
 
-        let iKey = app/*@START_MENU_TOKEN@*/.keys["i"]/*[[".keyboards.keys[\"i\"]",".keys[\"i\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
-        iKey.tap()
-        
-        let lKey = app/*@START_MENU_TOKEN@*/.keys["l"]/*[[".keyboards.keys[\"l\"]",".keys[\"l\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
-        lKey.tap()
+        app.writeOnKeyboard(text: "mail")
 
-        let moreKey = app/*@START_MENU_TOKEN@*/.keys["more"]/*[[".keyboards",".keys[\"numbers\"]",".keys[\"more\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/
-        moreKey.tap()
+        app.keys["more"].tap()
 
-        let key = app/*@START_MENU_TOKEN@*/.keys["@"]/*[[".keyboards.keys[\"@\"]",".keys[\"@\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
-        key.tap()
+        app.keys["."].tap()
 
-        let moreKey2 = app/*@START_MENU_TOKEN@*/.keys["more"]/*[[".keyboards",".keys[\"letters\"]",".keys[\"more\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/
-        moreKey2.tap()
-        mKey.tap()
-        aKey.tap()
-        iKey.tap()
-        lKey.tap()
-        moreKey.tap()
-        
-        let key2 = app/*@START_MENU_TOKEN@*/.keys["."]/*[[".keyboards.keys[\".\"]",".keys[\".\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
-        key2.tap()
-        moreKey2.tap()
+        app.keys["more"].tap()
 
-        let cKey = app/*@START_MENU_TOKEN@*/.keys["c"]/*[[".keyboards.keys[\"c\"]",".keys[\"c\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
-        cKey.tap()
+        app.writeOnKeyboard(text: "com")
 
-        let oKey = app/*@START_MENU_TOKEN@*/.keys["o"]/*[[".keyboards.keys[\"o\"]",".keys[\"o\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
-        oKey.tap()
-        mKey.tap()
-
-        let app2 = app
-        app2/*@START_MENU_TOKEN@*/.buttons["Next:"]/*[[".keyboards",".buttons[\"next\"]",".buttons[\"Next:\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.buttons["Next:"].tap()
 
         ValidateScenarioEventIsFired(eventToValidate: loginScenario.makeProps().didChangeMail("email@mail.com"))
 
-        app2/*@START_MENU_TOKEN@*/.buttons["shift"]/*[[".keyboards.buttons[\"shift\"]",".buttons[\"shift\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.buttons["shift"].tap()
 
-        let pKey = app2/*@START_MENU_TOKEN@*/.keys["P"]/*[[".keyboards.keys[\"P\"]",".keys[\"P\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
-        pKey.tap()
-        aKey.tap()
+        app.writeOnKeyboard(text: "Password")
 
-        let sKey = app2/*@START_MENU_TOKEN@*/.keys["s"]/*[[".keyboards.keys[\"s\"]",".keys[\"s\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
-        sKey.tap()
-        sKey.tap()
+        app.keys["more"].tap()
 
-        let wKey = app2/*@START_MENU_TOKEN@*/.keys["w"]/*[[".keyboards.keys[\"w\"]",".keys[\"w\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
-        wKey.tap()
-        oKey.tap()
-        app2/*@START_MENU_TOKEN@*/.keys["r"]/*[[".keyboards.keys[\"r\"]",".keys[\"r\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.writeOnKeyboard(text: "1234")
 
-        let dKey = app2/*@START_MENU_TOKEN@*/.keys["d"]/*[[".keyboards.keys[\"d\"]",".keys[\"d\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
-        dKey.tap()
-        moreKey.tap()
-        app2/*@START_MENU_TOKEN@*/.keys["1"]/*[[".keyboards.keys[\"1\"]",".keys[\"1\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        app2/*@START_MENU_TOKEN@*/.keys["2"]/*[[".keyboards.keys[\"2\"]",".keys[\"2\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        app2/*@START_MENU_TOKEN@*/.keys["3"]/*[[".keyboards.keys[\"3\"]",".keys[\"3\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-
-        let key3 = app2/*@START_MENU_TOKEN@*/.keys["4"]/*[[".keyboards.keys[\"4\"]",".keys[\"4\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
-        key3.tap()
-        app2/*@START_MENU_TOKEN@*/.buttons["Done"]/*[[".keyboards",".buttons[\"done\"]",".buttons[\"Done\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.buttons["Done"].tap()
 
         ValidateScenarioEventIsFired(eventToValidate: loginScenario.makeProps().didChangePassword("Password1234"))
 
-        app/*@START_MENU_TOKEN@*/.buttons["goButton"]/*[[".buttons[\"GOOOOOOO\"]",".buttons[\"goButton\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.buttons["goButton"].tap()
 
         ValidateScenarioEventIsFired(eventToValidate: loginScenario.makeProps().goButtonTouch())
+
+        DeactivateScenario()
+    }
+}
+
+extension XCUIApplication {
+    func writeOnKeyboard(text: String) {
+        text.forEach { self.keys[String($0)].tap() }
     }
 }
