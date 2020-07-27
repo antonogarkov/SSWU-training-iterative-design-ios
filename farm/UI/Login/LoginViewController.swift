@@ -1,5 +1,6 @@
 import UIKit
 import SkyFloatingLabelTextField
+import IQKeyboardManagerSwift
 
 extension LoginViewController: StoryboardInstantiatable {
     static var storyboardName: String { "Login" }
@@ -43,6 +44,8 @@ public final class LoginViewController: UIViewController {
         goButton.layer.borderColor = UIColor(named: "BrandBlue")?.cgColor
         goButton.layer.borderWidth = 1
         goButton.layer.cornerRadius = 22
+
+        IQKeyboardManager.shared.enable = true
 
         render(props: props)
     }

@@ -25,6 +25,13 @@
 		45C0316D24CCA79C000F32D0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459FABD024C8066300613F0D /* LoginViewController.swift */; };
 		45C0316E24CCA8A9000F32D0 /* NibInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459FABD524C806EB00613F0D /* NibInstantiatable.swift */; };
 		45C0316F24CCB2C8000F32D0 /* TestScenario.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459FABCB24C7869D00613F0D /* TestScenario.framework */; };
+		45C0317B24CDE666000F32D0 /* AddAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C0317924CDE666000F32D0 /* AddAddressViewController.swift */; };
+		45C0317C24CDE666000F32D0 /* AddAddress.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45C0317A24CDE666000F32D0 /* AddAddress.storyboard */; };
+		45C0317E24CDE8BA000F32D0 /* AddAddressScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C0317D24CDE8BA000F32D0 /* AddAddressScenario.swift */; };
+		45C0317F24CDED6D000F32D0 /* AddAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C0317924CDE666000F32D0 /* AddAddressViewController.swift */; };
+		45C0318024CDED6F000F32D0 /* AddAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C0317924CDE666000F32D0 /* AddAddressViewController.swift */; };
+		45C0318124CDED75000F32D0 /* AddAddressScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C0317D24CDE8BA000F32D0 /* AddAddressScenario.swift */; };
+		45C0318224CDF4A7000F32D0 /* AddAddress.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45C0317A24CDE666000F32D0 /* AddAddress.storyboard */; };
 		45C2041624CC00C000CF45D1 /* TestScenario.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459FABCB24C7869D00613F0D /* TestScenario.framework */; };
 		45C2041724CC00C000CF45D1 /* TestScenario.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 459FABCB24C7869D00613F0D /* TestScenario.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45C2041924CC00C300CF45D1 /* TestScenarioUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459FABC924C7869D00613F0D /* TestScenarioUI.framework */; };
@@ -85,6 +92,9 @@
 		459FABD024C8066300613F0D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		459FABD524C806EB00613F0D /* NibInstantiatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibInstantiatable.swift; sourceTree = "<group>"; };
 		459FABD724C807BC00613F0D /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		45C0317924CDE666000F32D0 /* AddAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAddressViewController.swift; sourceTree = "<group>"; };
+		45C0317A24CDE666000F32D0 /* AddAddress.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddAddress.storyboard; sourceTree = "<group>"; };
+		45C0317D24CDE8BA000F32D0 /* AddAddressScenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAddressScenario.swift; sourceTree = "<group>"; };
 		45C2041C24CC07B700CF45D1 /* LoginScenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScenario.swift; sourceTree = "<group>"; };
 		620395F4D433661D05C83696 /* Pods_StorybookApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StorybookApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CA9BE7ABAE96BE8B79F48EB /* Pods-StorybookApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StorybookApp.debug.xcconfig"; path = "Target Support Files/Pods-StorybookApp/Pods-StorybookApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,6 +144,7 @@
 				450D8A5824C9769B004EAE80 /* LaunchScreen.storyboard */,
 				450D8A5B24C9769B004EAE80 /* Info.plist */,
 				45C2041C24CC07B700CF45D1 /* LoginScenario.swift */,
+				45C0317D24CDE8BA000F32D0 /* AddAddressScenario.swift */,
 			);
 			path = StorybookApp;
 			sourceTree = "<group>";
@@ -198,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				459FABD424C8068B00613F0D /* Helpers */,
+				45C0317824CDE666000F32D0 /* AddAddress */,
 				459FABD324C8067200613F0D /* Login */,
 			);
 			path = UI;
@@ -218,6 +230,15 @@
 				459FABD524C806EB00613F0D /* NibInstantiatable.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		45C0317824CDE666000F32D0 /* AddAddress */ = {
+			isa = PBXGroup;
+			children = (
+				45C0317924CDE666000F32D0 /* AddAddressViewController.swift */,
+				45C0317A24CDE666000F32D0 /* AddAddress.storyboard */,
+			);
+			path = AddAddress;
 			sourceTree = "<group>";
 		};
 		7B8FA95FB4F6127F3965BB78 /* Pods */ = {
@@ -355,6 +376,7 @@
 				450D8A5A24C9769B004EAE80 /* LaunchScreen.storyboard in Resources */,
 				45C0316B24CC3449000F32D0 /* Assets.xcassets in Resources */,
 				45C2042024CC0A3C00CF45D1 /* Login.storyboard in Resources */,
+				45C0318224CDF4A7000F32D0 /* AddAddress.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +391,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45C0317C24CDE666000F32D0 /* AddAddress.storyboard in Resources */,
 				459FABD824C807BC00613F0D /* Login.storyboard in Resources */,
 				45544BCA24AB06BF00ECDF86 /* LaunchScreen.storyboard in Resources */,
 				45544BC724AB06BF00ECDF86 /* Assets.xcassets in Resources */,
@@ -506,6 +529,8 @@
 				450D8A4E24C9769B004EAE80 /* AppDelegate.swift in Sources */,
 				45C2041F24CC0A1600CF45D1 /* NibInstantiatable.swift in Sources */,
 				45C2041D24CC07B700CF45D1 /* LoginScenario.swift in Sources */,
+				45C0317E24CDE8BA000F32D0 /* AddAddressScenario.swift in Sources */,
+				45C0317F24CDED6D000F32D0 /* AddAddressViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +539,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				45C0316D24CCA79C000F32D0 /* LoginViewController.swift in Sources */,
+				45C0318024CDED6F000F32D0 /* AddAddressViewController.swift in Sources */,
+				45C0318124CDED75000F32D0 /* AddAddressScenario.swift in Sources */,
 				450D8A6524C9769B004EAE80 /* StorybookAppUITests.swift in Sources */,
 				45C0316E24CCA8A9000F32D0 /* NibInstantiatable.swift in Sources */,
 				45C0316C24CCA0B2000F32D0 /* LoginScenario.swift in Sources */,
@@ -524,6 +551,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45C0317B24CDE666000F32D0 /* AddAddressViewController.swift in Sources */,
 				459FABD124C8066300613F0D /* LoginViewController.swift in Sources */,
 				45544BC224AB06BB00ECDF86 /* ViewController.swift in Sources */,
 				459FABD624C806EB00613F0D /* NibInstantiatable.swift in Sources */,

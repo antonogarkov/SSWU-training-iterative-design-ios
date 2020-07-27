@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Address View Controller-->
+        <scene sceneID="3hg-Y1-5O7">
+            <objects>
+                <viewController storyboardIdentifier="AddAddressViewController" id="qzJ-3M-4gr" customClass="AddAddressViewController" customModule="farm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gll-f3-L7s">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aSu-kv-pbV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="194"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADD ADDRESS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGy-8H-LNs">
+                                        <rect key="frame" x="82" y="68.5" width="211" height="57.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="42"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="BrandYellow"/>
+                                <constraints>
+                                    <constraint firstItem="DGy-8H-LNs" firstAttribute="centerY" secondItem="aSu-kv-pbV" secondAttribute="centerY" id="5Xx-V3-Ojr"/>
+                                    <constraint firstAttribute="height" constant="194" id="lXO-C5-ohW"/>
+                                    <constraint firstItem="DGy-8H-LNs" firstAttribute="centerX" secondItem="aSu-kv-pbV" secondAttribute="centerX" id="ugW-T4-OKq"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gc2-An-4Zh">
+                                <rect key="frame" x="60" y="490" width="255" height="44"/>
+                                <accessibility key="accessibilityConfiguration" identifier="addAddressButton"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="F09-8K-Byl"/>
+                                </constraints>
+                                <state key="normal" title="ADD ADDRESS">
+                                    <color key="titleColor" name="BrandBlue"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTouchAddAddressButton:" destination="qzJ-3M-4gr" eventType="touchUpInside" id="9to-D1-cim"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Xoj-EM-7EL">
+                                <rect key="frame" x="20" y="194" width="335" height="276"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zCO-zC-KVv" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="39"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="address1"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Address line 1"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="qzJ-3M-4gr" id="KJS-9u-vX0"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="exN-Dc-zYK" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                        <rect key="frame" x="0.0" y="59" width="335" height="39.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="address2"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Address line 2"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="qzJ-3M-4gr" id="SFu-9V-eOo"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bft-54-4gA" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                        <rect key="frame" x="0.0" y="118.5" width="335" height="39"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="city"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="City"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="qzJ-3M-4gr" id="Thv-Aw-336"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="56K-AE-PPe" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                        <rect key="frame" x="0.0" y="177.5" width="335" height="39.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="state"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="State"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="qzJ-3M-4gr" id="TFO-Vn-snq"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fuI-nY-VOe" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                        <rect key="frame" x="0.0" y="237" width="335" height="39"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="zip"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="ZIP"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="delegate" destination="qzJ-3M-4gr" id="x41-yn-rIO"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="BrandYellow"/>
+                        <constraints>
+                            <constraint firstItem="Gc2-An-4Zh" firstAttribute="leading" secondItem="8n5-YH-hX1" secondAttribute="leading" constant="60" id="0Zb-BF-Lq9"/>
+                            <constraint firstItem="Xoj-EM-7EL" firstAttribute="top" secondItem="aSu-kv-pbV" secondAttribute="bottom" id="Dbt-2Q-Oac"/>
+                            <constraint firstItem="Xoj-EM-7EL" firstAttribute="centerX" secondItem="Gll-f3-L7s" secondAttribute="centerX" id="Wms-fC-F5f"/>
+                            <constraint firstItem="8n5-YH-hX1" firstAttribute="trailing" secondItem="aSu-kv-pbV" secondAttribute="trailing" id="fLh-3v-aaP"/>
+                            <constraint firstItem="aSu-kv-pbV" firstAttribute="leading" secondItem="8n5-YH-hX1" secondAttribute="leading" id="gNx-26-IyA"/>
+                            <constraint firstItem="8n5-YH-hX1" firstAttribute="trailing" secondItem="Gc2-An-4Zh" secondAttribute="trailing" constant="60" id="o2r-4q-Si7"/>
+                            <constraint firstItem="aSu-kv-pbV" firstAttribute="top" secondItem="8n5-YH-hX1" secondAttribute="top" id="oRU-Cg-Fgx"/>
+                            <constraint firstItem="Gc2-An-4Zh" firstAttribute="top" secondItem="Xoj-EM-7EL" secondAttribute="bottom" constant="20" id="vva-pV-fQ1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8n5-YH-hX1"/>
+                    </view>
+                    <connections>
+                        <outlet property="addAddressButton" destination="Gc2-An-4Zh" id="m0J-Ib-Aa6"/>
+                        <outlet property="cityTextField" destination="bft-54-4gA" id="R87-oC-57z"/>
+                        <outlet property="lineOneTextField" destination="zCO-zC-KVv" id="8tk-zs-dcW"/>
+                        <outlet property="lineTwoTextField" destination="exN-Dc-zYK" id="mRR-G4-MzM"/>
+                        <outlet property="stateTextField" destination="56K-AE-PPe" id="CjH-Xk-0xf"/>
+                        <outlet property="zipTextField" destination="fuI-nY-VOe" id="uQH-tG-x62"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gm6-Rd-Vgf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="BrandBlue">
+            <color red="0.34099999070167542" green="0.50999999046325684" blue="0.73299998044967651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BrandYellow">
+            <color red="1" green="0.99599999189376831" blue="0.93300002813339233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
