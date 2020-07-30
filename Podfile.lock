@@ -1,20 +1,26 @@
 PODS:
   - IQKeyboardManagerSwift (6.5.5)
+  - Kingfisher (5.8.3):
+    - Kingfisher/Core (= 5.8.3)
+  - Kingfisher/Core (5.8.3)
   - SkyFloatingLabelTextField (3.7.0)
 
 DEPENDENCIES:
   - IQKeyboardManagerSwift (= 6.5.5)
+  - Kingfisher (= 5.8.3)
   - SkyFloatingLabelTextField (= 3.7.0)
 
 SPEC REPOS:
   trunk:
     - IQKeyboardManagerSwift
+    - Kingfisher
     - SkyFloatingLabelTextField
 
 SPEC CHECKSUMS:
   IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  Kingfisher: b7e4cb65ff24c264bd2a1284b75b974d907afd94
   SkyFloatingLabelTextField: 4b46db0ab1ccde0919cded29c656e6b4805eda04
 
-PODFILE CHECKSUM: a7512f3ab3c25ee6beaebb18a12d4b964709ac11
+PODFILE CHECKSUM: 325948b4699924eedd2f0d5783836a348e7dde65
 
 COCOAPODS: 1.8.0

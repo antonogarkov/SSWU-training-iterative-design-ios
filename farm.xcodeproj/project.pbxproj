@@ -12,6 +12,16 @@
 		450D8A4E24C9769B004EAE80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450D8A4D24C9769B004EAE80 /* AppDelegate.swift */; };
 		450D8A5A24C9769B004EAE80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 450D8A5824C9769B004EAE80 /* LaunchScreen.storyboard */; };
 		450D8A6524C9769B004EAE80 /* StorybookAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450D8A6424C9769B004EAE80 /* StorybookAppUITests.swift */; };
+		4522E07B24D15C1400ECFA1F /* ProductsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4522E07A24D15C1400ECFA1F /* ProductsList.storyboard */; };
+		4522E07D24D15C3100ECFA1F /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4522E07C24D15C3100ECFA1F /* ProductsListViewController.swift */; };
+		4522E07F24D15C4B00ECFA1F /* ProductsListScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4522E07E24D15C4B00ECFA1F /* ProductsListScenario.swift */; };
+		4522E08024D16CDB00ECFA1F /* ProductsListScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4522E07E24D15C4B00ECFA1F /* ProductsListScenario.swift */; };
+		4522E08124D16CDF00ECFA1F /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4522E07C24D15C3100ECFA1F /* ProductsListViewController.swift */; };
+		4522E08224D16CDF00ECFA1F /* ProductsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4522E07C24D15C3100ECFA1F /* ProductsListViewController.swift */; };
+		4522E08324D16CE300ECFA1F /* ProductsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4522E07A24D15C1400ECFA1F /* ProductsList.storyboard */; };
+		4522E08524D1F7A500ECFA1F /* ProductsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4522E08424D1F7A500ECFA1F /* ProductsListCell.swift */; };
+		4522E08624D1F9A200ECFA1F /* ProductsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4522E08424D1F7A500ECFA1F /* ProductsListCell.swift */; };
+		4522E08824D1F9BD00ECFA1F /* ProductsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4522E08424D1F7A500ECFA1F /* ProductsListCell.swift */; };
 		45544BBE24AB06BB00ECDF86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45544BBD24AB06BB00ECDF86 /* AppDelegate.swift */; };
 		45544BC024AB06BB00ECDF86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45544BBF24AB06BB00ECDF86 /* SceneDelegate.swift */; };
 		45544BC224AB06BB00ECDF86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45544BC124AB06BB00ECDF86 /* ViewController.swift */; };
@@ -79,6 +89,10 @@
 		450D8A6024C9769B004EAE80 /* StorybookAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StorybookAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		450D8A6424C9769B004EAE80 /* StorybookAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorybookAppUITests.swift; sourceTree = "<group>"; };
 		450D8A6624C9769B004EAE80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4522E07A24D15C1400ECFA1F /* ProductsList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductsList.storyboard; sourceTree = "<group>"; };
+		4522E07C24D15C3100ECFA1F /* ProductsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListViewController.swift; sourceTree = "<group>"; };
+		4522E07E24D15C4B00ECFA1F /* ProductsListScenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListScenario.swift; sourceTree = "<group>"; };
+		4522E08424D1F7A500ECFA1F /* ProductsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListCell.swift; sourceTree = "<group>"; };
 		45544BBA24AB06BB00ECDF86 /* farm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = farm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45544BBD24AB06BB00ECDF86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45544BBF24AB06BB00ECDF86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +159,7 @@
 				450D8A5B24C9769B004EAE80 /* Info.plist */,
 				45C2041C24CC07B700CF45D1 /* LoginScenario.swift */,
 				45C0317D24CDE8BA000F32D0 /* AddAddressScenario.swift */,
+				4522E07E24D15C4B00ECFA1F /* ProductsListScenario.swift */,
 			);
 			path = StorybookApp;
 			sourceTree = "<group>";
@@ -156,6 +171,16 @@
 				450D8A6624C9769B004EAE80 /* Info.plist */,
 			);
 			path = StorybookAppUITests;
+			sourceTree = "<group>";
+		};
+		4522E07924D15A3000ECFA1F /* Products List */ = {
+			isa = PBXGroup;
+			children = (
+				4522E07A24D15C1400ECFA1F /* ProductsList.storyboard */,
+				4522E07C24D15C3100ECFA1F /* ProductsListViewController.swift */,
+				4522E08424D1F7A500ECFA1F /* ProductsListCell.swift */,
+			);
+			path = "Products List";
 			sourceTree = "<group>";
 		};
 		45544BB124AB06BB00ECDF86 = {
@@ -208,6 +233,7 @@
 		459FABCF24C8033500613F0D /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				4522E07924D15A3000ECFA1F /* Products List */,
 				459FABD424C8068B00613F0D /* Helpers */,
 				45C0317824CDE666000F32D0 /* AddAddress */,
 				459FABD324C8067200613F0D /* Login */,
@@ -375,6 +401,7 @@
 			files = (
 				450D8A5A24C9769B004EAE80 /* LaunchScreen.storyboard in Resources */,
 				45C0316B24CC3449000F32D0 /* Assets.xcassets in Resources */,
+				4522E08324D16CE300ECFA1F /* ProductsList.storyboard in Resources */,
 				45C2042024CC0A3C00CF45D1 /* Login.storyboard in Resources */,
 				45C0318224CDF4A7000F32D0 /* AddAddress.storyboard in Resources */,
 			);
@@ -393,6 +420,7 @@
 			files = (
 				45C0317C24CDE666000F32D0 /* AddAddress.storyboard in Resources */,
 				459FABD824C807BC00613F0D /* Login.storyboard in Resources */,
+				4522E07B24D15C1400ECFA1F /* ProductsList.storyboard in Resources */,
 				45544BCA24AB06BF00ECDF86 /* LaunchScreen.storyboard in Resources */,
 				45544BC724AB06BF00ECDF86 /* Assets.xcassets in Resources */,
 			);
@@ -527,7 +555,10 @@
 			files = (
 				45C2041E24CC093600CF45D1 /* LoginViewController.swift in Sources */,
 				450D8A4E24C9769B004EAE80 /* AppDelegate.swift in Sources */,
+				4522E08624D1F9A200ECFA1F /* ProductsListCell.swift in Sources */,
 				45C2041F24CC0A1600CF45D1 /* NibInstantiatable.swift in Sources */,
+				4522E07F24D15C4B00ECFA1F /* ProductsListScenario.swift in Sources */,
+				4522E08124D16CDF00ECFA1F /* ProductsListViewController.swift in Sources */,
 				45C2041D24CC07B700CF45D1 /* LoginScenario.swift in Sources */,
 				45C0317E24CDE8BA000F32D0 /* AddAddressScenario.swift in Sources */,
 				45C0317F24CDED6D000F32D0 /* AddAddressViewController.swift in Sources */,
@@ -540,7 +571,10 @@
 			files = (
 				45C0316D24CCA79C000F32D0 /* LoginViewController.swift in Sources */,
 				45C0318024CDED6F000F32D0 /* AddAddressViewController.swift in Sources */,
+				4522E08824D1F9BD00ECFA1F /* ProductsListCell.swift in Sources */,
 				45C0318124CDED75000F32D0 /* AddAddressScenario.swift in Sources */,
+				4522E08024D16CDB00ECFA1F /* ProductsListScenario.swift in Sources */,
+				4522E08224D16CDF00ECFA1F /* ProductsListViewController.swift in Sources */,
 				450D8A6524C9769B004EAE80 /* StorybookAppUITests.swift in Sources */,
 				45C0316E24CCA8A9000F32D0 /* NibInstantiatable.swift in Sources */,
 				45C0316C24CCA0B2000F32D0 /* LoginScenario.swift in Sources */,
@@ -552,10 +586,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				45C0317B24CDE666000F32D0 /* AddAddressViewController.swift in Sources */,
+				4522E08524D1F7A500ECFA1F /* ProductsListCell.swift in Sources */,
 				459FABD124C8066300613F0D /* LoginViewController.swift in Sources */,
 				45544BC224AB06BB00ECDF86 /* ViewController.swift in Sources */,
 				459FABD624C806EB00613F0D /* NibInstantiatable.swift in Sources */,
 				45544BBE24AB06BB00ECDF86 /* AppDelegate.swift in Sources */,
+				4522E07D24D15C3100ECFA1F /* ProductsListViewController.swift in Sources */,
 				45544BC024AB06BB00ECDF86 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

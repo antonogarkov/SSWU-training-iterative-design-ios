@@ -6,6 +6,7 @@ workspace 'farm.xcworkspace'
 def common
   pod 'SkyFloatingLabelTextField', '3.7.0'
   pod 'IQKeyboardManagerSwift', '6.5.5'
+  pod 'Kingfisher', '5.8.3'
 end
 
 target 'farm' do
