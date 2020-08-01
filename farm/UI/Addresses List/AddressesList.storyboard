@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Addresses List View Controller-->
+        <scene sceneID="9Lr-eE-4y4">
+            <objects>
+                <tableViewController storyboardIdentifier="AddressesListViewController" id="goi-cs-rHc" customClass="AddressesListViewController" customModule="Farm_Storybook" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="x9i-Ez-UqD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="BrandYellow"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddressListTableViewCell" rowHeight="94" id="Kph-1s-2sV" customClass="AddressListTableViewCell" customModule="Farm_Storybook" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="94"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kph-1s-2sV" id="Rkm-z9-ZuD">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Qz-e4-ASa">
+                                            <rect key="frame" x="16" y="11" width="343" height="72"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="95014, Infinite Loop 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNc-nf-xYu">
+                                                    <rect key="frame" x="8" y="8" width="327" height="24.5"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Cupertino, CA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1b-Kl-Vc7">
+                                                    <rect key="frame" x="8" y="40.5" width="327" height="23.5"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <constraints>
+                                                <constraint firstItem="n1b-Kl-Vc7" firstAttribute="leading" secondItem="4Qz-e4-ASa" secondAttribute="leadingMargin" id="3ga-kK-W3L"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="yNc-nf-xYu" secondAttribute="trailing" id="Bk7-dN-qXd"/>
+                                                <constraint firstItem="yNc-nf-xYu" firstAttribute="leading" secondItem="4Qz-e4-ASa" secondAttribute="leadingMargin" id="ET1-vu-NM4"/>
+                                                <constraint firstItem="yNc-nf-xYu" firstAttribute="top" secondItem="4Qz-e4-ASa" secondAttribute="topMargin" id="Gr6-D4-Tsy"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="n1b-Kl-Vc7" secondAttribute="bottom" id="qJN-KU-BZ3"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="n1b-Kl-Vc7" secondAttribute="trailing" id="urT-sG-Bh4"/>
+                                                <constraint firstItem="n1b-Kl-Vc7" firstAttribute="top" secondItem="yNc-nf-xYu" secondAttribute="bottom" constant="8" id="zf8-Ec-49i"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="4Qz-e4-ASa" firstAttribute="trailing" secondItem="Rkm-z9-ZuD" secondAttribute="trailingMargin" id="CeE-m9-kbk"/>
+                                        <constraint firstItem="4Qz-e4-ASa" firstAttribute="top" secondItem="Rkm-z9-ZuD" secondAttribute="topMargin" id="ckM-SX-93p"/>
+                                        <constraint firstItem="4Qz-e4-ASa" firstAttribute="leading" secondItem="Rkm-z9-ZuD" secondAttribute="leadingMargin" id="gIC-Df-PiW"/>
+                                        <constraint firstItem="4Qz-e4-ASa" firstAttribute="bottom" secondItem="Rkm-z9-ZuD" secondAttribute="bottomMargin" id="zhu-kb-t3s"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" name="BrandYellow"/>
+                                <connections>
+                                    <outlet property="line1" destination="yNc-nf-xYu" id="BWi-V4-pcz"/>
+                                    <outlet property="line2" destination="n1b-Kl-Vc7" id="hlh-E3-G1W"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="goi-cs-rHc" id="kZB-2z-y9J"/>
+                            <outlet property="delegate" destination="goi-cs-rHc" id="sjy-4L-WFn"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wuh-Cf-Qfq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-191.19999999999999" y="69.715142428785612"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="BrandYellow">
+            <color red="1" green="0.99599999189376831" blue="0.93300002813339233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
