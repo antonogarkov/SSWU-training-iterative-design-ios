@@ -11,7 +11,7 @@ class ProductsListScenario: TestScenario {
     }
 
     func makeProps() -> ProductsListViewController.Props {
-        return ProductsListViewController.Props(products: [
+        ProductsListViewController.Props(products: [
             ProductsListViewController.Props.Product(
                 imageURL: URL(string: "https://i.pinimg.com/originals/da/a8/de/daa8de830c02a6d62bf3696faaae3d85.png")!,
                 title: "THICK FLANK",

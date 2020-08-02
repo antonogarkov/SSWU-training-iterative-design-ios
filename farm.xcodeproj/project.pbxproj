@@ -27,6 +27,12 @@
 		45544BC224AB06BB00ECDF86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45544BC124AB06BB00ECDF86 /* ViewController.swift */; };
 		45544BC724AB06BF00ECDF86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45544BC624AB06BF00ECDF86 /* Assets.xcassets */; };
 		45544BCA24AB06BF00ECDF86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45544BC824AB06BF00ECDF86 /* LaunchScreen.storyboard */; };
+		4561164924D6A3B1007C169E /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4561164824D6A3B1007C169E /* BasketViewController.swift */; };
+		4561164B24D6A4B9007C169E /* BasketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4561164A24D6A4B9007C169E /* BasketTableViewCell.swift */; };
+		4561164D24D6AB4B007C169E /* BasketScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4561164C24D6AB4B007C169E /* BasketScenario.swift */; };
+		4561164E24D6ABB4007C169E /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4561164824D6A3B1007C169E /* BasketViewController.swift */; };
+		4561164F24D6ABB8007C169E /* BasketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4561164A24D6A4B9007C169E /* BasketTableViewCell.swift */; };
+		4561165024D6AE23007C169E /* Basket.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4567FD7D24D6876200F5621A /* Basket.storyboard */; };
 		4567FD6024D5A4D000F5621A /* AddressesList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4567FD5F24D5A4D000F5621A /* AddressesList.storyboard */; };
 		4567FD6124D5A4D000F5621A /* AddressesList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4567FD5F24D5A4D000F5621A /* AddressesList.storyboard */; };
 		4567FD6324D5A4EB00F5621A /* AddressesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4567FD6224D5A4EB00F5621A /* AddressesListViewController.swift */; };
@@ -46,6 +52,7 @@
 		4567FD7724D601C800F5621A /* ProfileScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4567FD7524D601C800F5621A /* ProfileScenario.swift */; };
 		4567FD7A24D602FF00F5621A /* RoundedBlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4567FD7924D602FF00F5621A /* RoundedBlueButton.swift */; };
 		4567FD7B24D602FF00F5621A /* RoundedBlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4567FD7924D602FF00F5621A /* RoundedBlueButton.swift */; };
+		4567FD7E24D6876200F5621A /* Basket.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4567FD7D24D6876200F5621A /* Basket.storyboard */; };
 		459FABD124C8066300613F0D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459FABD024C8066300613F0D /* LoginViewController.swift */; };
 		459FABD624C806EB00613F0D /* NibInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459FABD524C806EB00613F0D /* NibInstantiatable.swift */; };
 		459FABD824C807BC00613F0D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 459FABD724C807BC00613F0D /* Login.storyboard */; };
@@ -119,6 +126,9 @@
 		45544BC624AB06BF00ECDF86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45544BC924AB06BF00ECDF86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45544BCB24AB06BF00ECDF86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4561164824D6A3B1007C169E /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
+		4561164A24D6A4B9007C169E /* BasketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketTableViewCell.swift; sourceTree = "<group>"; };
+		4561164C24D6AB4B007C169E /* BasketScenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketScenario.swift; sourceTree = "<group>"; };
 		4567FD5F24D5A4D000F5621A /* AddressesList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddressesList.storyboard; sourceTree = "<group>"; };
 		4567FD6224D5A4EB00F5621A /* AddressesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressesListViewController.swift; sourceTree = "<group>"; };
 		4567FD6524D5A92600F5621A /* AddressListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressListTableViewCell.swift; sourceTree = "<group>"; };
@@ -127,6 +137,7 @@
 		4567FD7224D5FF0C00F5621A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4567FD7524D601C800F5621A /* ProfileScenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScenario.swift; sourceTree = "<group>"; };
 		4567FD7924D602FF00F5621A /* RoundedBlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBlueButton.swift; sourceTree = "<group>"; };
+		4567FD7D24D6876200F5621A /* Basket.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Basket.storyboard; sourceTree = "<group>"; };
 		459FABC924C7869D00613F0D /* TestScenarioUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestScenarioUI.framework; sourceTree = "<group>"; };
 		459FABCA24C7869D00613F0D /* TestScenarioUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestScenarioUtils.framework; sourceTree = "<group>"; };
 		459FABCB24C7869D00613F0D /* TestScenario.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestScenario.framework; sourceTree = "<group>"; };
@@ -189,6 +200,7 @@
 				4567FD6824D5A96900F5621A /* AddressesListScenario.swift */,
 				4522E07E24D15C4B00ECFA1F /* ProductsListScenario.swift */,
 				4567FD7524D601C800F5621A /* ProfileScenario.swift */,
+				4561164C24D6AB4B007C169E /* BasketScenario.swift */,
 			);
 			path = StorybookApp;
 			sourceTree = "<group>";
@@ -268,6 +280,16 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		4567FD7C24D6873E00F5621A /* Basket */ = {
+			isa = PBXGroup;
+			children = (
+				4567FD7D24D6876200F5621A /* Basket.storyboard */,
+				4561164824D6A3B1007C169E /* BasketViewController.swift */,
+				4561164A24D6A4B9007C169E /* BasketTableViewCell.swift */,
+			);
+			path = Basket;
+			sourceTree = "<group>";
+		};
 		459FABC824C7866D00613F0D /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,6 +303,7 @@
 		459FABCF24C8033500613F0D /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				4567FD7C24D6873E00F5621A /* Basket */,
 				4567FD6E24D5F9AD00F5621A /* Profile */,
 				4567FD5E24D5A4B000F5621A /* Addresses List */,
 				4522E07924D15A3000ECFA1F /* Products List */,
@@ -452,6 +475,7 @@
 			files = (
 				450D8A5A24C9769B004EAE80 /* LaunchScreen.storyboard in Resources */,
 				4567FD6124D5A4D000F5621A /* AddressesList.storyboard in Resources */,
+				4561165024D6AE23007C169E /* Basket.storyboard in Resources */,
 				45C0316B24CC3449000F32D0 /* Assets.xcassets in Resources */,
 				4522E08324D16CE300ECFA1F /* ProductsList.storyboard in Resources */,
 				45C2042024CC0A3C00CF45D1 /* Login.storyboard in Resources */,
@@ -473,6 +497,7 @@
 			files = (
 				45C0317C24CDE666000F32D0 /* AddAddress.storyboard in Resources */,
 				4567FD6024D5A4D000F5621A /* AddressesList.storyboard in Resources */,
+				4567FD7E24D6876200F5621A /* Basket.storyboard in Resources */,
 				459FABD824C807BC00613F0D /* Login.storyboard in Resources */,
 				4522E07B24D15C1400ECFA1F /* ProductsList.storyboard in Resources */,
 				45544BCA24AB06BF00ECDF86 /* LaunchScreen.storyboard in Resources */,
@@ -608,6 +633,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4561164E24D6ABB4007C169E /* BasketViewController.swift in Sources */,
+				4561164F24D6ABB8007C169E /* BasketTableViewCell.swift in Sources */,
 				4567FD7B24D602FF00F5621A /* RoundedBlueButton.swift in Sources */,
 				45C2041E24CC093600CF45D1 /* LoginViewController.swift in Sources */,
 				4567FD6724D5A92600F5621A /* AddressListTableViewCell.swift in Sources */,
@@ -621,6 +648,7 @@
 				4567FD6A24D5A96900F5621A /* AddressesListScenario.swift in Sources */,
 				4567FD6424D5A4EB00F5621A /* AddressesListViewController.swift in Sources */,
 				4567FD7424D5FF0C00F5621A /* ProfileViewController.swift in Sources */,
+				4561164D24D6AB4B007C169E /* BasketScenario.swift in Sources */,
 				45C0317E24CDE8BA000F32D0 /* AddAddressScenario.swift in Sources */,
 				45C0317F24CDED6D000F32D0 /* AddAddressViewController.swift in Sources */,
 			);
@@ -649,6 +677,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4561164924D6A3B1007C169E /* BasketViewController.swift in Sources */,
+				4561164B24D6A4B9007C169E /* BasketTableViewCell.swift in Sources */,
 				45C0317B24CDE666000F32D0 /* AddAddressViewController.swift in Sources */,
 				4567FD7A24D602FF00F5621A /* RoundedBlueButton.swift in Sources */,
 				4567FD7624D601C800F5621A /* ProfileScenario.swift in Sources */,

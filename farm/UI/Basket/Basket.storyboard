@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Basket View Controller-->
+        <scene sceneID="4y6-Gf-VQQ">
+            <objects>
+                <tableViewController storyboardIdentifier="BasketViewController" id="Sj4-73-OBA" customClass="BasketViewController" customModule="Farm_Storybook" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="141" estimatedRowHeight="141" sectionHeaderHeight="28" sectionFooterHeight="28" id="kAu-gG-EaT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" name="BrandYellow"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BasketTableViewCell" rowHeight="141" id="7xP-Rf-5XT" customClass="BasketTableViewCell" customModule="Farm_Storybook" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="141"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7xP-Rf-5XT" id="mSd-7c-Eem">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="141"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ln2-Pw-A4x">
+                                            <rect key="frame" x="16" y="11" width="343" height="119"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h0w-fq-lCc">
+                                                    <rect key="frame" x="0.0" y="0.0" width="171.5" height="119"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BEEF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ssy-aA-yaW">
+                                                    <rect key="frame" x="179.5" y="8" width="155.5" height="29"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="21"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$90" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ON-5C-6rj">
+                                                    <rect key="frame" x="179.5" y="40" width="155.5" height="24"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="obj-tX-Ktl">
+                                                    <rect key="frame" x="179.5" y="67" width="155.5" height="44"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rdt-km-een">
+                                                            <rect key="frame" x="111.5" y="0.0" width="44" height="44"/>
+                                                            <color key="backgroundColor" name="BrandBlue"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="44" id="EFO-eY-FKD"/>
+                                                                <constraint firstAttribute="width" constant="44" id="MRj-xf-Naw"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="39"/>
+                                                            <state key="normal" title="+">
+                                                                <color key="titleColor" name="BrandYellow"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="increaseAmountDidTouch:" destination="7xP-Rf-5XT" eventType="touchUpInside" id="IVJ-B1-dTj"/>
+                                                            </connections>
+                                                        </button>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9kg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NO9-JJ-5GX">
+                                                            <rect key="frame" x="52" y="4" width="51.5" height="36"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="26"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WO1-pD-hgw">
+                                                            <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                                            <color key="backgroundColor" name="BrandRed"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="44" id="SEA-DX-9n0"/>
+                                                                <constraint firstAttribute="width" constant="44" id="k6K-p6-L9o"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="39"/>
+                                                            <state key="normal" title="-">
+                                                                <color key="titleColor" name="BrandYellow"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="decreaseAmountDidTouch:" destination="7xP-Rf-5XT" eventType="touchUpInside" id="unU-mX-Rrz"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Rdt-km-een" firstAttribute="bottom" secondItem="obj-tX-Ktl" secondAttribute="bottom" id="Gy4-Ah-GOy"/>
+                                                        <constraint firstItem="Rdt-km-een" firstAttribute="top" secondItem="obj-tX-Ktl" secondAttribute="top" id="KQD-DM-cxe"/>
+                                                        <constraint firstItem="WO1-pD-hgw" firstAttribute="bottom" secondItem="obj-tX-Ktl" secondAttribute="bottom" id="NnZ-Qa-CAK"/>
+                                                        <constraint firstItem="NO9-JJ-5GX" firstAttribute="leading" secondItem="WO1-pD-hgw" secondAttribute="trailing" constant="8" id="WyE-ZQ-bmv"/>
+                                                        <constraint firstItem="NO9-JJ-5GX" firstAttribute="centerY" secondItem="obj-tX-Ktl" secondAttribute="centerY" id="eHF-hD-OPs"/>
+                                                        <constraint firstItem="Rdt-km-een" firstAttribute="leading" secondItem="NO9-JJ-5GX" secondAttribute="trailing" constant="8" id="hf6-jq-yoJ"/>
+                                                        <constraint firstItem="WO1-pD-hgw" firstAttribute="top" secondItem="obj-tX-Ktl" secondAttribute="top" id="iLq-NJ-kcZ"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Rdt-km-een" secondAttribute="trailing" id="nba-Mg-9Of"/>
+                                                        <constraint firstItem="WO1-pD-hgw" firstAttribute="leading" secondItem="obj-tX-Ktl" secondAttribute="leading" id="sLa-iI-Pb4"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="3ON-5C-6rj" secondAttribute="trailing" constant="8" id="5nf-Qj-2R3"/>
+                                                <constraint firstItem="3ON-5C-6rj" firstAttribute="top" secondItem="Ssy-aA-yaW" secondAttribute="bottom" constant="3" id="Brs-L5-eSj"/>
+                                                <constraint firstItem="3ON-5C-6rj" firstAttribute="leading" secondItem="h0w-fq-lCc" secondAttribute="trailing" constant="8" id="Mm6-n1-PoP"/>
+                                                <constraint firstItem="h0w-fq-lCc" firstAttribute="leading" secondItem="Ln2-Pw-A4x" secondAttribute="leading" id="NlI-wD-r2T"/>
+                                                <constraint firstAttribute="bottom" secondItem="obj-tX-Ktl" secondAttribute="bottom" constant="8" id="Qox-Wa-WTV"/>
+                                                <constraint firstItem="h0w-fq-lCc" firstAttribute="width" secondItem="Ln2-Pw-A4x" secondAttribute="width" multiplier="0.5" id="ULR-m2-fvO"/>
+                                                <constraint firstItem="Ssy-aA-yaW" firstAttribute="leading" secondItem="h0w-fq-lCc" secondAttribute="trailing" constant="8" id="cg3-vs-JtF"/>
+                                                <constraint firstAttribute="bottom" secondItem="h0w-fq-lCc" secondAttribute="bottom" id="fsV-ao-uaT"/>
+                                                <constraint firstItem="obj-tX-Ktl" firstAttribute="leading" secondItem="h0w-fq-lCc" secondAttribute="trailing" constant="8" id="nLa-cH-m31"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ssy-aA-yaW" secondAttribute="trailing" constant="8" id="nQj-u6-3xT"/>
+                                                <constraint firstItem="Ssy-aA-yaW" firstAttribute="top" secondItem="Ln2-Pw-A4x" secondAttribute="top" constant="8" id="q5x-eK-qLR"/>
+                                                <constraint firstItem="h0w-fq-lCc" firstAttribute="top" secondItem="Ln2-Pw-A4x" secondAttribute="top" id="uPy-TF-ftb"/>
+                                                <constraint firstItem="obj-tX-Ktl" firstAttribute="top" secondItem="3ON-5C-6rj" secondAttribute="bottom" constant="3" id="ueK-hV-hL1"/>
+                                                <constraint firstAttribute="trailing" secondItem="obj-tX-Ktl" secondAttribute="trailing" constant="8" id="vy6-8x-ht2"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" name="BrandYellow"/>
+                                    <constraints>
+                                        <constraint firstItem="Ln2-Pw-A4x" firstAttribute="bottom" secondItem="mSd-7c-Eem" secondAttribute="bottomMargin" id="ffa-n8-lLM"/>
+                                        <constraint firstItem="Ln2-Pw-A4x" firstAttribute="top" secondItem="mSd-7c-Eem" secondAttribute="topMargin" id="gdY-h3-Tak"/>
+                                        <constraint firstItem="Ln2-Pw-A4x" firstAttribute="trailing" secondItem="mSd-7c-Eem" secondAttribute="trailingMargin" id="iVo-Sp-fbr"/>
+                                        <constraint firstItem="Ln2-Pw-A4x" firstAttribute="leading" secondItem="mSd-7c-Eem" secondAttribute="leadingMargin" id="uoX-UL-l0j"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="addedValueLabel" destination="3ON-5C-6rj" id="jrn-61-DAa"/>
+                                    <outlet property="addedWeightLabel" destination="NO9-JJ-5GX" id="7Hc-pc-qwK"/>
+                                    <outlet property="productImageView" destination="h0w-fq-lCc" id="N7v-x9-5kK"/>
+                                    <outlet property="titleLabel" destination="Ssy-aA-yaW" id="k9E-o9-Gzt"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Sj4-73-OBA" id="MMm-dF-Yml"/>
+                            <outlet property="delegate" destination="Sj4-73-OBA" id="TZZ-K3-Kjs"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MY4-lE-8aX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="205.59999999999999" y="-295.50224887556226"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="BrandBlue">
+            <color red="0.34099999070167542" green="0.50999999046325684" blue="0.73299998044967651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BrandRed">
+            <color red="0.73299998044967651" green="0.38499999046325684" blue="0.30700001120567322" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BrandYellow">
+            <color red="1" green="0.99599999189376831" blue="0.93300002813339233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
