@@ -57,12 +57,13 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hiD-bz-nmV">
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hiD-bz-nmV" customClass="RoundedBlueButton" customModule="Farm_Storybook" customModuleProvider="target">
                                 <rect key="frame" x="60" y="431" width="255" height="44"/>
                                 <accessibility key="accessibilityConfiguration" identifier="goButton"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="C7B-Xh-Bnc"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
                                 <state key="normal" title="GOOOOOOO">
                                     <color key="titleColor" name="BrandBlue"/>
                                 </state>
@@ -88,7 +89,6 @@
                         <viewLayoutGuide key="safeArea" id="tRl-aL-65z"/>
                     </view>
                     <connections>
-                        <outlet property="goButton" destination="hiD-bz-nmV" id="QC1-kX-dLl"/>
                         <outlet property="mailTextField" destination="qJL-Cg-k9g" id="b00-w2-11j"/>
                         <outlet property="passwordTextField" destination="DTF-Tn-4kw" id="hgP-Ya-GxV"/>
                     </connections>

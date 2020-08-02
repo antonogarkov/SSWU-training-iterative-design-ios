@@ -41,7 +41,6 @@ public final class AddAddressViewController: UIViewController {
     @IBOutlet private weak var cityTextField: SkyFloatingLabelTextField!
     @IBOutlet private weak var stateTextField: SkyFloatingLabelTextField!
     @IBOutlet private weak var zipTextField: SkyFloatingLabelTextField!
-    @IBOutlet private weak var addAddressButton: UIButton!
 
     private var props = Props.defaultValue
 
@@ -58,10 +57,6 @@ public final class AddAddressViewController: UIViewController {
 
     public override func viewDidLoad() {
         super.viewDidLoad()
-
-        addAddressButton.layer.borderColor = UIColor(named: "BrandBlue")?.cgColor
-        addAddressButton.layer.borderWidth = 1
-        addAddressButton.layer.cornerRadius = 22
 
         IQKeyboardManager.shared.enable = true
 

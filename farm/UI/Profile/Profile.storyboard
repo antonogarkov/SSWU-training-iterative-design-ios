@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile View Controller-->
+        <scene sceneID="YmH-if-rGH">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" id="Us3-pm-72J" customClass="ProfileViewController" customModule="Farm_Storybook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eBb-4B-jT8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hu5-Mk-tlI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="194"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACCOUNT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9K-Ku-4wd">
+                                        <rect key="frame" x="116" y="68" width="143.5" height="58"/>
+                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="42"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="BrandYellow"/>
+                                <constraints>
+                                    <constraint firstItem="s9K-Ku-4wd" firstAttribute="centerY" secondItem="Hu5-Mk-tlI" secondAttribute="centerY" id="1ph-VF-QC5"/>
+                                    <constraint firstAttribute="height" constant="194" id="G1B-dT-0cx"/>
+                                    <constraint firstItem="s9K-Ku-4wd" firstAttribute="centerX" secondItem="Hu5-Mk-tlI" secondAttribute="centerX" id="JfO-i5-WXk"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are logged in as" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QfI-ZK-4mq">
+                                <rect key="frame" x="16" y="202" width="343" height="34.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test_email@test.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3s-Xp-pXy">
+                                <rect key="frame" x="16" y="244.5" width="343" height="28"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47E-RF-gX9" customClass="RoundedBlueButton" customModule="Farm_Storybook" customModuleProvider="target">
+                                <rect key="frame" x="60" y="607" width="255" height="44"/>
+                                <accessibility key="accessibilityConfiguration" identifier="addAddressButton"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="X6c-LY-HPv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
+                                <state key="normal" title="LOG OUT">
+                                    <color key="titleColor" name="BrandBlue"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTouchLogout:" destination="Us3-pm-72J" eventType="touchUpInside" id="PWR-I8-gQt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="BrandYellow"/>
+                        <constraints>
+                            <constraint firstItem="Hu5-Mk-tlI" firstAttribute="leading" secondItem="dFM-QX-Fdj" secondAttribute="leading" id="7i5-Kj-yDM"/>
+                            <constraint firstItem="dFM-QX-Fdj" firstAttribute="trailing" secondItem="QfI-ZK-4mq" secondAttribute="trailing" constant="16" id="E77-wX-d4a"/>
+                            <constraint firstItem="47E-RF-gX9" firstAttribute="leading" secondItem="dFM-QX-Fdj" secondAttribute="leading" constant="60" id="Ifd-l7-TPs"/>
+                            <constraint firstItem="dFM-QX-Fdj" firstAttribute="bottom" secondItem="47E-RF-gX9" secondAttribute="bottom" constant="16" id="M0J-25-I5Y"/>
+                            <constraint firstItem="Hu5-Mk-tlI" firstAttribute="trailing" secondItem="dFM-QX-Fdj" secondAttribute="trailing" id="Qf5-z2-IUH"/>
+                            <constraint firstItem="T3s-Xp-pXy" firstAttribute="top" secondItem="QfI-ZK-4mq" secondAttribute="bottom" constant="8" id="XHk-9Z-k6t"/>
+                            <constraint firstItem="QfI-ZK-4mq" firstAttribute="top" secondItem="Hu5-Mk-tlI" secondAttribute="bottom" constant="8" id="Yqx-Ke-RTu"/>
+                            <constraint firstItem="T3s-Xp-pXy" firstAttribute="leading" secondItem="dFM-QX-Fdj" secondAttribute="leading" constant="16" id="aWf-Se-15n"/>
+                            <constraint firstItem="dFM-QX-Fdj" firstAttribute="trailing" secondItem="T3s-Xp-pXy" secondAttribute="trailing" constant="16" id="gmM-SK-O46"/>
+                            <constraint firstItem="Hu5-Mk-tlI" firstAttribute="top" secondItem="dFM-QX-Fdj" secondAttribute="top" id="yeH-aE-f0I"/>
+                            <constraint firstItem="dFM-QX-Fdj" firstAttribute="trailing" secondItem="47E-RF-gX9" secondAttribute="trailing" constant="60" id="ykD-GK-KPr"/>
+                            <constraint firstItem="QfI-ZK-4mq" firstAttribute="leading" secondItem="dFM-QX-Fdj" secondAttribute="leading" constant="16" id="yut-1h-Zrd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dFM-QX-Fdj"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailLabel" destination="T3s-Xp-pXy" id="qnF-Mn-wFs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tV3-jy-zaQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="333" y="-220"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="BrandBlue">
+            <color red="0.34099999070167542" green="0.50999999046325684" blue="0.73299998044967651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BrandYellow">
+            <color red="1" green="0.99599999189376831" blue="0.93300002813339233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

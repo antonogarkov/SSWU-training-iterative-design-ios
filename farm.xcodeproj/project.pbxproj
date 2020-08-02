@@ -38,6 +38,14 @@
 		4567FD6B24D5B20100F5621A /* AddressesListScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4567FD6824D5A96900F5621A /* AddressesListScenario.swift */; };
 		4567FD6C24D5B20B00F5621A /* AddressesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4567FD6224D5A4EB00F5621A /* AddressesListViewController.swift */; };
 		4567FD6D24D5B20E00F5621A /* AddressListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4567FD6524D5A92600F5621A /* AddressListTableViewCell.swift */; };
+		4567FD7024D5F9CB00F5621A /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4567FD6F24D5F9CB00F5621A /* Profile.storyboard */; };
+		4567FD7124D5F9CB00F5621A /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4567FD6F24D5F9CB00F5621A /* Profile.storyboard */; };
+		4567FD7324D5FF0C00F5621A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4567FD7224D5FF0C00F5621A /* ProfileViewController.swift */; };
+		4567FD7424D5FF0C00F5621A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4567FD7224D5FF0C00F5621A /* ProfileViewController.swift */; };
+		4567FD7624D601C800F5621A /* ProfileScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4567FD7524D601C800F5621A /* ProfileScenario.swift */; };
+		4567FD7724D601C800F5621A /* ProfileScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4567FD7524D601C800F5621A /* ProfileScenario.swift */; };
+		4567FD7A24D602FF00F5621A /* RoundedBlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4567FD7924D602FF00F5621A /* RoundedBlueButton.swift */; };
+		4567FD7B24D602FF00F5621A /* RoundedBlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4567FD7924D602FF00F5621A /* RoundedBlueButton.swift */; };
 		459FABD124C8066300613F0D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459FABD024C8066300613F0D /* LoginViewController.swift */; };
 		459FABD624C806EB00613F0D /* NibInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459FABD524C806EB00613F0D /* NibInstantiatable.swift */; };
 		459FABD824C807BC00613F0D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 459FABD724C807BC00613F0D /* Login.storyboard */; };
@@ -115,6 +123,10 @@
 		4567FD6224D5A4EB00F5621A /* AddressesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressesListViewController.swift; sourceTree = "<group>"; };
 		4567FD6524D5A92600F5621A /* AddressListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressListTableViewCell.swift; sourceTree = "<group>"; };
 		4567FD6824D5A96900F5621A /* AddressesListScenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressesListScenario.swift; sourceTree = "<group>"; };
+		4567FD6F24D5F9CB00F5621A /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		4567FD7224D5FF0C00F5621A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4567FD7524D601C800F5621A /* ProfileScenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScenario.swift; sourceTree = "<group>"; };
+		4567FD7924D602FF00F5621A /* RoundedBlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBlueButton.swift; sourceTree = "<group>"; };
 		459FABC924C7869D00613F0D /* TestScenarioUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestScenarioUI.framework; sourceTree = "<group>"; };
 		459FABCA24C7869D00613F0D /* TestScenarioUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestScenarioUtils.framework; sourceTree = "<group>"; };
 		459FABCB24C7869D00613F0D /* TestScenario.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestScenario.framework; sourceTree = "<group>"; };
@@ -176,6 +188,7 @@
 				45C0317D24CDE8BA000F32D0 /* AddAddressScenario.swift */,
 				4567FD6824D5A96900F5621A /* AddressesListScenario.swift */,
 				4522E07E24D15C4B00ECFA1F /* ProductsListScenario.swift */,
+				4567FD7524D601C800F5621A /* ProfileScenario.swift */,
 			);
 			path = StorybookApp;
 			sourceTree = "<group>";
@@ -246,6 +259,15 @@
 			path = "Addresses List";
 			sourceTree = "<group>";
 		};
+		4567FD6E24D5F9AD00F5621A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				4567FD6F24D5F9CB00F5621A /* Profile.storyboard */,
+				4567FD7224D5FF0C00F5621A /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		459FABC824C7866D00613F0D /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +281,7 @@
 		459FABCF24C8033500613F0D /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				4567FD6E24D5F9AD00F5621A /* Profile */,
 				4567FD5E24D5A4B000F5621A /* Addresses List */,
 				4522E07924D15A3000ECFA1F /* Products List */,
 				459FABD424C8068B00613F0D /* Helpers */,
@@ -281,6 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				459FABD524C806EB00613F0D /* NibInstantiatable.swift */,
+				4567FD7924D602FF00F5621A /* RoundedBlueButton.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -431,6 +455,7 @@
 				45C0316B24CC3449000F32D0 /* Assets.xcassets in Resources */,
 				4522E08324D16CE300ECFA1F /* ProductsList.storyboard in Resources */,
 				45C2042024CC0A3C00CF45D1 /* Login.storyboard in Resources */,
+				4567FD7124D5F9CB00F5621A /* Profile.storyboard in Resources */,
 				45C0318224CDF4A7000F32D0 /* AddAddress.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,6 +476,7 @@
 				459FABD824C807BC00613F0D /* Login.storyboard in Resources */,
 				4522E07B24D15C1400ECFA1F /* ProductsList.storyboard in Resources */,
 				45544BCA24AB06BF00ECDF86 /* LaunchScreen.storyboard in Resources */,
+				4567FD7024D5F9CB00F5621A /* Profile.storyboard in Resources */,
 				45544BC724AB06BF00ECDF86 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -582,9 +608,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4567FD7B24D602FF00F5621A /* RoundedBlueButton.swift in Sources */,
 				45C2041E24CC093600CF45D1 /* LoginViewController.swift in Sources */,
 				4567FD6724D5A92600F5621A /* AddressListTableViewCell.swift in Sources */,
 				450D8A4E24C9769B004EAE80 /* AppDelegate.swift in Sources */,
+				4567FD7724D601C800F5621A /* ProfileScenario.swift in Sources */,
 				4522E08624D1F9A200ECFA1F /* ProductsListCell.swift in Sources */,
 				45C2041F24CC0A1600CF45D1 /* NibInstantiatable.swift in Sources */,
 				4522E07F24D15C4B00ECFA1F /* ProductsListScenario.swift in Sources */,
@@ -592,6 +620,7 @@
 				45C2041D24CC07B700CF45D1 /* LoginScenario.swift in Sources */,
 				4567FD6A24D5A96900F5621A /* AddressesListScenario.swift in Sources */,
 				4567FD6424D5A4EB00F5621A /* AddressesListViewController.swift in Sources */,
+				4567FD7424D5FF0C00F5621A /* ProfileViewController.swift in Sources */,
 				45C0317E24CDE8BA000F32D0 /* AddAddressScenario.swift in Sources */,
 				45C0317F24CDED6D000F32D0 /* AddAddressViewController.swift in Sources */,
 			);
@@ -621,11 +650,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				45C0317B24CDE666000F32D0 /* AddAddressViewController.swift in Sources */,
+				4567FD7A24D602FF00F5621A /* RoundedBlueButton.swift in Sources */,
+				4567FD7624D601C800F5621A /* ProfileScenario.swift in Sources */,
 				4522E08524D1F7A500ECFA1F /* ProductsListCell.swift in Sources */,
 				4567FD6624D5A92600F5621A /* AddressListTableViewCell.swift in Sources */,
 				459FABD124C8066300613F0D /* LoginViewController.swift in Sources */,
 				45544BC224AB06BB00ECDF86 /* ViewController.swift in Sources */,
 				4567FD6924D5A96900F5621A /* AddressesListScenario.swift in Sources */,
+				4567FD7324D5FF0C00F5621A /* ProfileViewController.swift in Sources */,
 				459FABD624C806EB00613F0D /* NibInstantiatable.swift in Sources */,
 				4567FD6324D5A4EB00F5621A /* AddressesListViewController.swift in Sources */,
 				45544BBE24AB06BB00ECDF86 /* AppDelegate.swift in Sources */,

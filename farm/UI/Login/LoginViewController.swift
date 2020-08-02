@@ -26,7 +26,6 @@ public final class LoginViewController: UIViewController {
 
     private var props = Props.defaultValue
 
-    @IBOutlet private weak var goButton: UIButton!
     @IBOutlet private weak var mailTextField: SkyFloatingLabelTextField!
     @IBOutlet private weak var passwordTextField: SkyFloatingLabelTextField!
 
@@ -40,10 +39,6 @@ public final class LoginViewController: UIViewController {
 
     public override func viewDidLoad() {
         super.viewDidLoad()
-
-        goButton.layer.borderColor = UIColor(named: "BrandBlue")?.cgColor
-        goButton.layer.borderWidth = 1
-        goButton.layer.cornerRadius = 22
 
         IQKeyboardManager.shared.enable = true
 

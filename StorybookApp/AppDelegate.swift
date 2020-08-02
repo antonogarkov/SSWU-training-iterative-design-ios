@@ -9,7 +9,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let mainWindow = UIWindow(frame: UIScreen.main.bounds)
 
-        ConfigureTestApplication(withConfig: TestApplicationManagerConfig(scenariosClasses: [LoginScenario.self, AddAddressScenario.self, ProductsListScenario.self, AddressesListScenario.self]))
+        ConfigureTestApplication(withConfig: TestApplicationManagerConfig(scenariosClasses: [LoginScenario.self, AddAddressScenario.self, ProductsListScenario.self, AddressesListScenario.self, ProfileScenario.self]))
 
         mainWindow.rootViewController = ScenarioTestingRootViewController()
 
