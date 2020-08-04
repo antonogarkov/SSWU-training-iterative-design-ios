@@ -9,6 +9,12 @@ def common
   pod 'Kingfisher', '5.8.3'
 end
 
+target 'UI' do
+  project 'UI/UI.xcodeproj'
+
+  common
+end
+
 target 'farm' do
    project 'farm.xcodeproj'
 

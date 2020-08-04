@@ -1,5 +1,6 @@
 import UIKit.UIViewController
 import TestScenario
+@testable import UI
 
 class AddAddressScenario: TestScenario {
     override func buildViewController() -> UIViewController {

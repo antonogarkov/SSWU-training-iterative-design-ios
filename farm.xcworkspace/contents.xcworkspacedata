@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:UI/UI.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "absolute:/Users/antonogarkov/Documents/Presentations/FARM/SSWU_training/farm/farm.xcodeproj">
    </FileRef>
    <FileRef

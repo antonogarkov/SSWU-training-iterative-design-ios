@@ -1,5 +1,6 @@
 import UIKit.UIViewController
 import TestScenario
+@testable import UI
 
 fileprivate class ColoredViewController: UIViewController {
     var color = UIColor.clear
