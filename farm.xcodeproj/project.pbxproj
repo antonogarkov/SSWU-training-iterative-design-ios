@@ -22,6 +22,12 @@
 		4522E08524D1F7A500ECFA1F /* ProductsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4522E08424D1F7A500ECFA1F /* ProductsListCell.swift */; };
 		4522E08624D1F9A200ECFA1F /* ProductsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4522E08424D1F7A500ECFA1F /* ProductsListCell.swift */; };
 		4522E08824D1F9BD00ECFA1F /* ProductsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4522E08424D1F7A500ECFA1F /* ProductsListCell.swift */; };
+		4536D56024D88DE3001905ED /* Checkout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4536D55F24D88DE3001905ED /* Checkout.storyboard */; };
+		4536D56224D88DF4001905ED /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4536D56124D88DF4001905ED /* CheckoutViewController.swift */; };
+		4536D56324D8903A001905ED /* Checkout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4536D55F24D88DE3001905ED /* Checkout.storyboard */; };
+		4536D56424D89047001905ED /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4536D56124D88DF4001905ED /* CheckoutViewController.swift */; };
+		4536D56624D89076001905ED /* CheckoutScenatrio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4536D56524D89076001905ED /* CheckoutScenatrio.swift */; };
+		4536D56724D890CF001905ED /* CheckoutScenatrio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4536D56524D89076001905ED /* CheckoutScenatrio.swift */; };
 		45544BBE24AB06BB00ECDF86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45544BBD24AB06BB00ECDF86 /* AppDelegate.swift */; };
 		45544BC024AB06BB00ECDF86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45544BBF24AB06BB00ECDF86 /* SceneDelegate.swift */; };
 		45544BC224AB06BB00ECDF86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45544BC124AB06BB00ECDF86 /* ViewController.swift */; };
@@ -119,6 +125,9 @@
 		4522E07C24D15C3100ECFA1F /* ProductsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListViewController.swift; sourceTree = "<group>"; };
 		4522E07E24D15C4B00ECFA1F /* ProductsListScenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListScenario.swift; sourceTree = "<group>"; };
 		4522E08424D1F7A500ECFA1F /* ProductsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListCell.swift; sourceTree = "<group>"; };
+		4536D55F24D88DE3001905ED /* Checkout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Checkout.storyboard; sourceTree = "<group>"; };
+		4536D56124D88DF4001905ED /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		4536D56524D89076001905ED /* CheckoutScenatrio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutScenatrio.swift; sourceTree = "<group>"; };
 		45544BBA24AB06BB00ECDF86 /* farm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = farm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45544BBD24AB06BB00ECDF86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45544BBF24AB06BB00ECDF86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -201,6 +210,7 @@
 				4522E07E24D15C4B00ECFA1F /* ProductsListScenario.swift */,
 				4567FD7524D601C800F5621A /* ProfileScenario.swift */,
 				4561164C24D6AB4B007C169E /* BasketScenario.swift */,
+				4536D56524D89076001905ED /* CheckoutScenatrio.swift */,
 			);
 			path = StorybookApp;
 			sourceTree = "<group>";
@@ -222,6 +232,15 @@
 				4522E08424D1F7A500ECFA1F /* ProductsListCell.swift */,
 			);
 			path = "Products List";
+			sourceTree = "<group>";
+		};
+		4536D55E24D88DC7001905ED /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				4536D56124D88DF4001905ED /* CheckoutViewController.swift */,
+				4536D55F24D88DE3001905ED /* Checkout.storyboard */,
+			);
+			path = Checkout;
 			sourceTree = "<group>";
 		};
 		45544BB124AB06BB00ECDF86 = {
@@ -303,6 +322,7 @@
 		459FABCF24C8033500613F0D /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				4536D55E24D88DC7001905ED /* Checkout */,
 				4567FD7C24D6873E00F5621A /* Basket */,
 				4567FD6E24D5F9AD00F5621A /* Profile */,
 				4567FD5E24D5A4B000F5621A /* Addresses List */,
@@ -477,6 +497,7 @@
 				4567FD6124D5A4D000F5621A /* AddressesList.storyboard in Resources */,
 				4561165024D6AE23007C169E /* Basket.storyboard in Resources */,
 				45C0316B24CC3449000F32D0 /* Assets.xcassets in Resources */,
+				4536D56324D8903A001905ED /* Checkout.storyboard in Resources */,
 				4522E08324D16CE300ECFA1F /* ProductsList.storyboard in Resources */,
 				45C2042024CC0A3C00CF45D1 /* Login.storyboard in Resources */,
 				4567FD7124D5F9CB00F5621A /* Profile.storyboard in Resources */,
@@ -499,6 +520,7 @@
 				4567FD6024D5A4D000F5621A /* AddressesList.storyboard in Resources */,
 				4567FD7E24D6876200F5621A /* Basket.storyboard in Resources */,
 				459FABD824C807BC00613F0D /* Login.storyboard in Resources */,
+				4536D56024D88DE3001905ED /* Checkout.storyboard in Resources */,
 				4522E07B24D15C1400ECFA1F /* ProductsList.storyboard in Resources */,
 				45544BCA24AB06BF00ECDF86 /* LaunchScreen.storyboard in Resources */,
 				4567FD7024D5F9CB00F5621A /* Profile.storyboard in Resources */,
@@ -633,6 +655,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4536D56624D89076001905ED /* CheckoutScenatrio.swift in Sources */,
 				4561164E24D6ABB4007C169E /* BasketViewController.swift in Sources */,
 				4561164F24D6ABB8007C169E /* BasketTableViewCell.swift in Sources */,
 				4567FD7B24D602FF00F5621A /* RoundedBlueButton.swift in Sources */,
@@ -647,6 +670,7 @@
 				45C2041D24CC07B700CF45D1 /* LoginScenario.swift in Sources */,
 				4567FD6A24D5A96900F5621A /* AddressesListScenario.swift in Sources */,
 				4567FD6424D5A4EB00F5621A /* AddressesListViewController.swift in Sources */,
+				4536D56424D89047001905ED /* CheckoutViewController.swift in Sources */,
 				4567FD7424D5FF0C00F5621A /* ProfileViewController.swift in Sources */,
 				4561164D24D6AB4B007C169E /* BasketScenario.swift in Sources */,
 				45C0317E24CDE8BA000F32D0 /* AddAddressScenario.swift in Sources */,
@@ -662,6 +686,7 @@
 				45C0318024CDED6F000F32D0 /* AddAddressViewController.swift in Sources */,
 				4567FD6C24D5B20B00F5621A /* AddressesListViewController.swift in Sources */,
 				4522E08824D1F9BD00ECFA1F /* ProductsListCell.swift in Sources */,
+				4536D56724D890CF001905ED /* CheckoutScenatrio.swift in Sources */,
 				45C0318124CDED75000F32D0 /* AddAddressScenario.swift in Sources */,
 				4522E08024D16CDB00ECFA1F /* ProductsListScenario.swift in Sources */,
 				4567FD6D24D5B20E00F5621A /* AddressListTableViewCell.swift in Sources */,
@@ -688,6 +713,7 @@
 				45544BC224AB06BB00ECDF86 /* ViewController.swift in Sources */,
 				4567FD6924D5A96900F5621A /* AddressesListScenario.swift in Sources */,
 				4567FD7324D5FF0C00F5621A /* ProfileViewController.swift in Sources */,
+				4536D56224D88DF4001905ED /* CheckoutViewController.swift in Sources */,
 				459FABD624C806EB00613F0D /* NibInstantiatable.swift in Sources */,
 				4567FD6324D5A4EB00F5621A /* AddressesListViewController.swift in Sources */,
 				45544BBE24AB06BB00ECDF86 /* AppDelegate.swift in Sources */,

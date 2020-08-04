@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Checkout View Controller-->
+        <scene sceneID="Ui6-Fb-YWn">
+            <objects>
+                <viewController storyboardIdentifier="CheckoutViewController" id="SBD-sn-Bvq" customClass="CheckoutViewController" customModule="farm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RA4-tj-1hI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IhH-pw-ifn">
+                                <rect key="frame" x="0.0" y="603" width="375" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIz-sw-nan" customClass="RoundedBlueButton" customModule="Farm_Storybook" customModuleProvider="target">
+                                        <rect key="frame" x="60" y="10" width="255" height="44"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="goButton"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Cgi-Vb-HgB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
+                                        <state key="normal" title="PLACE THE OOOOOORDER">
+                                            <color key="titleColor" name="BrandBlue"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="SIz-sw-nan" firstAttribute="leading" secondItem="IhH-pw-ifn" secondAttribute="leading" constant="60" id="Cou-oz-Xyu"/>
+                                    <constraint firstAttribute="trailing" secondItem="SIz-sw-nan" secondAttribute="trailing" constant="60" id="VFq-JG-0UH"/>
+                                    <constraint firstItem="SIz-sw-nan" firstAttribute="top" secondItem="IhH-pw-ifn" secondAttribute="top" constant="10" id="eHP-mr-JOz"/>
+                                    <constraint firstAttribute="bottom" secondItem="SIz-sw-nan" secondAttribute="bottom" constant="10" id="rYx-0I-AXh"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4fD-Oz-nCe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="200" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zXz-x4-2mR">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="BrandYellow"/>
+                                <constraints>
+                                    <constraint firstItem="zXz-x4-2mR" firstAttribute="top" secondItem="S4Y-ej-2hX" secondAttribute="top" id="8za-jf-Q8V"/>
+                                    <constraint firstItem="zXz-x4-2mR" firstAttribute="leading" secondItem="S4Y-ej-2hX" secondAttribute="leading" id="URJ-AB-4tk"/>
+                                    <constraint firstItem="zXz-x4-2mR" firstAttribute="trailing" secondItem="S4Y-ej-2hX" secondAttribute="trailing" id="VN8-dM-oVZ"/>
+                                    <constraint firstItem="zXz-x4-2mR" firstAttribute="width" secondItem="0kd-xU-06E" secondAttribute="width" id="jH8-up-Ifh"/>
+                                    <constraint firstItem="zXz-x4-2mR" firstAttribute="bottom" secondItem="S4Y-ej-2hX" secondAttribute="bottom" id="teV-nT-Kpp"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="S4Y-ej-2hX"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="0kd-xU-06E"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" name="BrandYellow"/>
+                        <constraints>
+                            <constraint firstItem="IhH-pw-ifn" firstAttribute="trailing" secondItem="gFU-DZ-wKL" secondAttribute="trailing" id="N1C-8M-6u6"/>
+                            <constraint firstItem="4fD-Oz-nCe" firstAttribute="leading" secondItem="gFU-DZ-wKL" secondAttribute="leading" id="ZPJ-qI-4Nk"/>
+                            <constraint firstItem="4fD-Oz-nCe" firstAttribute="trailing" secondItem="gFU-DZ-wKL" secondAttribute="trailing" id="cqE-te-EFJ"/>
+                            <constraint firstItem="4fD-Oz-nCe" firstAttribute="top" secondItem="gFU-DZ-wKL" secondAttribute="top" id="dRK-jV-yJn"/>
+                            <constraint firstItem="IhH-pw-ifn" firstAttribute="top" secondItem="4fD-Oz-nCe" secondAttribute="bottom" id="hNU-E3-bqh"/>
+                            <constraint firstItem="IhH-pw-ifn" firstAttribute="bottom" secondItem="gFU-DZ-wKL" secondAttribute="bottom" id="yXl-w3-cwb"/>
+                            <constraint firstItem="IhH-pw-ifn" firstAttribute="leading" secondItem="gFU-DZ-wKL" secondAttribute="leading" id="ylr-bC-JC5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gFU-DZ-wKL"/>
+                    </view>
+                    <connections>
+                        <outlet property="generalStackView" destination="zXz-x4-2mR" id="irO-ei-lIz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nwg-Lc-ZV6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-71.200000000000003" y="-7.6461769115442282"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="BrandBlue">
+            <color red="0.34099999070167542" green="0.50999999046325684" blue="0.73299998044967651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="BrandYellow">
+            <color red="1" green="0.99599999189376831" blue="0.93300002813339233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
