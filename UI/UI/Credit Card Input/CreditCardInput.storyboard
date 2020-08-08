@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Credit Card InputVC-->
+        <scene sceneID="FjY-aE-8I4">
+            <objects>
+                <viewController storyboardIdentifier="CreditCardInputVC" id="woA-2d-rXS" customClass="CreditCardInputVC" customModule="UI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ATc-gQ-yY1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WFH-JG-QkL" customClass="STPPaymentCardTextField">
+                                <rect key="frame" x="16" y="16" width="343" height="44"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Bww-Rt-wrG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="BrandYellow"/>
+                        <constraints>
+                            <constraint firstItem="WFH-JG-QkL" firstAttribute="leading" secondItem="KJp-4Z-Zyc" secondAttribute="leading" constant="16" id="FGC-e1-fC1"/>
+                            <constraint firstItem="KJp-4Z-Zyc" firstAttribute="bottom" secondItem="WFH-JG-QkL" secondAttribute="bottom" constant="16" id="OWL-LB-aIa"/>
+                            <constraint firstItem="KJp-4Z-Zyc" firstAttribute="trailing" secondItem="WFH-JG-QkL" secondAttribute="trailing" constant="16" id="SKx-Zw-cZy"/>
+                            <constraint firstItem="WFH-JG-QkL" firstAttribute="top" secondItem="KJp-4Z-Zyc" secondAttribute="top" constant="16" id="dQN-Gp-dxq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KJp-4Z-Zyc"/>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="WFH-JG-QkL" id="Xy8-DY-S5R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dfE-AP-AKO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-50.399999999999999" y="-287.40629685157421"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="BrandYellow">
+            <color red="1" green="0.99599999189376831" blue="0.93300002813339233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

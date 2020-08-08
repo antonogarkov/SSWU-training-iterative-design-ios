@@ -31,6 +31,8 @@
 		4536D5FF24DA0194001905ED /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4536D5D224DA00BB001905ED /* Login.storyboard */; };
 		456E55B624DB3F9200797AD8 /* CheckoutSectionWrapperVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456E55B524DB3F9200797AD8 /* CheckoutSectionWrapperVC.swift */; };
 		456E55B824DB448600797AD8 /* UIView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456E55B724DB448600797AD8 /* UIView+extensions.swift */; };
+		456E55BD24DEC92700797AD8 /* CreditCardInputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456E55BC24DEC92700797AD8 /* CreditCardInputVC.swift */; };
+		456E55C124DEC9CE00797AD8 /* CreditCardInput.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456E55C024DEC9CE00797AD8 /* CreditCardInput.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +61,8 @@
 		4536D5E324DA00BB001905ED /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		456E55B524DB3F9200797AD8 /* CheckoutSectionWrapperVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutSectionWrapperVC.swift; sourceTree = "<group>"; };
 		456E55B724DB448600797AD8 /* UIView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extensions.swift"; sourceTree = "<group>"; };
+		456E55BC24DEC92700797AD8 /* CreditCardInputVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardInputVC.swift; sourceTree = "<group>"; };
+		456E55C024DEC9CE00797AD8 /* CreditCardInput.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreditCardInput.storyboard; sourceTree = "<group>"; };
 		7D744C7653D96E2DFC0F6158 /* Pods-UI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI.debug.xcconfig"; path = "Target Support Files/Pods-UI/Pods-UI.debug.xcconfig"; sourceTree = "<group>"; };
 		E6A547F203517235C0DD48D0 /* Pods_UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F73D8E8B8666C5B093686142 /* Pods-UI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI.release.xcconfig"; path = "Target Support Files/Pods-UI/Pods-UI.release.xcconfig"; sourceTree = "<group>"; };
@@ -115,6 +119,7 @@
 		4536D5C024DA00B1001905ED /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				456E55BB24DEC90700797AD8 /* Credit Card Input */,
 				4536D5E124DA00BB001905ED /* Checkout */,
 				4536D5CC24DA00BA001905ED /* Basket */,
 				4536D5E424DA00BB001905ED /* Profile */,
@@ -207,6 +212,15 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		456E55BB24DEC90700797AD8 /* Credit Card Input */ = {
+			isa = PBXGroup;
+			children = (
+				456E55BC24DEC92700797AD8 /* CreditCardInputVC.swift */,
+				456E55C024DEC9CE00797AD8 /* CreditCardInput.storyboard */,
+			);
+			path = "Credit Card Input";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -283,6 +297,7 @@
 				4536D5F624DA0185001905ED /* ProductsList.storyboard in Resources */,
 				4536D5EE24DA017A001905ED /* Basket.storyboard in Resources */,
 				4536D5ED24DA0175001905ED /* Checkout.storyboard in Resources */,
+				456E55C124DEC9CE00797AD8 /* CreditCardInput.storyboard in Resources */,
 				4536D5FD24DA0190001905ED /* AddAddress.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				456E55BD24DEC92700797AD8 /* CreditCardInputVC.swift in Sources */,
 				4536D5F524DA0182001905ED /* AddressListTableViewCell.swift in Sources */,
 				4536D5F824DA0185001905ED /* ProductsListCell.swift in Sources */,
 				4536D5FA24DA018A001905ED /* NibInstantiatable.swift in Sources */,

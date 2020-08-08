@@ -4,23 +4,27 @@ PODS:
     - Kingfisher/Core (= 5.8.3)
   - Kingfisher/Core (5.8.3)
   - SkyFloatingLabelTextField (3.7.0)
+  - Stripe (19.3.0)
 
 DEPENDENCIES:
   - IQKeyboardManagerSwift (= 6.5.5)
   - Kingfisher (= 5.8.3)
   - SkyFloatingLabelTextField (= 3.7.0)
+  - Stripe (= 19.3.0)
 
 SPEC REPOS:
   trunk:
     - IQKeyboardManagerSwift
     - Kingfisher
     - SkyFloatingLabelTextField
+    - Stripe
 
 SPEC CHECKSUMS:
   IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
   Kingfisher: b7e4cb65ff24c264bd2a1284b75b974d907afd94
   SkyFloatingLabelTextField: 4b46db0ab1ccde0919cded29c656e6b4805eda04
+  Stripe: dd5bfdd5f1daed4f9ddbfb47e9449ec302f9f708
 
-PODFILE CHECKSUM: 98d7c06deb4eee8562feb685d92fbd32f031278d
+PODFILE CHECKSUM: 2b4ec7b5c37a20920dc36d5338e7faf7d010bc7b
 
-COCOAPODS: 1.8.0
+COCOAPODS: 1.9.3

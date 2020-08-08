@@ -7,6 +7,7 @@ def common
   pod 'SkyFloatingLabelTextField', '3.7.0'
   pod 'IQKeyboardManagerSwift', '6.5.5'
   pod 'Kingfisher', '5.8.3'
+  pod 'Stripe', '19.3.0'
 end
 
 target 'UI' do
