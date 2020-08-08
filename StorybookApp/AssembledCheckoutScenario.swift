@@ -7,12 +7,17 @@ class AssembledCheckoutScenario: TestScenario {
         let viewController = CheckoutViewController.instantiate()
 
         let addressListVC = AddressesListScenario(reportEventClosure: reportEventClosure).buildViewController()
+        let deliveryTimeVC = DeliveryTimesScenario(reportEventClosure: reportEventClosure).buildViewController()
         let basketVC = BasketScenario(reportEventClosure: reportEventClosure).buildViewController()
         let creditCardInputVC = CreditCardInputScenario(reportEventClosure: reportEventClosure).buildViewController()
 
         let addressWrapper = CheckoutSectionWrapperVC.instantiate()
         addressWrapper.embeddedViewController = addressListVC
         addressWrapper.headerTitle = "SELECT DELIVERY ADDRESS"
+
+        let deliveryTimeWrapper = CheckoutSectionWrapperVC.instantiate()
+        deliveryTimeWrapper.embeddedViewController = deliveryTimeVC
+        deliveryTimeWrapper.headerTitle = "SELECT DELIVERY TIME"
 
         let creditCardWrapper = CheckoutSectionWrapperVC.instantiate()
         creditCardWrapper.embeddedViewController = creditCardInputVC
@@ -24,6 +29,7 @@ class AssembledCheckoutScenario: TestScenario {
 
         viewController.embeddedViewControllers = [
             addressWrapper,
+            deliveryTimeWrapper,
             creditCardWrapper,
             basketWrapper
         ]

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Delivery TimesVC-->
+        <scene sceneID="VT8-jA-x2k">
+            <objects>
+                <viewController storyboardIdentifier="DeliveryTimesVC" id="s8A-Jg-qdv" customClass="DeliveryTimesVC" customModule="UI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qju-Sd-kH5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="QXI-Cv-aSG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="611"/>
+                                <color key="backgroundColor" name="BrandYellow"/>
+                                <connections>
+                                    <action selector="didChangeDatePickerValue:" destination="s8A-Jg-qdv" eventType="valueChanged" id="gcS-jK-ghD"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes! We deliver even at night!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2b-QM-T7M">
+                                <rect key="frame" x="99" y="627" width="177" height="24"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="BrandYellow"/>
+                        <constraints>
+                            <constraint firstItem="QXI-Cv-aSG" firstAttribute="leading" secondItem="NiT-VR-Ykf" secondAttribute="leading" id="6E5-JT-ctm"/>
+                            <constraint firstItem="QXI-Cv-aSG" firstAttribute="trailing" secondItem="NiT-VR-Ykf" secondAttribute="trailing" id="FbY-O0-EdO"/>
+                            <constraint firstItem="T2b-QM-T7M" firstAttribute="top" secondItem="QXI-Cv-aSG" secondAttribute="bottom" constant="16" id="Hrg-d9-TP2"/>
+                            <constraint firstItem="NiT-VR-Ykf" firstAttribute="bottom" secondItem="T2b-QM-T7M" secondAttribute="bottom" constant="16" id="nbG-cv-i8k"/>
+                            <constraint firstItem="QXI-Cv-aSG" firstAttribute="top" secondItem="NiT-VR-Ykf" secondAttribute="top" id="phl-71-5jE"/>
+                            <constraint firstItem="T2b-QM-T7M" firstAttribute="centerX" secondItem="qju-Sd-kH5" secondAttribute="centerX" id="sEU-an-lMb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NiT-VR-Ykf"/>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="QXI-Cv-aSG" id="aJc-Ic-9yK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XQe-wJ-7rB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111.2" y="-216.34182908545728"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="BrandYellow">
+            <color red="1" green="0.99599999189376831" blue="0.93300002813339233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

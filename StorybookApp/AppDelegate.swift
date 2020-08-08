@@ -18,7 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             BasketScenario.self,
             CheckoutScenario.self,
             AssembledCheckoutScenario.self,
-            CreditCardInputScenario.self
+            CreditCardInputScenario.self,
+            DeliveryTimesScenario.self
         ]))
 
         mainWindow.rootViewController = ScenarioTestingRootViewController()
