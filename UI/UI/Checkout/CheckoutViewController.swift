@@ -1,24 +1,6 @@
 import UIKit
 
 private final class SectionView: UIView {
-    private let separator: UIView = {
-        let separator = UIView()
-        separator.translatesAutoresizingMaskIntoConstraints = false
-        separator.backgroundColor = .lightGray
-
-        separator.heightAnchor.constraint(equalToConstant: 1).isActive = true
-
-        return separator
-    }()
-
-    var isSepartorHidden: Bool {
-        get {
-            separator.isHidden
-        }
-        set {
-            separator.isHidden = newValue
-        }
-    }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -35,28 +17,6 @@ private final class SectionView: UIView {
     private func setUp() {
         translatesAutoresizingMaskIntoConstraints = false
         clipsToBounds = true
-
-        addSubview(separator)
-        NSLayoutConstraint.activate([
-            separator.leftAnchor.constraint(equalTo: leftAnchor, constant: 20),
-            separator.rightAnchor.constraint(equalTo: rightAnchor, constant: -20),
-            separator.topAnchor.constraint(equalTo: topAnchor)
-        ])
-    }
-
-    func embed(view: UIView) {
-        self.addSubview(view)
-
-        view.translatesAutoresizingMaskIntoConstraints = false
-
-        NSLayoutConstraint.activate([
-            view.leftAnchor.constraint(equalTo: leftAnchor),
-            view.bottomAnchor.constraint(equalTo: bottomAnchor),
-            view.rightAnchor.constraint(equalTo: rightAnchor),
-            view.topAnchor.constraint(equalTo: topAnchor)
-        ])
-
-        bringSubviewToFront(separator)
     }
 }
 
@@ -120,7 +80,5 @@ public final class CheckoutViewController: UIViewController {
             self.generalStackView.addArrangedSubview(sectionView)
             $0.didMove(toParent: self)
         }
-
-        self.sectionViews.first?.isSepartorHidden = true
     }
 }
