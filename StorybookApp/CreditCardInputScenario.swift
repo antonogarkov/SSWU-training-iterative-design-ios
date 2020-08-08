@@ -10,6 +10,11 @@ class CreditCardInputScenario: TestScenario {
     }
 
     func makeProps() -> CreditCardInputVC.Props {
-        CreditCardInputVC.Props()
+        CreditCardInputVC.Props(
+            didEnterNumber: { self.reportEventClosure(DescribeCalledFunction() + $0) },
+            didEnterCVC: { self.reportEventClosure(DescribeCalledFunction() + $0) },
+            didEnterExp: { self.reportEventClosure(DescribeCalledFunction() + $0) },
+            didEnterPostalCode: { self.reportEventClosure(DescribeCalledFunction() + $0) }
+        )
     }
 }

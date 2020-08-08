@@ -7,7 +7,17 @@ extension CreditCardInputVC: StoryboardInstantiatable {
 
 public final class CreditCardInputVC: UIViewController {
     struct Props {
-        static let defaultValue = Props()
+        let didEnterNumber: (String) -> Void
+        let didEnterCVC: (String) -> Void
+        let didEnterExp: (String) -> Void
+        let didEnterPostalCode: (String) -> Void
+
+        static let defaultValue = Props(
+            didEnterNumber: { _ in },
+            didEnterCVC: { _ in },
+            didEnterExp: { _ in },
+            didEnterPostalCode: { _ in }
+        )
     }
 
     private var props = Props.defaultValue
@@ -15,9 +25,6 @@ public final class CreditCardInputVC: UIViewController {
 
     func render(props: Props) {
         self.props = props
-        if isViewLoaded {
-
-        }
     }
 
     public override func viewDidLoad() {
@@ -25,7 +32,23 @@ public final class CreditCardInputVC: UIViewController {
 
         textField.borderColor = UIColor(named: "BrandBlue")
         textField.font = UIFont(name: "AvenirNextCondensed-Regular", size: 17)
+    }
+}
 
-        render(props: props)
+extension CreditCardInputVC: STPPaymentCardTextFieldDelegate {
+    public func paymentCardTextFieldDidEndEditingNumber(_ textField: STPPaymentCardTextField) {
+        props.didEnterNumber(textField.cardNumber ?? "")
+    }
+
+    public func paymentCardTextFieldDidEndEditingCVC(_ textField: STPPaymentCardTextField) {
+        props.didEnterCVC(textField.cvc ?? "")
+    }
+
+    public func paymentCardTextFieldDidEndEditingExpiration(_ textField: STPPaymentCardTextField) {
+        props.didEnterExp("\(textField.expirationMonth)/\(textField.expirationYear)")
+    }
+
+    public func paymentCardTextFieldDidEndEditingPostalCode(_ textField: STPPaymentCardTextField) {
+        props.didEnterPostalCode(textField.postalCode ?? "")
     }
 }
