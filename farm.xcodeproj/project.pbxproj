@@ -26,14 +26,17 @@
 		45544BC724AB06BF00ECDF86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45544BC624AB06BF00ECDF86 /* Assets.xcassets */; };
 		45544BCA24AB06BF00ECDF86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45544BC824AB06BF00ECDF86 /* LaunchScreen.storyboard */; };
 		4561164D24D6AB4B007C169E /* BasketScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4561164C24D6AB4B007C169E /* BasketScenario.swift */; };
-		4567FD6924D5A96900F5621A /* AddressesListScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4567FD6824D5A96900F5621A /* AddressesListScenario.swift */; };
 		4567FD6A24D5A96900F5621A /* AddressesListScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4567FD6824D5A96900F5621A /* AddressesListScenario.swift */; };
 		4567FD6B24D5B20100F5621A /* AddressesListScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4567FD6824D5A96900F5621A /* AddressesListScenario.swift */; };
-		4567FD7624D601C800F5621A /* ProfileScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4567FD7524D601C800F5621A /* ProfileScenario.swift */; };
 		4567FD7724D601C800F5621A /* ProfileScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4567FD7524D601C800F5621A /* ProfileScenario.swift */; };
 		456E55B424DB3EF300797AD8 /* AssembledCheckoutScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456E55B324DB3EF300797AD8 /* AssembledCheckoutScenario.swift */; };
 		456E55BF24DEC98C00797AD8 /* CreditCardInputScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456E55BE24DEC98C00797AD8 /* CreditCardInputScenario.swift */; };
 		456E55C824DF099C00797AD8 /* DeliveryTimesScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456E55C724DF099C00797AD8 /* DeliveryTimesScenario.swift */; };
+		456E55F324DF321000797AD8 /* ProfileScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4567FD7524D601C800F5621A /* ProfileScenario.swift */; };
+		456E55F424DF321800797AD8 /* BasketScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4561164C24D6AB4B007C169E /* BasketScenario.swift */; };
+		456E55F524DF321F00797AD8 /* AssembledCheckoutScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456E55B324DB3EF300797AD8 /* AssembledCheckoutScenario.swift */; };
+		456E55F624DF322200797AD8 /* CreditCardInputScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456E55BE24DEC98C00797AD8 /* CreditCardInputScenario.swift */; };
+		456E55F724DF322500797AD8 /* DeliveryTimesScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456E55C724DF099C00797AD8 /* DeliveryTimesScenario.swift */; };
 		45C0316B24CC3449000F32D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45544BC624AB06BF00ECDF86 /* Assets.xcassets */; };
 		45C0316C24CCA0B2000F32D0 /* LoginScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C2041C24CC07B700CF45D1 /* LoginScenario.swift */; };
 		45C0316F24CCB2C8000F32D0 /* TestScenario.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459FABCB24C7869D00613F0D /* TestScenario.framework */; };
@@ -538,8 +541,13 @@
 			files = (
 				4536D56724D890CF001905ED /* CheckoutScenatrio.swift in Sources */,
 				45C0318124CDED75000F32D0 /* AddAddressScenario.swift in Sources */,
+				456E55F524DF321F00797AD8 /* AssembledCheckoutScenario.swift in Sources */,
+				456E55F724DF322500797AD8 /* DeliveryTimesScenario.swift in Sources */,
 				4522E08024D16CDB00ECFA1F /* ProductsListScenario.swift in Sources */,
+				456E55F324DF321000797AD8 /* ProfileScenario.swift in Sources */,
+				456E55F624DF322200797AD8 /* CreditCardInputScenario.swift in Sources */,
 				4567FD6B24D5B20100F5621A /* AddressesListScenario.swift in Sources */,
+				456E55F424DF321800797AD8 /* BasketScenario.swift in Sources */,
 				450D8A6524C9769B004EAE80 /* StorybookAppUITests.swift in Sources */,
 				45C0316C24CCA0B2000F32D0 /* LoginScenario.swift in Sources */,
 			);
@@ -549,9 +557,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4567FD7624D601C800F5621A /* ProfileScenario.swift in Sources */,
 				45544BC224AB06BB00ECDF86 /* ViewController.swift in Sources */,
-				4567FD6924D5A96900F5621A /* AddressesListScenario.swift in Sources */,
 				45544BBE24AB06BB00ECDF86 /* AppDelegate.swift in Sources */,
 				45544BC024AB06BB00ECDF86 /* SceneDelegate.swift in Sources */,
 			);
@@ -807,6 +813,7 @@
 					"$(PROJECT_DIR)/ThirdParty",
 				);
 				INFOPLIST_FILE = farm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -830,6 +837,7 @@
 					"$(PROJECT_DIR)/ThirdParty",
 				);
 				INFOPLIST_FILE = farm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

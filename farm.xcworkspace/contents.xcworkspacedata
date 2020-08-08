@@ -2,15 +2,18 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:UI/UI.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "absolute:/Users/antonogarkov/Documents/Presentations/FARM/SSWU_training/farm/farm.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Pods/Pods.xcodeproj">
+      location = "group:Services/Services.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:farm.xcodeproj">
+      location = "group:Interactors/Interactors.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UI/UI.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
