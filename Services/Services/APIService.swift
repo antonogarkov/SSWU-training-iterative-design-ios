@@ -52,6 +52,8 @@ public final class APIService {
         ]
 
     var basket = [UUID: Double]()
+
+    public init() {}
 }
 
 extension APIService {

@@ -8,6 +8,7 @@
 
 import UIKit
 import UI
+import Services
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
