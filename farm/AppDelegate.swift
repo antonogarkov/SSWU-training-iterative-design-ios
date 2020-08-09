@@ -30,6 +30,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         )
         addressesVC.retainedObject = addressesPresenter
 
+        let basketVC = BasketViewController.instantiate()
+        let basketInteractor = BasketInteractor(apiService: apiService)
+        let basketPresenter = BasketPresenter(viewController: basketVC,
+                                              interactor: basketInteractor)
+        basketVC.retainedObject = basketPresenter
+
         let tabbarController = UITabBarController()
 
         tabbarController.tabBar.tintColor = .black
@@ -39,7 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             ProductsListViewController.instantiate(),
             addressesVC,
             ProfileViewController.instantiate(),
-            BasketViewController.instantiate()
+            basketVC
         ]
 
         window.rootViewController = tabbarController

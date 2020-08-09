@@ -26,6 +26,8 @@ public final class APIService {
     public struct Basket {
         public let items: [BasketItem]
         public let overallPrice: Double
+
+        public static let empty = Basket(items: [], overallPrice: 0)
     }
 
     let products = [

@@ -14,6 +14,7 @@ public final class BasketViewController: UITableViewController {
     }
 
     private var props = Props.defaultValue
+    public var retainedObject: AnyObject?
 
     func render(props: Props) {
         self.props = props
