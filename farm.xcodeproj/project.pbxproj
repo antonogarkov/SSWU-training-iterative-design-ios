@@ -37,6 +37,10 @@
 		456E55F524DF321F00797AD8 /* AssembledCheckoutScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456E55B324DB3EF300797AD8 /* AssembledCheckoutScenario.swift */; };
 		456E55F624DF322200797AD8 /* CreditCardInputScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456E55BE24DEC98C00797AD8 /* CreditCardInputScenario.swift */; };
 		456E55F724DF322500797AD8 /* DeliveryTimesScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456E55C724DF099C00797AD8 /* DeliveryTimesScenario.swift */; };
+		456E55FB24E019BA00797AD8 /* Interactors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456E55FA24E019BA00797AD8 /* Interactors.framework */; };
+		456E55FC24E019BA00797AD8 /* Interactors.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 456E55FA24E019BA00797AD8 /* Interactors.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		456E55FE24E019BF00797AD8 /* Services.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456E55FD24E019BF00797AD8 /* Services.framework */; };
+		456E55FF24E019BF00797AD8 /* Services.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 456E55FD24E019BF00797AD8 /* Services.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		45C0316B24CC3449000F32D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45544BC624AB06BF00ECDF86 /* Assets.xcassets */; };
 		45C0316C24CCA0B2000F32D0 /* LoginScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C2041C24CC07B700CF45D1 /* LoginScenario.swift */; };
 		45C0316F24CCB2C8000F32D0 /* TestScenario.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459FABCB24C7869D00613F0D /* TestScenario.framework */; };
@@ -69,6 +73,8 @@
 			dstSubfolderSpec = 10;
 			files = (
 				4536D5E724DA00F8001905ED /* UI.framework in Embed Frameworks */,
+				456E55FF24E019BF00797AD8 /* Services.framework in Embed Frameworks */,
+				456E55FC24E019BA00797AD8 /* Interactors.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -115,6 +121,8 @@
 		456E55B324DB3EF300797AD8 /* AssembledCheckoutScenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssembledCheckoutScenario.swift; sourceTree = "<group>"; };
 		456E55BE24DEC98C00797AD8 /* CreditCardInputScenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardInputScenario.swift; sourceTree = "<group>"; };
 		456E55C724DF099C00797AD8 /* DeliveryTimesScenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryTimesScenario.swift; sourceTree = "<group>"; };
+		456E55FA24E019BA00797AD8 /* Interactors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Interactors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		456E55FD24E019BF00797AD8 /* Services.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Services.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		459FABC924C7869D00613F0D /* TestScenarioUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestScenarioUI.framework; sourceTree = "<group>"; };
 		459FABCA24C7869D00613F0D /* TestScenarioUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestScenarioUtils.framework; sourceTree = "<group>"; };
 		459FABCB24C7869D00613F0D /* TestScenario.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestScenario.framework; sourceTree = "<group>"; };
@@ -155,7 +163,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				456E55FB24E019BA00797AD8 /* Interactors.framework in Frameworks */,
 				4536D5E624DA00F8001905ED /* UI.framework in Frameworks */,
+				456E55FE24E019BF00797AD8 /* Services.framework in Frameworks */,
 				0135FEC2014F0BEF999AF9D2 /* Pods_farm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,6 +264,8 @@
 		D03CD518BDE4F1B55FE838F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				456E55FD24E019BF00797AD8 /* Services.framework */,
+				456E55FA24E019BA00797AD8 /* Interactors.framework */,
 				4536D5E924DA0101001905ED /* UI.framework */,
 				4536D5E524DA00F8001905ED /* UI.framework */,
 				620395F4D433661D05C83696 /* Pods_StorybookApp.framework */,
