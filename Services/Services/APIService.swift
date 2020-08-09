@@ -1,31 +1,31 @@
 import Foundation
 
 public final class APIService {
-    struct Product {
-        let id: UUID
-        let imageUrl: URL
-        let name: String
-        let description: String
-        let price: Double
+    public struct Product {
+        public let id: UUID
+        public let imageUrl: URL
+        public let name: String
+        public let description: String
+        public let price: Double
     }
 
-    struct Address {
-        let id: UUID
-        let addressFirstLine: String
-        let addressSecondLine: String
-        let city: String
-        let state: String
-        let zip: String
+    public struct Address {
+        public let id: UUID
+        public let addressFirstLine: String
+        public let addressSecondLine: String
+        public let city: String
+        public let state: String
+        public let zip: String
     }
 
-    struct BasketItem {
-        let product: Product
-        let amountAdded: Double
+    public struct BasketItem {
+        public let product: Product
+        public let amountAdded: Double
     }
 
-    struct Basket {
-        let items: [BasketItem]
-        let overallPrice: Double
+    public struct Basket {
+        public let items: [BasketItem]
+        public let overallPrice: Double
     }
 
     let products = [
@@ -55,11 +55,11 @@ public final class APIService {
 }
 
 extension APIService {
-    func getProducts() -> [Product] {
+    public func getProducts() -> [Product] {
         products
     }
 
-    func getAddresses() -> Address {
+    public func getAddresses() -> Address {
         Address(
             id: UUID(),
             addressFirstLine: "Infinite Loop",
@@ -70,11 +70,11 @@ extension APIService {
         )
     }
 
-    func getProfileEmail() -> String {
+    public func getProfileEmail() -> String {
         "guest@farm.com"
     }
 
-    func getBasket() -> Basket {
+    public func getBasket() -> Basket {
         var basketPrice: Double = 0
 
         let items = basket.map { (id, amount) -> BasketItem in
@@ -86,14 +86,14 @@ extension APIService {
         return Basket(items: items, overallPrice: basketPrice)
     }
 
-    func incrementProductInBasket(uuid: UUID) -> Basket {
+    public func incrementProductInBasket(uuid: UUID) -> Basket {
         let currentAmount = basket[uuid]
         basket[uuid] = (currentAmount ?? 0) + 0.1
 
         return getBasket()
     }
 
-    func decrementProductInBasket(uuid: UUID) -> Basket {
+    public func decrementProductInBasket(uuid: UUID) -> Basket {
         if let currentAmount = basket[uuid] {
             let newAmount = currentAmount - 0.1
             if newAmount > 0 {
