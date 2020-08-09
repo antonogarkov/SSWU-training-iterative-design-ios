@@ -22,11 +22,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let apiService = APIService()
 
-        let basketVC = BasketViewController.instantiate()
         let basketInteractor = BasketInteractor(apiService: apiService)
-        let basketPresenter = BasketPresenter(viewController: basketVC,
-                                              interactor: basketInteractor)
-        basketVC.retainedObject = basketPresenter
+
+        let tabbarController = UITabBarController()
+
+        tabbarController.tabBar.tintColor = .black
+        tabbarController.tabBar.unselectedItemTintColor = UIColor(named: "BrandBlue")
+
+        tabbarController.viewControllers = [
+            makeProductsModule(apiService: apiService, basketInteractor: basketInteractor),
+            makeAddressesModule(apiService: apiService),
+            makeProfileModule(apiService: apiService),
+            makeBasketModule(apiService: apiService, basketInteractor: basketInteractor)
+        ]
+
+        window.rootViewController = tabbarController
+
+        window.makeKeyAndVisible()
+
+        return true
+    }
+
+    private func makeProductsModule(apiService: APIService,
+                                    basketInteractor: BasketInteractor) -> ProductsListViewController {
 
         let productsVC = ProductsListViewController.instantiate()
         let productsInteractor = ProductsListInteractor(apiService: apiService)
@@ -35,6 +53,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                                       viewController: productsVC)
         productsVC.retainedObject = productsPresenter
 
+        return productsVC
+    }
+
+    private func makeBasketModule(apiService: APIService, basketInteractor: BasketInteractor) -> BasketViewController {
+        let basketVC = BasketViewController.instantiate()
+        let basketPresenter = BasketPresenter(viewController: basketVC,
+                                              interactor: basketInteractor)
+        basketVC.retainedObject = basketPresenter
+
+        return basketVC
+    }
+
+    private func makeProfileModule(apiService: APIService) -> ProfileViewController {
+        let profileVC = ProfileViewController.instantiate()
+        let profileInteractor = ProfileInteractor(apiService: apiService)
+        let profilePresenter = ProfilePresenter(viewController: profileVC, interactor: profileInteractor)
+
+        profileVC.retainedObject = profilePresenter
+
+        return profileVC
+    }
+
+    private func makeAddressesModule(apiService: APIService) -> AddressesListViewController {
         let addressesVC = AddressesListViewController.instantiate()
         let addressesInteractor = AddressesListInteractor(apiService: apiService)
         let addressesPresenter = AddressesListPresenter(
@@ -43,28 +84,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         )
         addressesVC.retainedObject = addressesPresenter
 
-        let profileVC = ProfileViewController.instantiate()
-        let profileInteractor = ProfileInteractor(apiService: apiService)
-        let profilePresenter = ProfilePresenter(viewController: profileVC, interactor: profileInteractor)
-        profileVC.retainedObject = profilePresenter
-
-        let tabbarController = UITabBarController()
-
-        tabbarController.tabBar.tintColor = .black
-        tabbarController.tabBar.unselectedItemTintColor = UIColor(named: "BrandBlue")
-
-        tabbarController.viewControllers = [
-            productsVC,
-            addressesVC,
-            profileVC,
-            basketVC
-        ]
-
-        window.rootViewController = tabbarController
-
-        window.makeKeyAndVisible()
-
-        return true
+        return addressesVC
     }
 }
 
