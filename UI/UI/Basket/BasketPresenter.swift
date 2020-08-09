@@ -9,6 +9,9 @@ public final class BasketPresenter {
     public init(viewController: BasketViewController, interactor: BasketInteractor) {
         self.viewController = viewController
         self.interactor = interactor
+
+        interactor.reloadBasket()
+        present()
     }
 
     private func present() {
@@ -18,12 +21,23 @@ public final class BasketPresenter {
                 title: apiItem.product.name,
                 addedValue: "$\(apiItem.amountAdded * apiItem.product.price)",
                 addedWeight: "\(apiItem.amountAdded) kg",
-                didSelectDecrease: { [weak self] in self?.didSelectDecrease(forUUID: apiItem.product.id) },
-                didSelectIncrease: { [weak self] in self?.didSelectIncrease(forUUID: apiItem.product.id) }
+                didSelectDecrease: { [weak self] in
+                    self?.didSelectDecrease(forUUID: apiItem.product.id)
+                },
+                didSelectIncrease: { [weak self] in
+                    self?.didSelectIncrease(forUUID: apiItem.product.id)
+                }
             )
         }
 
-        viewController?.render(props: BasketViewController.Props(items: propsItems))
+        let props = BasketViewController.Props(
+            items: propsItems,
+            viewWillAppear: { [weak self] in
+                self?.present()
+            }
+        )
+
+        viewController?.render(props: props)
     }
 
     private func didSelectDecrease(forUUID uuid: UUID) {
@@ -32,7 +46,7 @@ public final class BasketPresenter {
     }
 
     private func didSelectIncrease(forUUID uuid: UUID) {
-        interactor.decrement(itemId: uuid)
+        interactor.increment(itemId: uuid)
         present()
     }
 }

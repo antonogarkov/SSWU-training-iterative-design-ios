@@ -9,8 +9,9 @@ public final class BasketViewController: UITableViewController {
         typealias Item = BasketTableViewCell.Item
 
         let items: [Item]
+        let viewWillAppear: () -> Void
 
-        static let defaultValue = Props(items: [])
+        static let defaultValue = Props(items: [], viewWillAppear: {})
     }
 
     private var props = Props.defaultValue
@@ -27,6 +28,12 @@ public final class BasketViewController: UITableViewController {
         super.viewDidLoad()
 
         render(props: props)
+    }
+
+    public override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        props.viewWillAppear()
     }
 }
 

@@ -22,6 +22,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let apiService = APIService()
 
+        let basketVC = BasketViewController.instantiate()
+        let basketInteractor = BasketInteractor(apiService: apiService)
+        let basketPresenter = BasketPresenter(viewController: basketVC,
+                                              interactor: basketInteractor)
+        basketVC.retainedObject = basketPresenter
+
+        let productsVC = ProductsListViewController.instantiate()
+        let productsInteractor = ProductsListInteractor(apiService: apiService)
+        let productsPresenter = ProductsListPresenter(productsInteractor: productsInteractor,
+                                                      basketInteractor: basketInteractor,
+                                                      viewController: productsVC)
+        productsVC.retainedObject = productsPresenter
+
         let addressesVC = AddressesListViewController.instantiate()
         let addressesInteractor = AddressesListInteractor(apiService: apiService)
         let addressesPresenter = AddressesListPresenter(
@@ -30,19 +43,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         )
         addressesVC.retainedObject = addressesPresenter
 
-        let basketVC = BasketViewController.instantiate()
-        let basketInteractor = BasketInteractor(apiService: apiService)
-        let basketPresenter = BasketPresenter(viewController: basketVC,
-                                              interactor: basketInteractor)
-        basketVC.retainedObject = basketPresenter
-
         let tabbarController = UITabBarController()
 
         tabbarController.tabBar.tintColor = .black
         tabbarController.tabBar.unselectedItemTintColor = UIColor(named: "BrandBlue")
 
         tabbarController.viewControllers = [
-            ProductsListViewController.instantiate(),
+            productsVC,
             addressesVC,
             ProfileViewController.instantiate(),
             basketVC

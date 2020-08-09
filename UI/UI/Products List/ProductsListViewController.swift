@@ -9,11 +9,13 @@ public final class ProductsListViewController: UITableViewController {
         typealias Product = ProductsListCell.Product
 
         let products: [Product]
+        let viewWillAppear: () -> Void
 
-        static let defaultValue = Props(products: [])
+        static let defaultValue = Props(products: [], viewWillAppear: {})
     }
 
     private var props = Props.defaultValue
+    public var retainedObject: AnyObject?
 
     func render(props: Props) {
         self.props = props
@@ -26,6 +28,12 @@ public final class ProductsListViewController: UITableViewController {
         super.viewDidLoad()
 
         render(props: props)
+    }
+
+    public override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        props.viewWillAppear()
     }
 }
 
