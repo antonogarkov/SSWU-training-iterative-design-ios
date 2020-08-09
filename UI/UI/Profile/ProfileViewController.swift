@@ -18,6 +18,7 @@ public final class ProfileViewController: UIViewController {
     @IBOutlet weak var emailLabel: UILabel!
 
     private var props = Props.defaultValue
+    public var retainedObject: AnyObject?
 
     func render(props: Props) {
         self.props = props

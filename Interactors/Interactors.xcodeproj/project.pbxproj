@@ -12,6 +12,7 @@
 		456E560824E0362100797AD8 /* Services.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456E560724E0362100797AD8 /* Services.framework */; };
 		456E560E24E04F1C00797AD8 /* ProductsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456E560D24E04F1C00797AD8 /* ProductsListInteractor.swift */; };
 		456E561224E04FFA00797AD8 /* BasketInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456E561124E04FFA00797AD8 /* BasketInteractor.swift */; };
+		456E561624E06FE800797AD8 /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456E561524E06FE800797AD8 /* ProfileInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		456E560724E0362100797AD8 /* Services.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Services.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		456E560D24E04F1C00797AD8 /* ProductsListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListInteractor.swift; sourceTree = "<group>"; };
 		456E561124E04FFA00797AD8 /* BasketInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketInteractor.swift; sourceTree = "<group>"; };
+		456E561524E06FE800797AD8 /* ProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				456E560424E035EE00797AD8 /* AddressesListInteractor.swift */,
 				456E560D24E04F1C00797AD8 /* ProductsListInteractor.swift */,
 				456E561124E04FFA00797AD8 /* BasketInteractor.swift */,
+				456E561524E06FE800797AD8 /* ProfileInteractor.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			files = (
 				456E560E24E04F1C00797AD8 /* ProductsListInteractor.swift in Sources */,
 				456E560524E035EE00797AD8 /* AddressesListInteractor.swift in Sources */,
+				456E561624E06FE800797AD8 /* ProfileInteractor.swift in Sources */,
 				456E561224E04FFA00797AD8 /* BasketInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

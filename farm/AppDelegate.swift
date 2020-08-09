@@ -43,6 +43,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         )
         addressesVC.retainedObject = addressesPresenter
 
+        let profileVC = ProfileViewController.instantiate()
+        let profileInteractor = ProfileInteractor(apiService: apiService)
+        let profilePresenter = ProfilePresenter(viewController: profileVC, interactor: profileInteractor)
+        profileVC.retainedObject = profilePresenter
+
         let tabbarController = UITabBarController()
 
         tabbarController.tabBar.tintColor = .black
@@ -51,7 +56,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         tabbarController.viewControllers = [
             productsVC,
             addressesVC,
-            ProfileViewController.instantiate(),
+            profileVC,
             basketVC
         ]
 

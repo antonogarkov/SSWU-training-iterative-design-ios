@@ -38,6 +38,7 @@
 		456E560324E0359600797AD8 /* AddressesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456E560224E0359600797AD8 /* AddressesListPresenter.swift */; };
 		456E560C24E04F0000797AD8 /* ProductsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456E560B24E04F0000797AD8 /* ProductsListPresenter.swift */; };
 		456E561024E04FBF00797AD8 /* BasketPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456E560F24E04FBF00797AD8 /* BasketPresenter.swift */; };
+		456E561424E06FCD00797AD8 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456E561324E06FCD00797AD8 /* ProfilePresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		456E560224E0359600797AD8 /* AddressesListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressesListPresenter.swift; sourceTree = "<group>"; };
 		456E560B24E04F0000797AD8 /* ProductsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsListPresenter.swift; sourceTree = "<group>"; };
 		456E560F24E04FBF00797AD8 /* BasketPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketPresenter.swift; sourceTree = "<group>"; };
+		456E561324E06FCD00797AD8 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		7D744C7653D96E2DFC0F6158 /* Pods-UI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI.debug.xcconfig"; path = "Target Support Files/Pods-UI/Pods-UI.debug.xcconfig"; sourceTree = "<group>"; };
 		E6A547F203517235C0DD48D0 /* Pods_UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F73D8E8B8666C5B093686142 /* Pods-UI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI.release.xcconfig"; path = "Target Support Files/Pods-UI/Pods-UI.release.xcconfig"; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 			children = (
 				4536D5E224DA00BB001905ED /* Profile.storyboard */,
 				4536D5E324DA00BB001905ED /* ProfileViewController.swift */,
+				456E561324E06FCD00797AD8 /* ProfilePresenter.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				456E561024E04FBF00797AD8 /* BasketPresenter.swift in Sources */,
 				4536D5F924DA018A001905ED /* ContentSizedTableView.swift in Sources */,
 				4536D5F724DA0185001905ED /* ProductsListViewController.swift in Sources */,
+				456E561424E06FCD00797AD8 /* ProfilePresenter.swift in Sources */,
 				4536D5EC24DA0167001905ED /* CheckoutViewController.swift in Sources */,
 				4536D5FE24DA0194001905ED /* LoginViewController.swift in Sources */,
 				4536D5FC24DA0190001905ED /* AddAddressViewController.swift in Sources */,
