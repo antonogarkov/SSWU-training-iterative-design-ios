@@ -1,7 +1,7 @@
 import UIKit
 
 extension ProfileViewController: StoryboardInstantiatable {
-    static var storyboardName: String { "Profile" }
+    public static var storyboardName: String { "Profile" }
 }
 
 public final class ProfileViewController: UIViewController {

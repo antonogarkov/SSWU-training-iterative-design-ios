@@ -21,7 +21,7 @@ private final class SectionView: UIView {
 }
 
 extension CheckoutViewController: StoryboardInstantiatable {
-    static var storyboardName: String { "Checkout" }
+    public static var storyboardName: String { "Checkout" }
 }
 
 public final class CheckoutViewController: UIViewController {

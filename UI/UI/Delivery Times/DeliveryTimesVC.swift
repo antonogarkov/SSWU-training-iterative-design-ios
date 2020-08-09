@@ -1,7 +1,7 @@
 import UIKit
 
 extension DeliveryTimesVC: StoryboardInstantiatable {
-    static var storyboardName: String { "DeliveryTimes" }
+    public static var storyboardName: String { "DeliveryTimes" }
 }
 
 public final class DeliveryTimesVC: UIViewController {

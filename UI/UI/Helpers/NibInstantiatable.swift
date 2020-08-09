@@ -1,12 +1,12 @@
 import UIKit
 
 /// Load ViewController from Storyboard
-protocol StoryboardInstantiatable: class {
+public protocol StoryboardInstantiatable: class {
     /// Override the storyboardName if storyboard file has different name
     static var storyboardName: String { get }
 }
 
-extension StoryboardInstantiatable {
+public extension StoryboardInstantiatable {
     static var storyboardName: String { return String(describing: self) }
     static var bundleName: Bundle { return Bundle(for: self) }
 

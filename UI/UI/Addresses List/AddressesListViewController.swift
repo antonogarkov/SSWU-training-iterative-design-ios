@@ -1,7 +1,7 @@
 import UIKit
 
 extension AddressesListViewController: StoryboardInstantiatable {
-    static var storyboardName: String { "AddressesList" }
+    public static var storyboardName: String { "AddressesList" }
 }
 
 public final class AddressesListViewController: UITableViewController {

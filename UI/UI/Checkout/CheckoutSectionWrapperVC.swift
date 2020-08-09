@@ -1,7 +1,7 @@
 import UIKit
 
 extension CheckoutSectionWrapperVC: StoryboardInstantiatable {
-    static var storyboardName: String { "Checkout" }
+    public static var storyboardName: String { "Checkout" }
 }
 
 public final class CheckoutSectionWrapperVC: UIViewController {

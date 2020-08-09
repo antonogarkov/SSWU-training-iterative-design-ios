@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Profile View Controller-->
+        <!--Account-->
         <scene sceneID="YmH-if-rGH">
             <objects>
-                <viewController storyboardIdentifier="ProfileViewController" id="Us3-pm-72J" customClass="ProfileViewController" customModule="Farm_Storybook" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileViewController" title="Account" id="Us3-pm-72J" customClass="ProfileViewController" customModule="UI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eBb-4B-jT8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,8 +45,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47E-RF-gX9" customClass="RoundedBlueButton" customModule="Farm_Storybook" customModuleProvider="target">
-                                <rect key="frame" x="60" y="607" width="255" height="44"/>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47E-RF-gX9" customClass="RoundedBlueButton" customModule="UI" customModuleProvider="target">
+                                <rect key="frame" x="60" y="558" width="255" height="44"/>
                                 <accessibility key="accessibilityConfiguration" identifier="addAddressButton"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="X6c-LY-HPv"/>
@@ -77,6 +77,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dFM-QX-Fdj"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Account" image="person" catalog="system" id="rHx-xX-wOc"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="emailLabel" destination="T3s-Xp-pXy" id="qnF-Mn-wFs"/>
                     </connections>
@@ -87,6 +89,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="person" catalog="system" width="128" height="117"/>
         <namedColor name="BrandBlue">
             <color red="0.34099999070167542" green="0.50999999046325684" blue="0.73299998044967651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

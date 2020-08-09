@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Products List View Controller-->
+        <!--Shop-->
         <scene sceneID="KAw-Ml-K5m">
             <objects>
-                <tableViewController storyboardIdentifier="ProductsListViewController" id="i78-ig-Eof" customClass="ProductsListViewController" customModule="UI" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="ProductsListViewController" title="Shop" id="i78-ig-Eof" customClass="ProductsListViewController" customModule="UI" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="isn-Ia-SCU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -148,6 +148,8 @@
                             <outlet property="delegate" destination="i78-ig-Eof" id="fBH-Re-oOu"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Shop" image="bag" catalog="system" id="exc-HQ-8Cw"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LEz-55-wrF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -155,6 +157,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bag" catalog="system" width="128" height="128"/>
         <namedColor name="BrandBlue">
             <color red="0.34099999070167542" green="0.50999999046325684" blue="0.73299998044967651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

@@ -1,7 +1,7 @@
 import UIKit
 
 extension ProductsListViewController: StoryboardInstantiatable {
-    static var storyboardName: String { "ProductsList" }
+    public static var storyboardName: String { "ProductsList" }
 }
 
 public final class ProductsListViewController: UITableViewController {

@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Addresses List View Controller-->
+        <!--Addresses-->
         <scene sceneID="9Lr-eE-4y4">
             <objects>
-                <tableViewController storyboardIdentifier="AddressesListViewController" id="goi-cs-rHc" customClass="AddressesListViewController" customModule="UI" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="AddressesListViewController" title="Addresses" id="goi-cs-rHc" customClass="AddressesListViewController" customModule="UI" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="x9i-Ez-UqD" customClass="ContentSizedTableView" customModule="UI" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,6 +70,8 @@
                             <outlet property="delegate" destination="goi-cs-rHc" id="sjy-4L-WFn"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Addresses" image="house" catalog="system" id="dPc-xH-iW2"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wuh-Cf-Qfq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -77,6 +79,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="house" catalog="system" width="128" height="110"/>
         <namedColor name="BrandYellow">
             <color red="1" green="0.99599999189376831" blue="0.93300002813339233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

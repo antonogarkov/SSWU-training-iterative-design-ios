@@ -1,7 +1,7 @@
 import UIKit
 
 extension BasketViewController: StoryboardInstantiatable {
-    static var storyboardName: String { "Basket" }
+    public static var storyboardName: String { "Basket" }
 }
 
 public final class BasketViewController: UITableViewController {

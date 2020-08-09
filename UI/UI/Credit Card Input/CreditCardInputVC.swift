@@ -2,7 +2,7 @@ import UIKit
 import Stripe
 
 extension CreditCardInputVC: StoryboardInstantiatable {
-    static var storyboardName: String { "CreditCardInput" }
+    public static var storyboardName: String { "CreditCardInput" }
 }
 
 public final class CreditCardInputVC: UIViewController {

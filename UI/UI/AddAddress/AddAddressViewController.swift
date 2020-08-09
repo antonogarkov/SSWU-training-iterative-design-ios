@@ -3,7 +3,7 @@ import SkyFloatingLabelTextField
 import IQKeyboardManagerSwift
 
 extension AddAddressViewController: StoryboardInstantiatable {
-    static var storyboardName: String { "AddAddress" }
+    public static var storyboardName: String { "AddAddress" }
 }
 
 public final class AddAddressViewController: UIViewController {
