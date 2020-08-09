@@ -28,8 +28,8 @@ public final class ProductsListPresenter {
                 imageURL: apiProduct.imageUrl,
                 title: apiProduct.name,
                 description: apiProduct.description,
-                priceTag: "$\(apiProduct.price) per 1 kg",
-                addedAmount: "\(basketProduct?.amountAdded ?? 0) kg",
+                priceTag: "$\(String(format: "%.2f", apiProduct.price)) per 1 kg",
+                addedAmount: "\(String(format: "%.2f", basketProduct?.amountAdded ?? 0)) kg",
                 didSelectIncrease: { [weak self] in
                     self?.didSelectIncrease(forUUID: apiProduct.id)
                 },

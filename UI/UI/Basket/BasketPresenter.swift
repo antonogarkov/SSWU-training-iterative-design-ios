@@ -19,8 +19,8 @@ public final class BasketPresenter {
             Props.Item(
                 imageURL: apiItem.product.imageUrl,
                 title: apiItem.product.name,
-                addedValue: "$\(apiItem.amountAdded * apiItem.product.price)",
-                addedWeight: "\(apiItem.amountAdded) kg",
+                addedValue: "$\(String(format: "%.2f", apiItem.amountAdded * apiItem.product.price))",
+                addedWeight: "\(String(format: "%.2f", apiItem.amountAdded)) kg",
                 didSelectDecrease: { [weak self] in
                     self?.didSelectDecrease(forUUID: apiItem.product.id)
                 },
@@ -29,6 +29,8 @@ public final class BasketPresenter {
                 }
             )
         }
+
+
 
         let props = BasketViewController.Props(
             items: propsItems,
