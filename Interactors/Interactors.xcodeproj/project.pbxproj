@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		456E55ED24DF29CA00797AD8 /* Interactors.h in Headers */ = {isa = PBXBuildFile; fileRef = 456E55EB24DF29CA00797AD8 /* Interactors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		456E560524E035EE00797AD8 /* AddressesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456E560424E035EE00797AD8 /* AddressesListInteractor.swift */; };
+		456E560824E0362100797AD8 /* Services.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456E560724E0362100797AD8 /* Services.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		456E55E824DF29CA00797AD8 /* Interactors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Interactors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		456E55EB24DF29CA00797AD8 /* Interactors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Interactors.h; sourceTree = "<group>"; };
 		456E55EC24DF29CA00797AD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		456E560424E035EE00797AD8 /* AddressesListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressesListInteractor.swift; sourceTree = "<group>"; };
+		456E560724E0362100797AD8 /* Services.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Services.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +25,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				456E560824E0362100797AD8 /* Services.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +37,7 @@
 			children = (
 				456E55EA24DF29CA00797AD8 /* Interactors */,
 				456E55E924DF29CA00797AD8 /* Products */,
+				456E560624E0362000797AD8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,8 +54,17 @@
 			children = (
 				456E55EB24DF29CA00797AD8 /* Interactors.h */,
 				456E55EC24DF29CA00797AD8 /* Info.plist */,
+				456E560424E035EE00797AD8 /* AddressesListInteractor.swift */,
 			);
 			path = Interactors;
+			sourceTree = "<group>";
+		};
+		456E560624E0362000797AD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				456E560724E0362100797AD8 /* Services.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +110,7 @@
 				TargetAttributes = {
 					456E55E724DF29CA00797AD8 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 				};
 			};
@@ -131,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				456E560524E035EE00797AD8 /* AddressesListInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +277,7 @@
 		456E55F124DF29CA00797AD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -275,6 +293,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sigma.farm.Interactors;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,6 +302,7 @@
 		456E55F224DF29CA00797AD8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;

@@ -9,6 +9,7 @@
 import UIKit
 import UI
 import Services
+import Interactors
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,6 +20,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         UITabBar.appearance().tintColor = UIColor.black
 
+        let apiService = APIService()
+
+        let addressesVC = AddressesListViewController.instantiate()
+        let addressesInteractor = AddressesListInteractor(apiService: apiService)
+        let addressesPresenter = AddressesListPresenter(
+            viewController: addressesVC,
+            interactor: addressesInteractor
+        )
+        addressesVC.retainedObject = addressesPresenter
+
         let tabbarController = UITabBarController()
 
         tabbarController.tabBar.tintColor = .black
@@ -26,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         tabbarController.viewControllers = [
             ProductsListViewController.instantiate(),
-            AddressesListViewController.instantiate(),
+            addressesVC,
             ProfileViewController.instantiate(),
             BasketViewController.instantiate()
         ]

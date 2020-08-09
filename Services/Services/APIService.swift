@@ -61,15 +61,15 @@ extension APIService {
         products
     }
 
-    public func getAddresses() -> Address {
-        Address(
+    public func getAddresses() -> [Address] {
+        [Address(
             id: UUID(),
             addressFirstLine: "Infinite Loop",
             addressSecondLine: "1",
             city: "Cupertino",
             state: "CA",
             zip: "95014"
-        )
+        )]
     }
 
     public func getProfileEmail() -> String {

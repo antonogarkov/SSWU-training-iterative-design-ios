@@ -35,6 +35,7 @@
 		456E55C124DEC9CE00797AD8 /* CreditCardInput.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456E55C024DEC9CE00797AD8 /* CreditCardInput.storyboard */; };
 		456E55C424DEFF6A00797AD8 /* DeliveryTimes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456E55C324DEFF6A00797AD8 /* DeliveryTimes.storyboard */; };
 		456E55C624DEFF7500797AD8 /* DeliveryTimesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456E55C524DEFF7500797AD8 /* DeliveryTimesVC.swift */; };
+		456E560324E0359600797AD8 /* AddressesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456E560224E0359600797AD8 /* AddressesListPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		456E55C024DEC9CE00797AD8 /* CreditCardInput.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreditCardInput.storyboard; sourceTree = "<group>"; };
 		456E55C324DEFF6A00797AD8 /* DeliveryTimes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DeliveryTimes.storyboard; sourceTree = "<group>"; };
 		456E55C524DEFF7500797AD8 /* DeliveryTimesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryTimesVC.swift; sourceTree = "<group>"; };
+		456E560224E0359600797AD8 /* AddressesListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressesListPresenter.swift; sourceTree = "<group>"; };
 		7D744C7653D96E2DFC0F6158 /* Pods-UI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI.debug.xcconfig"; path = "Target Support Files/Pods-UI/Pods-UI.debug.xcconfig"; sourceTree = "<group>"; };
 		E6A547F203517235C0DD48D0 /* Pods_UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F73D8E8B8666C5B093686142 /* Pods-UI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI.release.xcconfig"; path = "Target Support Files/Pods-UI/Pods-UI.release.xcconfig"; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				4536D5D824DA00BB001905ED /* AddressesList.storyboard */,
 				4536D5D924DA00BB001905ED /* AddressesListViewController.swift */,
 				4536D5DA24DA00BB001905ED /* AddressListTableViewCell.swift */,
+				456E560224E0359600797AD8 /* AddressesListPresenter.swift */,
 			);
 			path = "Addresses List";
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				4536D5F524DA0182001905ED /* AddressListTableViewCell.swift in Sources */,
 				4536D5F824DA0185001905ED /* ProductsListCell.swift in Sources */,
 				4536D5FA24DA018A001905ED /* NibInstantiatable.swift in Sources */,
+				456E560324E0359600797AD8 /* AddressesListPresenter.swift in Sources */,
 				4536D5EF24DA017A001905ED /* BasketViewController.swift in Sources */,
 				4536D5F024DA017A001905ED /* BasketTableViewCell.swift in Sources */,
 				4536D5F424DA0182001905ED /* AddressesListViewController.swift in Sources */,
