@@ -37,7 +37,7 @@
     <resources>
         <image name="Logo" width="330" height="372.5"/>
         <namedColor name="BrandYellow">
-            <color red="0.99991363290000002" green="0.99613267179999998" blue="0.93322306870000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.99599999189376831" blue="0.93300002813339233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

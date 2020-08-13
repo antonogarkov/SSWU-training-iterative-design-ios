@@ -30,7 +30,7 @@ public final class CreditCardInputVC: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
 
-        textField.borderColor = UIColor(named: "BrandBlue")
+        textField.borderColor = UIColor(named: "BrandBlue", in: Bundle(for: RoundedBlueButton.self), compatibleWith: nil)
         textField.font = UIFont(name: "AvenirNextCondensed-Regular", size: 17)
     }
 }

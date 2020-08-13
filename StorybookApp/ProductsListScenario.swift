@@ -49,6 +49,6 @@ class ProductsListScenario: TestScenario {
                 didSelectIncrease: { self.reportEventClosure(DescribeCalledFunction()) },
                 didSelectDecrease: { self.reportEventClosure(DescribeCalledFunction()) }
             )
-        ])
+        ], viewWillAppear: { self.reportEventClosure(DescribeCalledFunction()) })
     }
 }

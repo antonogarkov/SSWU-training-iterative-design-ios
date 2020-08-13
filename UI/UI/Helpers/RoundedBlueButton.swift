@@ -4,7 +4,7 @@ final class RoundedBlueButton: UIButton {
     override func awakeFromNib() {
         super.awakeFromNib()
 
-        let brandBlue = UIColor(named: "BrandBlue")
+        let brandBlue = UIColor(named: "BrandBlue", in: Bundle(for: RoundedBlueButton.self), compatibleWith: nil)
 
         layer.borderColor = brandBlue?.cgColor
         layer.borderWidth = 1

@@ -19,32 +19,26 @@ class BasketScenario: TestScenario {
                     title: "THICK FLANK",
                     addedValue: "$16.00",
                     addedWeight: "2 kg",
-                    didSelectDecrease: { self.reportEventClosure(DescribeCalledFunction())
-                    },
-                    didSelectIncrease: { self.reportEventClosure(DescribeCalledFunction())
-                    }
+                    didSelectDecrease: { self.reportEventClosure(DescribeCalledFunction()) },
+                    didSelectIncrease: { self.reportEventClosure(DescribeCalledFunction()) }
                 ),
                 BasketViewController.Props.Item(
                     imageURL: URL(string: "https://i.pinimg.com/originals/da/a8/de/daa8de830c02a6d62bf3696faaae3d85.png")!,
                     title: "RUMP",
                     addedValue: "$4.50",
                     addedWeight: "0.5 kg",
-                    didSelectDecrease: { self.reportEventClosure(DescribeCalledFunction())
-                    },
-                    didSelectIncrease: { self.reportEventClosure(DescribeCalledFunction())
-                    }
+                    didSelectDecrease: { self.reportEventClosure(DescribeCalledFunction()) },
+                    didSelectIncrease: { self.reportEventClosure(DescribeCalledFunction()) }
                 ),
                 BasketViewController.Props.Item(
                     imageURL: URL(string: "https://i.pinimg.com/originals/da/a8/de/daa8de830c02a6d62bf3696faaae3d85.png")!,
                     title: "SIRLOIN",
                     addedValue: "$4.00",
                     addedWeight: "0.25 kg",
-                    didSelectDecrease: { self.reportEventClosure(DescribeCalledFunction())
-                    },
-                    didSelectIncrease: { self.reportEventClosure(DescribeCalledFunction())
-                    }
+                    didSelectDecrease: { self.reportEventClosure(DescribeCalledFunction()) },
+                    didSelectIncrease: { self.reportEventClosure(DescribeCalledFunction()) }
                 ),
-            ]
+            ], viewWillAppear: { self.reportEventClosure(DescribeCalledFunction()) }
         )
     }
 }

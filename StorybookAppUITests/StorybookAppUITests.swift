@@ -8,6 +8,7 @@
 
 import XCTest
 import TestScenarioUtils
+@testable import UI
 
 class StorybookAppUITests: XCTestCase {
 
