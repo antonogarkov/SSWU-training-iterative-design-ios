@@ -1,7 +1,7 @@
 import UIKit.UIButton
 
-public final class RoundedBlueButton: UIButton {
-    public override func awakeFromNib() {
+final class RoundedBlueButton: UIButton {
+    override func awakeFromNib() {
         super.awakeFromNib()
 
         let brandBlue = UIColor(named: "BrandBlue", in: Bundle(for: RoundedBlueButton.self), compatibleWith: nil)

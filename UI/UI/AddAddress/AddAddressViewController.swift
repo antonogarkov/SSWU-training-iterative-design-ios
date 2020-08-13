@@ -4,10 +4,10 @@ import IQKeyboardManagerSwift
 import Helpers
 
 extension AddAddressViewController: StoryboardInstantiatable {
-    public static var storyboardName: String { "AddAddress" }
+    static var storyboardName: String { "AddAddress" }
 }
 
-public final class AddAddressViewController: UIViewController {
+final class AddAddressViewController: UIViewController {
     struct Props {
         let addressLine1: String
         let addressLine2: String
@@ -56,7 +56,7 @@ public final class AddAddressViewController: UIViewController {
         }
     }
 
-    public override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
 
         IQKeyboardManager.shared.enable = true
@@ -70,7 +70,7 @@ public final class AddAddressViewController: UIViewController {
 }
 
 extension AddAddressViewController: UITextFieldDelegate {
-    public func textFieldDidEndEditing(_ textField: UITextField) {
+    func textFieldDidEndEditing(_ textField: UITextField) {
         switch textField {
         case lineOneTextField:
             props.didChangeAddressLine1(textField.text ?? "")
@@ -87,7 +87,7 @@ extension AddAddressViewController: UITextFieldDelegate {
         }
     }
 
-    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         switch textField {
         case lineOneTextField:
             lineTwoTextField.becomeFirstResponder()

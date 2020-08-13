@@ -22,10 +22,10 @@ private final class SectionView: UIView {
 }
 
 extension CheckoutViewController: StoryboardInstantiatable {
-    public static var storyboardName: String { "Checkout" }
+    static var storyboardName: String { "Checkout" }
 }
 
-public final class CheckoutViewController: UIViewController {
+final class CheckoutViewController: UIViewController {
     struct Props {
         static let defaultValue = Props()
     }
@@ -62,7 +62,7 @@ public final class CheckoutViewController: UIViewController {
         }
     }
 
-    public override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
 
         applyEmbeddedVCs(embeddedViewControllers: embeddedViewControllers)

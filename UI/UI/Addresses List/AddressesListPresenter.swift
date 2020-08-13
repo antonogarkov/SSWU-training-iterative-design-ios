@@ -1,12 +1,12 @@
 import Interactors
 
-public final class AddressesListPresenter {
+final class AddressesListPresenter {
     typealias Props = AddressesListViewController.Props
 
     private weak var viewController: AddressesListViewController?
     private let interactor: AddressesListInteractor
 
-    public init(viewController: AddressesListViewController, interactor: AddressesListInteractor) {
+    init(viewController: AddressesListViewController, interactor: AddressesListInteractor) {
         self.viewController = viewController
         self.interactor = interactor
 

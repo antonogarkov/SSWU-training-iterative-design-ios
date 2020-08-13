@@ -1,6 +1,6 @@
 import UIKit
 
-public final class AddressListTableViewCell: UITableViewCell {
+final class AddressListTableViewCell: UITableViewCell {
     struct Address {
         let zip: String
         let line1: String

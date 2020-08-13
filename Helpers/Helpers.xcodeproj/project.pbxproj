@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		45232C1824E592F2006A85E2 /* Helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 45232C1624E592F2006A85E2 /* Helpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45232C2224E59319006A85E2 /* ContentSizedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45232C1F24E59319006A85E2 /* ContentSizedTableView.swift */; };
-		45232C2324E59319006A85E2 /* RoundedBlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45232C2124E59319006A85E2 /* RoundedBlueButton.swift */; };
 		45232C2424E59319006A85E2 /* UIView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45232C2024E59319006A85E2 /* UIView+extensions.swift */; };
 		45232C2524E59319006A85E2 /* NibInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45232C1E24E59319006A85E2 /* NibInstantiatable.swift */; };
 /* End PBXBuildFile section */
@@ -21,7 +20,6 @@
 		45232C1E24E59319006A85E2 /* NibInstantiatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibInstantiatable.swift; sourceTree = "<group>"; };
 		45232C1F24E59319006A85E2 /* ContentSizedTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentSizedTableView.swift; sourceTree = "<group>"; };
 		45232C2024E59319006A85E2 /* UIView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extensions.swift"; sourceTree = "<group>"; };
-		45232C2124E59319006A85E2 /* RoundedBlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBlueButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +54,6 @@
 			children = (
 				45232C1F24E59319006A85E2 /* ContentSizedTableView.swift */,
 				45232C1E24E59319006A85E2 /* NibInstantiatable.swift */,
-				45232C2124E59319006A85E2 /* RoundedBlueButton.swift */,
 				45232C2024E59319006A85E2 /* UIView+extensions.swift */,
 				45232C1624E592F2006A85E2 /* Helpers.h */,
 				45232C1724E592F2006A85E2 /* Info.plist */,
@@ -146,7 +143,6 @@
 				45232C2424E59319006A85E2 /* UIView+extensions.swift in Sources */,
 				45232C2224E59319006A85E2 /* ContentSizedTableView.swift in Sources */,
 				45232C2524E59319006A85E2 /* NibInstantiatable.swift in Sources */,
-				45232C2324E59319006A85E2 /* RoundedBlueButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

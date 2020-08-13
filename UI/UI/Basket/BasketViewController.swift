@@ -2,10 +2,10 @@ import UIKit
 import Helpers
 
 extension BasketViewController: StoryboardInstantiatable {
-    public static var storyboardName: String { "Basket" }
+    static var storyboardName: String { "Basket" }
 }
 
-public final class BasketViewController: UITableViewController {
+final class BasketViewController: UITableViewController {
     struct Props {
         typealias Item = BasketTableViewCell.Item
 
@@ -16,7 +16,7 @@ public final class BasketViewController: UITableViewController {
     }
 
     private var props = Props.defaultValue
-    public var retainedObject: AnyObject?
+    var retainedObject: AnyObject?
 
     func render(props: Props) {
         self.props = props
@@ -25,13 +25,13 @@ public final class BasketViewController: UITableViewController {
         }
     }
 
-    public override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
 
         render(props: props)
     }
 
-    public override func viewWillAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
         props.viewWillAppear()
@@ -40,11 +40,11 @@ public final class BasketViewController: UITableViewController {
 
 // UITableViewDataSource
 extension BasketViewController {
-    public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         props.items.count
     }
 
-    public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "BasketTableViewCell")
 
         if let itemCell = cell as? BasketTableViewCell {

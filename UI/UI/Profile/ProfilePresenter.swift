@@ -1,10 +1,10 @@
 import Interactors
 
-public final class ProfilePresenter {
+final class ProfilePresenter {
     private weak var viewController: ProfileViewController?
     private let interactor: ProfileInteractor
 
-    public init(viewController: ProfileViewController, interactor: ProfileInteractor) {
+    init(viewController: ProfileViewController, interactor: ProfileInteractor) {
 
         self.viewController = viewController
         self.interactor = interactor

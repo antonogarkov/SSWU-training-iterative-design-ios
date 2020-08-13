@@ -1,15 +1,15 @@
 import Interactors
 
-public final class ProductsListPresenter {
+final class ProductsListPresenter {
     typealias Props = ProductsListViewController.Props
 
     private let productsInteractor: ProductsListInteractor
     private let basketInteractor: BasketInteractor
     private weak var viewController: ProductsListViewController?
 
-    public init(productsInteractor: ProductsListInteractor,
-                basketInteractor: BasketInteractor,
-                viewController: ProductsListViewController) {
+    init(productsInteractor: ProductsListInteractor,
+         basketInteractor: BasketInteractor,
+         viewController: ProductsListViewController) {
 
         self.productsInteractor = productsInteractor
         self.basketInteractor = basketInteractor

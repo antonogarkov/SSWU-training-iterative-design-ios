@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  farm
-//
-//  Created by Anton Ogarkov on 30.06.2020.
-//  Copyright © 2020 SigmaSoftware. All rights reserved.
-//
-
 import UIKit
 import UI
 import Services
@@ -33,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             makeProductsModule(apiService: apiService, basketInteractor: basketInteractor),
             makeAddressesModule(apiService: apiService),
             makeProfileModule(apiService: apiService),
-            makeBasketModule(apiService: apiService, basketInteractor: basketInteractor)
+            ModulesFactory.makeBasketModule(basketInteractor: basketInteractor)
         ]
 
         window.rootViewController = tabbarController
@@ -44,47 +36,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     private func makeProductsModule(apiService: APIService,
-                                    basketInteractor: BasketInteractor) -> ProductsListViewController {
+                                    basketInteractor: BasketInteractor) -> UIViewController {
 
-        let productsVC = ProductsListViewController.instantiate()
         let productsInteractor = ProductsListInteractor(apiService: apiService)
-        let productsPresenter = ProductsListPresenter(productsInteractor: productsInteractor,
-                                                      basketInteractor: basketInteractor,
-                                                      viewController: productsVC)
-        productsVC.retainedObject = productsPresenter
-
-        return productsVC
+        return ModulesFactory.makeProductsModule(productsInteractor: productsInteractor, basketInteractor: basketInteractor)
     }
 
-    private func makeBasketModule(apiService: APIService, basketInteractor: BasketInteractor) -> BasketViewController {
-        let basketVC = BasketViewController.instantiate()
-        let basketPresenter = BasketPresenter(viewController: basketVC,
-                                              interactor: basketInteractor)
-        basketVC.retainedObject = basketPresenter
-
-        return basketVC
-    }
-
-    private func makeProfileModule(apiService: APIService) -> ProfileViewController {
-        let profileVC = ProfileViewController.instantiate()
+    private func makeProfileModule(apiService: APIService) -> UIViewController {
         let profileInteractor = ProfileInteractor(apiService: apiService)
-        let profilePresenter = ProfilePresenter(viewController: profileVC, interactor: profileInteractor)
-
-        profileVC.retainedObject = profilePresenter
-
-        return profileVC
+        return ModulesFactory.makeProfileModule(profileInteractor: profileInteractor)
     }
 
-    private func makeAddressesModule(apiService: APIService) -> AddressesListViewController {
-        let addressesVC = AddressesListViewController.instantiate()
+    private func makeAddressesModule(apiService: APIService) -> UIViewController {
         let addressesInteractor = AddressesListInteractor(apiService: apiService)
-        let addressesPresenter = AddressesListPresenter(
-            viewController: addressesVC,
-            interactor: addressesInteractor
-        )
-        addressesVC.retainedObject = addressesPresenter
-
-        return addressesVC
+        return ModulesFactory.makeAddressesModule(addressesInteractor: addressesInteractor)
     }
 }
 

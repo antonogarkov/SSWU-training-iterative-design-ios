@@ -2,10 +2,10 @@ import UIKit
 import Helpers
 
 extension AddressesListViewController: StoryboardInstantiatable {
-    public static var storyboardName: String { "AddressesList" }
+    static var storyboardName: String { "AddressesList" }
 }
 
-public final class AddressesListViewController: UITableViewController {
+final class AddressesListViewController: UITableViewController {
     struct Props {
         typealias Address = AddressListTableViewCell.Address
 
@@ -15,7 +15,7 @@ public final class AddressesListViewController: UITableViewController {
     }
 
     private var props = Props.defaultValue
-    public var retainedObject: AnyObject?
+    var retainedObject: AnyObject?
 
     func render(props: Props) {
         self.props = props
@@ -24,7 +24,7 @@ public final class AddressesListViewController: UITableViewController {
         }
     }
 
-    public override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
 
         render(props: props)
@@ -33,11 +33,11 @@ public final class AddressesListViewController: UITableViewController {
 
 // UITableViewDataSource
 extension AddressesListViewController {
-    public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         props.addresses.count
     }
 
-    public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AddressListTableViewCell")
 
         if let addressCell = cell as? AddressListTableViewCell {

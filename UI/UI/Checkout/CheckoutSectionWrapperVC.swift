@@ -2,11 +2,11 @@ import UIKit
 import Helpers
 
 extension CheckoutSectionWrapperVC: StoryboardInstantiatable {
-    public static var storyboardName: String { "Checkout" }
+    static var storyboardName: String { "Checkout" }
 }
 
-public final class CheckoutSectionWrapperVC: UIViewController {
-    public var headerTitle: String = "" {
+final class CheckoutSectionWrapperVC: UIViewController {
+    var headerTitle: String = "" {
         didSet {
             if isViewLoaded {
                 titleLabel.text = headerTitle
@@ -14,7 +14,7 @@ public final class CheckoutSectionWrapperVC: UIViewController {
         }
     }
 
-    public var embeddedViewController: UIViewController = UIViewController() {
+    var embeddedViewController: UIViewController = UIViewController() {
         willSet {
             embeddedViewController.willMove(toParent: nil)
             embeddedViewController.view.removeFromSuperview()
@@ -31,14 +31,14 @@ public final class CheckoutSectionWrapperVC: UIViewController {
     @IBOutlet private weak var containerView: UIView!
     @IBOutlet private weak var titleLabel: UILabel!
 
-    public override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
 
         embed(viewController: embeddedViewController)
         titleLabel.text = headerTitle
     }
 
-    fileprivate func embed(viewController: UIViewController) {
+    private func embed(viewController: UIViewController) {
         self.addChild(embeddedViewController)
         containerView.embed(view: embeddedViewController.view)
         embeddedViewController.didMove(toParent: self)

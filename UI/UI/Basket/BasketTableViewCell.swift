@@ -1,7 +1,7 @@
 import UIKit
 import Kingfisher
 
-public final class BasketTableViewCell: UITableViewCell {
+final class BasketTableViewCell: UITableViewCell {
     struct Item {
         let imageURL: URL
         let title: String

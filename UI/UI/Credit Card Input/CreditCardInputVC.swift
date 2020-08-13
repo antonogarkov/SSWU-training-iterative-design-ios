@@ -3,10 +3,10 @@ import Stripe
 import Helpers
 
 extension CreditCardInputVC: StoryboardInstantiatable {
-    public static var storyboardName: String { "CreditCardInput" }
+    static var storyboardName: String { "CreditCardInput" }
 }
 
-public final class CreditCardInputVC: UIViewController {
+final class CreditCardInputVC: UIViewController {
     struct Props {
         let didEnterNumber: (String) -> Void
         let didEnterCVC: (String) -> Void
@@ -28,7 +28,7 @@ public final class CreditCardInputVC: UIViewController {
         self.props = props
     }
 
-    public override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
 
         textField.borderColor = UIColor(named: "BrandBlue", in: Bundle(for: RoundedBlueButton.self), compatibleWith: nil)
@@ -37,19 +37,19 @@ public final class CreditCardInputVC: UIViewController {
 }
 
 extension CreditCardInputVC: STPPaymentCardTextFieldDelegate {
-    public func paymentCardTextFieldDidEndEditingNumber(_ textField: STPPaymentCardTextField) {
+    func paymentCardTextFieldDidEndEditingNumber(_ textField: STPPaymentCardTextField) {
         props.didEnterNumber(textField.cardNumber ?? "")
     }
 
-    public func paymentCardTextFieldDidEndEditingCVC(_ textField: STPPaymentCardTextField) {
+    func paymentCardTextFieldDidEndEditingCVC(_ textField: STPPaymentCardTextField) {
         props.didEnterCVC(textField.cvc ?? "")
     }
 
-    public func paymentCardTextFieldDidEndEditingExpiration(_ textField: STPPaymentCardTextField) {
+    func paymentCardTextFieldDidEndEditingExpiration(_ textField: STPPaymentCardTextField) {
         props.didEnterExp("\(textField.expirationMonth)/\(textField.expirationYear)")
     }
 
-    public func paymentCardTextFieldDidEndEditingPostalCode(_ textField: STPPaymentCardTextField) {
+    func paymentCardTextFieldDidEndEditingPostalCode(_ textField: STPPaymentCardTextField) {
         props.didEnterPostalCode(textField.postalCode ?? "")
     }
 }

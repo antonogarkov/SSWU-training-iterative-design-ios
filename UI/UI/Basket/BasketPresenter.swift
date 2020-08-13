@@ -1,12 +1,12 @@
 import Interactors
 
-public final class BasketPresenter {
+final class BasketPresenter {
     typealias Props = BasketViewController.Props
 
     private weak var viewController: BasketViewController?
     private let interactor: BasketInteractor
 
-    public init(viewController: BasketViewController, interactor: BasketInteractor) {
+    init(viewController: BasketViewController, interactor: BasketInteractor) {
         self.viewController = viewController
         self.interactor = interactor
 
@@ -29,8 +29,6 @@ public final class BasketPresenter {
                 }
             )
         }
-
-
 
         let props = BasketViewController.Props(
             items: propsItems,

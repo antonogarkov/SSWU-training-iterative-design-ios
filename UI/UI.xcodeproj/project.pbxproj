@@ -10,6 +10,8 @@
 		1EC36DA7A1C5B71E44F6D8B7 /* Pods_UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6A547F203517235C0DD48D0 /* Pods_UI.framework */; };
 		45232BC124E56FA7006A85E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45232BC024E56FA4006A85E2 /* Assets.xcassets */; };
 		45232C2724E5934F006A85E2 /* Helpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45232C2624E5934F006A85E2 /* Helpers.framework */; };
+		45232C3A24E59D09006A85E2 /* ModulesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45232C3924E59D09006A85E2 /* ModulesFactory.swift */; };
+		45232C3C24E5A12A006A85E2 /* RoundedBlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45232C3B24E5A129006A85E2 /* RoundedBlueButton.swift */; };
 		4536D5C324DA00B1001905ED /* UI.h in Headers */ = {isa = PBXBuildFile; fileRef = 4536D5C124DA00B1001905ED /* UI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4536D5EC24DA0167001905ED /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4536D5DF24DA00BB001905ED /* CheckoutViewController.swift */; };
 		4536D5ED24DA0175001905ED /* Checkout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4536D5E024DA00BB001905ED /* Checkout.storyboard */; };
@@ -42,6 +44,8 @@
 /* Begin PBXFileReference section */
 		45232BC024E56FA4006A85E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45232C2624E5934F006A85E2 /* Helpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Helpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45232C3924E59D09006A85E2 /* ModulesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulesFactory.swift; sourceTree = "<group>"; };
+		45232C3B24E5A129006A85E2 /* RoundedBlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBlueButton.swift; sourceTree = "<group>"; };
 		4536D5BE24DA00B1001905ED /* UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4536D5C124DA00B1001905ED /* UI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UI.h; sourceTree = "<group>"; };
 		4536D5C224DA00B1001905ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -141,6 +145,8 @@
 				4536D5D324DA00BB001905ED /* Login */,
 				4536D5C124DA00B1001905ED /* UI.h */,
 				4536D5C224DA00B1001905ED /* Info.plist */,
+				45232C3B24E5A129006A85E2 /* RoundedBlueButton.swift */,
+				45232C3924E59D09006A85E2 /* ModulesFactory.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -355,6 +361,7 @@
 				456E560C24E04F0000797AD8 /* ProductsListPresenter.swift in Sources */,
 				4536D5F824DA0185001905ED /* ProductsListCell.swift in Sources */,
 				456E560324E0359600797AD8 /* AddressesListPresenter.swift in Sources */,
+				45232C3C24E5A12A006A85E2 /* RoundedBlueButton.swift in Sources */,
 				4536D5EF24DA017A001905ED /* BasketViewController.swift in Sources */,
 				4536D5F024DA017A001905ED /* BasketTableViewCell.swift in Sources */,
 				4536D5F424DA0182001905ED /* AddressesListViewController.swift in Sources */,
@@ -365,6 +372,7 @@
 				456E561424E06FCD00797AD8 /* ProfilePresenter.swift in Sources */,
 				4536D5EC24DA0167001905ED /* CheckoutViewController.swift in Sources */,
 				4536D5FE24DA0194001905ED /* LoginViewController.swift in Sources */,
+				45232C3A24E59D09006A85E2 /* ModulesFactory.swift in Sources */,
 				4536D5FC24DA0190001905ED /* AddAddressViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

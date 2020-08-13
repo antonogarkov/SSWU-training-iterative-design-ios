@@ -2,10 +2,10 @@ import UIKit
 import Helpers
 
 extension ProductsListViewController: StoryboardInstantiatable {
-    public static var storyboardName: String { "ProductsList" }
+    static var storyboardName: String { "ProductsList" }
 }
 
-public final class ProductsListViewController: UITableViewController {
+final class ProductsListViewController: UITableViewController {
     struct Props {
         typealias Product = ProductsListCell.Product
 
@@ -16,7 +16,7 @@ public final class ProductsListViewController: UITableViewController {
     }
 
     private var props = Props.defaultValue
-    public var retainedObject: AnyObject?
+    var retainedObject: AnyObject?
 
     func render(props: Props) {
         self.props = props
@@ -25,13 +25,13 @@ public final class ProductsListViewController: UITableViewController {
         }
     }
 
-    public override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
 
         render(props: props)
     }
 
-    public override func viewWillAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
         props.viewWillAppear()
@@ -40,11 +40,11 @@ public final class ProductsListViewController: UITableViewController {
 
 // UITableViewDataSource
 extension ProductsListViewController {
-    public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         props.products.count
     }
 
-    public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProductsListCell")
 
         if let productCell = cell as? ProductsListCell {

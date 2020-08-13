@@ -4,10 +4,10 @@ import IQKeyboardManagerSwift
 import Helpers
 
 extension LoginViewController: StoryboardInstantiatable {
-    public static var storyboardName: String { "Login" }
+    static var storyboardName: String { "Login" }
 }
 
-public final class LoginViewController: UIViewController {
+final class LoginViewController: UIViewController {
     struct Props {
         let mail: String
         let password: String
@@ -38,7 +38,7 @@ public final class LoginViewController: UIViewController {
         }
     }
 
-    public override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
 
         IQKeyboardManager.shared.enable = true
@@ -52,7 +52,7 @@ public final class LoginViewController: UIViewController {
 }
 
 extension LoginViewController: UITextFieldDelegate {
-    public func textFieldDidEndEditing(_ textField: UITextField) {
+    func textFieldDidEndEditing(_ textField: UITextField) {
         switch textField {
         case mailTextField:
             props.didChangeMail(textField.text ?? "")
@@ -63,7 +63,7 @@ extension LoginViewController: UITextFieldDelegate {
         }
     }
 
-    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         switch textField {
         case mailTextField:
             passwordTextField.becomeFirstResponder()
