@@ -25,6 +25,6 @@ final class AddressesListPresenter {
             )
         }
 
-        viewController?.render(props: Props(addresses: propsAddresses))
+        viewController?.render(props: Props(addresses: propsAddresses, showsHeader: true))
     }
 }

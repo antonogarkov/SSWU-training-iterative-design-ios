@@ -47,7 +47,7 @@ class AddressesListScenario: TestScenario {
                     city: "Cupertino",
                     state: "CA"
                 )
-            ]
+            ], showsHeader: false
         )
     }
 }

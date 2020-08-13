@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,9 +16,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="BrandYellow"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="G3t-P2-AI2">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="194"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRODUCTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMv-ET-CBh">
+                                    <rect key="frame" x="106.5" y="68" width="162" height="58"/>
+                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="42"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" name="BrandYellow"/>
+                            <constraints>
+                                <constraint firstItem="CMv-ET-CBh" firstAttribute="centerY" secondItem="G3t-P2-AI2" secondAttribute="centerY" id="4fj-YI-eWd"/>
+                                <constraint firstAttribute="height" constant="194" id="J1n-dk-X4l"/>
+                                <constraint firstItem="CMv-ET-CBh" firstAttribute="centerX" secondItem="G3t-P2-AI2" secondAttribute="centerX" id="hFp-50-bQ4"/>
+                            </constraints>
+                            <viewLayoutGuide key="safeArea" id="wGF-mf-9hL"/>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ProductsListCell" rowHeight="355" id="f9L-5C-uHm" customClass="ProductsListCell" customModule="UI" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="355"/>
+                                <rect key="frame" x="0.0" y="222" width="375" height="355"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f9L-5C-uHm" id="XqE-aI-aQ8">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="355"/>

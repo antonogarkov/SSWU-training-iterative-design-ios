@@ -10,9 +10,12 @@ final class AddressesListViewController: UITableViewController {
         typealias Address = AddressListTableViewCell.Address
 
         let addresses: [Address]
+        let showsHeader: Bool
 
-        static let defaultValue = Props(addresses: [])
+        static let defaultValue = Props(addresses: [], showsHeader: true)
     }
+
+    private var headerView: UIView?
 
     private var props = Props.defaultValue
     var retainedObject: AnyObject?
@@ -20,12 +23,16 @@ final class AddressesListViewController: UITableViewController {
     func render(props: Props) {
         self.props = props
         if isViewLoaded {
+            tableView.tableHeaderView = props.showsHeader ? headerView : nil
+
             tableView.reloadData()
         }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        headerView = tableView.tableHeaderView
 
         render(props: props)
     }
