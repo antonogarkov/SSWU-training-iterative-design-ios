@@ -12,7 +12,7 @@
         <scene sceneID="4y6-Gf-VQQ">
             <objects>
                 <tableViewController storyboardIdentifier="BasketViewController" title="Cart" id="Sj4-73-OBA" customClass="BasketViewController" customModule="UI" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="141" estimatedRowHeight="141" sectionHeaderHeight="28" sectionFooterHeight="28" id="kAu-gG-EaT" customClass="ContentSizedTableView" customModule="UI" customModuleProvider="target">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="141" estimatedRowHeight="141" sectionHeaderHeight="28" sectionFooterHeight="28" id="kAu-gG-EaT" customClass="ContentSizedTableView" customModule="Helpers">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="BrandYellow"/>

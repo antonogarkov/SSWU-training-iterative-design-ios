@@ -12,7 +12,8 @@ class BasketScenario: TestScenario {
     }
 
     func makeProps() -> BasketViewController.Props {
-        BasketViewController.Props(items:
+        BasketViewController.Props(
+            items:
             [
                 BasketViewController.Props.Item(
                     imageURL: URL(string: "https://i.pinimg.com/originals/da/a8/de/daa8de830c02a6d62bf3696faaae3d85.png")!,
@@ -38,7 +39,9 @@ class BasketScenario: TestScenario {
                     didSelectDecrease: { self.reportEventClosure(DescribeCalledFunction()) },
                     didSelectIncrease: { self.reportEventClosure(DescribeCalledFunction()) }
                 ),
-            ], viewWillAppear: { self.reportEventClosure(DescribeCalledFunction()) }
+            ],
+            showsHeader: false,
+            viewWillAppear: { self.reportEventClosure(DescribeCalledFunction()) }
         )
     }
 }

@@ -32,6 +32,7 @@ final class BasketPresenter {
 
         let props = BasketViewController.Props(
             items: propsItems,
+            showsHeader: true,
             viewWillAppear: { [weak self] in
                 self?.present()
             }

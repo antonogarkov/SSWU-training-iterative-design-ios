@@ -10,10 +10,13 @@ final class BasketViewController: UITableViewController {
         typealias Item = BasketTableViewCell.Item
 
         let items: [Item]
+        let showsHeader: Bool
         let viewWillAppear: () -> Void
 
-        static let defaultValue = Props(items: [], viewWillAppear: {})
+        static let defaultValue = Props(items: [], showsHeader: false, viewWillAppear: {})
     }
+
+    private var headerView: UIView?
 
     private var props = Props.defaultValue
     var retainedObject: AnyObject?
@@ -21,12 +24,16 @@ final class BasketViewController: UITableViewController {
     func render(props: Props) {
         self.props = props
         if isViewLoaded {
+            tableView.tableHeaderView = props.showsHeader ? headerView : nil
+
             tableView.reloadData()
         }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        headerView = tableView.tableHeaderView
 
         render(props: props)
     }
