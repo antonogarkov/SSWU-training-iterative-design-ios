@@ -7,114 +7,110 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		45232C3024E59366006A85E2 /* Helpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45232C2F24E59366006A85E2 /* Helpers.framework */; };
-		456E55D824DF293300797AD8 /* Services.h in Headers */ = {isa = PBXBuildFile; fileRef = 456E55D624DF293300797AD8 /* Services.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		456E55F924E007B700797AD8 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456E55F824E007B700797AD8 /* APIService.swift */; };
+		45232C1824E592F2006A85E2 /* Helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 45232C1624E592F2006A85E2 /* Helpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45232C2224E59319006A85E2 /* ContentSizedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45232C1F24E59319006A85E2 /* ContentSizedTableView.swift */; };
+		45232C2324E59319006A85E2 /* RoundedBlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45232C2124E59319006A85E2 /* RoundedBlueButton.swift */; };
+		45232C2424E59319006A85E2 /* UIView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45232C2024E59319006A85E2 /* UIView+extensions.swift */; };
+		45232C2524E59319006A85E2 /* NibInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45232C1E24E59319006A85E2 /* NibInstantiatable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		45232C2F24E59366006A85E2 /* Helpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Helpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		456E55D324DF293300797AD8 /* Services.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Services.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		456E55D624DF293300797AD8 /* Services.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Services.h; sourceTree = "<group>"; };
-		456E55D724DF293300797AD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		456E55F824E007B700797AD8 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		45232C1324E592F2006A85E2 /* Helpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Helpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45232C1624E592F2006A85E2 /* Helpers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Helpers.h; sourceTree = "<group>"; };
+		45232C1724E592F2006A85E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45232C1E24E59319006A85E2 /* NibInstantiatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibInstantiatable.swift; sourceTree = "<group>"; };
+		45232C1F24E59319006A85E2 /* ContentSizedTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentSizedTableView.swift; sourceTree = "<group>"; };
+		45232C2024E59319006A85E2 /* UIView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extensions.swift"; sourceTree = "<group>"; };
+		45232C2124E59319006A85E2 /* RoundedBlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBlueButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		456E55D024DF293300797AD8 /* Frameworks */ = {
+		45232C1024E592F2006A85E2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45232C3024E59366006A85E2 /* Helpers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		45232C2E24E59366006A85E2 /* Frameworks */ = {
+		45232C0924E592F2006A85E2 = {
 			isa = PBXGroup;
 			children = (
-				45232C2F24E59366006A85E2 /* Helpers.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		456E55C924DF293300797AD8 = {
-			isa = PBXGroup;
-			children = (
-				456E55D524DF293300797AD8 /* Services */,
-				456E55D424DF293300797AD8 /* Products */,
-				45232C2E24E59366006A85E2 /* Frameworks */,
+				45232C1524E592F2006A85E2 /* Helpers */,
+				45232C1424E592F2006A85E2 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		456E55D424DF293300797AD8 /* Products */ = {
+		45232C1424E592F2006A85E2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				456E55D324DF293300797AD8 /* Services.framework */,
+				45232C1324E592F2006A85E2 /* Helpers.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		456E55D524DF293300797AD8 /* Services */ = {
+		45232C1524E592F2006A85E2 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				456E55F824E007B700797AD8 /* APIService.swift */,
-				456E55D624DF293300797AD8 /* Services.h */,
-				456E55D724DF293300797AD8 /* Info.plist */,
+				45232C1F24E59319006A85E2 /* ContentSizedTableView.swift */,
+				45232C1E24E59319006A85E2 /* NibInstantiatable.swift */,
+				45232C2124E59319006A85E2 /* RoundedBlueButton.swift */,
+				45232C2024E59319006A85E2 /* UIView+extensions.swift */,
+				45232C1624E592F2006A85E2 /* Helpers.h */,
+				45232C1724E592F2006A85E2 /* Info.plist */,
 			);
-			path = Services;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		456E55CE24DF293300797AD8 /* Headers */ = {
+		45232C0E24E592F2006A85E2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				456E55D824DF293300797AD8 /* Services.h in Headers */,
+				45232C1824E592F2006A85E2 /* Helpers.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		456E55D224DF293300797AD8 /* Services */ = {
+		45232C1224E592F2006A85E2 /* Helpers */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 456E55DB24DF293300797AD8 /* Build configuration list for PBXNativeTarget "Services" */;
+			buildConfigurationList = 45232C1B24E592F2006A85E2 /* Build configuration list for PBXNativeTarget "Helpers" */;
 			buildPhases = (
-				456E55CE24DF293300797AD8 /* Headers */,
-				456E55CF24DF293300797AD8 /* Sources */,
-				456E55D024DF293300797AD8 /* Frameworks */,
-				456E55D124DF293300797AD8 /* Resources */,
+				45232C0E24E592F2006A85E2 /* Headers */,
+				45232C0F24E592F2006A85E2 /* Sources */,
+				45232C1024E592F2006A85E2 /* Frameworks */,
+				45232C1124E592F2006A85E2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Services;
-			productName = Services;
-			productReference = 456E55D324DF293300797AD8 /* Services.framework */;
+			name = Helpers;
+			productName = Helpers;
+			productReference = 45232C1324E592F2006A85E2 /* Helpers.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		456E55CA24DF293300797AD8 /* Project object */ = {
+		45232C0A24E592F2006A85E2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = "Anton Ogarkov";
 				TargetAttributes = {
-					456E55D224DF293300797AD8 = {
+					45232C1224E592F2006A85E2 = {
 						CreatedOnToolsVersion = 11.6;
-						LastSwiftMigration = 1160;
 					};
 				};
 			};
-			buildConfigurationList = 456E55CD24DF293300797AD8 /* Build configuration list for PBXProject "Services" */;
+			buildConfigurationList = 45232C0D24E592F2006A85E2 /* Build configuration list for PBXProject "Helpers" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -122,18 +118,18 @@
 				en,
 				Base,
 			);
-			mainGroup = 456E55C924DF293300797AD8;
-			productRefGroup = 456E55D424DF293300797AD8 /* Products */;
+			mainGroup = 45232C0924E592F2006A85E2;
+			productRefGroup = 45232C1424E592F2006A85E2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				456E55D224DF293300797AD8 /* Services */,
+				45232C1224E592F2006A85E2 /* Helpers */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		456E55D124DF293300797AD8 /* Resources */ = {
+		45232C1124E592F2006A85E2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -143,18 +139,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		456E55CF24DF293300797AD8 /* Sources */ = {
+		45232C0F24E592F2006A85E2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				456E55F924E007B700797AD8 /* APIService.swift in Sources */,
+				45232C2424E59319006A85E2 /* UIView+extensions.swift in Sources */,
+				45232C2224E59319006A85E2 /* ContentSizedTableView.swift in Sources */,
+				45232C2524E59319006A85E2 /* NibInstantiatable.swift in Sources */,
+				45232C2324E59319006A85E2 /* RoundedBlueButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		456E55D924DF293300797AD8 /* Debug */ = {
+		45232C1924E592F2006A85E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -217,7 +216,7 @@
 			};
 			name = Debug;
 		};
-		456E55DA24DF293300797AD8 /* Release */ = {
+		45232C1A24E592F2006A85E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -274,48 +273,45 @@
 			};
 			name = Release;
 		};
-		456E55DC24DF293300797AD8 /* Debug */ = {
+		45232C1C24E592F2006A85E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Services/Info.plist;
+				INFOPLIST_FILE = Helpers/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sigma.farm.Services;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sigma.farm.Helpers;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		456E55DD24DF293300797AD8 /* Release */ = {
+		45232C1D24E592F2006A85E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Services/Info.plist;
+				INFOPLIST_FILE = Helpers/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.sigma.farm.Services;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sigma.farm.Helpers;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -326,25 +322,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		456E55CD24DF293300797AD8 /* Build configuration list for PBXProject "Services" */ = {
+		45232C0D24E592F2006A85E2 /* Build configuration list for PBXProject "Helpers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				456E55D924DF293300797AD8 /* Debug */,
-				456E55DA24DF293300797AD8 /* Release */,
+				45232C1924E592F2006A85E2 /* Debug */,
+				45232C1A24E592F2006A85E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		456E55DB24DF293300797AD8 /* Build configuration list for PBXNativeTarget "Services" */ = {
+		45232C1B24E592F2006A85E2 /* Build configuration list for PBXNativeTarget "Helpers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				456E55DC24DF293300797AD8 /* Debug */,
-				456E55DD24DF293300797AD8 /* Release */,
+				45232C1C24E592F2006A85E2 /* Debug */,
+				45232C1D24E592F2006A85E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 456E55CA24DF293300797AD8 /* Project object */;
+	rootObject = 45232C0A24E592F2006A85E2 /* Project object */;
 }

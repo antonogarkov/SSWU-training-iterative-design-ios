@@ -1,4 +1,5 @@
 import UIKit
+import Helpers
 
 extension ProfileViewController: StoryboardInstantiatable {
     public static var storyboardName: String { "Profile" }

@@ -1,6 +1,7 @@
 import UIKit
 import SkyFloatingLabelTextField
 import IQKeyboardManagerSwift
+import Helpers
 
 extension LoginViewController: StoryboardInstantiatable {
     public static var storyboardName: String { "Login" }

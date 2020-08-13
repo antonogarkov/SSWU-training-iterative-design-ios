@@ -1,4 +1,5 @@
 import UIKit
+import Helpers
 
 private final class SectionView: UIView {
 

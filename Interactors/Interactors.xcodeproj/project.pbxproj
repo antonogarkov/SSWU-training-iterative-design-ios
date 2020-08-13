@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45232C2B24E5935F006A85E2 /* Helpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45232C2A24E5935F006A85E2 /* Helpers.framework */; };
 		456E55ED24DF29CA00797AD8 /* Interactors.h in Headers */ = {isa = PBXBuildFile; fileRef = 456E55EB24DF29CA00797AD8 /* Interactors.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		456E560524E035EE00797AD8 /* AddressesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456E560424E035EE00797AD8 /* AddressesListInteractor.swift */; };
 		456E560824E0362100797AD8 /* Services.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456E560724E0362100797AD8 /* Services.framework */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45232C2A24E5935F006A85E2 /* Helpers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Helpers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		456E55E824DF29CA00797AD8 /* Interactors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Interactors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		456E55EB24DF29CA00797AD8 /* Interactors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Interactors.h; sourceTree = "<group>"; };
 		456E55EC24DF29CA00797AD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45232C2B24E5935F006A85E2 /* Helpers.framework in Frameworks */,
 				456E560824E0362100797AD8 /* Services.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +74,7 @@
 		456E560624E0362000797AD8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				45232C2A24E5935F006A85E2 /* Helpers.framework */,
 				456E560724E0362100797AD8 /* Services.framework */,
 			);
 			name = Frameworks;

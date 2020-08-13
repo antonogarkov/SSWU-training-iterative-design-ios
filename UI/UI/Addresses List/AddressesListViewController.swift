@@ -1,4 +1,5 @@
 import UIKit
+import Helpers
 
 extension AddressesListViewController: StoryboardInstantiatable {
     public static var storyboardName: String { "AddressesList" }

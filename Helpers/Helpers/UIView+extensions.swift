@@ -1,6 +1,6 @@
 import UIKit
 
-extension UIView {
+public extension UIView {
     func embed(view: UIView) {
         self.addSubview(view)
 

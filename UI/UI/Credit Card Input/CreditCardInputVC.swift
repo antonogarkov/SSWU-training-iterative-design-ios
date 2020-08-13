@@ -1,5 +1,6 @@
 import UIKit
 import Stripe
+import Helpers
 
 extension CreditCardInputVC: StoryboardInstantiatable {
     public static var storyboardName: String { "CreditCardInput" }
