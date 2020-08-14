@@ -50,7 +50,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         tabbarController.viewControllers = [
             makeProductsModule(apiService: apiService, basketInteractor: basketInteractor),
             addressesNavigationController,
-            makeProfileModule(apiService: apiService),
+            makeProfileModule(apiService: apiService, didPresLogout: { [weak self, weak apiService, weak tabbarController] in
+                print("PANIC! I DON'T KNOW WHAT TO DO HERE!!")
+                guard let tabbarController = tabbarController, let apiService = apiService, let self = self else {
+                    return
+                }
+                apiService.resetSession()
+                self.showLogin(overViewController: tabbarController, apiService: apiService)
+            }),
             ModulesFactory.makeBasketModule(
                 basketInteractor: basketInteractor,
                 showsNavigation: true,
@@ -68,6 +75,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window.rootViewController = tabbarController
         window.makeKeyAndVisible()
 
+        showLogin(overViewController: tabbarController, apiService: apiService)
+
+        return true
+    }
+
+    private func showLogin(overViewController viewController: UIViewController, apiService: APIService) {
         let loginNavController = UINavigationController()
         loginNavController.setNavigationBarHidden(true, animated: false)
 
@@ -94,9 +107,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         loginNavController.setViewControllers([loginModule], animated: false)
 
-        tabbarController.present(loginNavController, animated: true, completion: nil)
-
-        return true
+        viewController.present(loginNavController, animated: true, completion: nil)
     }
 
     private func showCheckout(overViewController viewController: UIViewController, apiService: APIService, basketInteractor: BasketInteractor) {
@@ -147,9 +158,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return ModulesFactory.makeProductsModule(productsInteractor: productsInteractor, basketInteractor: basketInteractor)
     }
 
-    private func makeProfileModule(apiService: APIService) -> UIViewController {
+    private func makeProfileModule(apiService: APIService, didPresLogout: @escaping () -> Void) -> UIViewController {
         let profileInteractor = ProfileInteractor(apiService: apiService)
-        return ModulesFactory.makeProfileModule(profileInteractor: profileInteractor)
+        return ModulesFactory.makeProfileModule(profileInteractor: profileInteractor, didPresLogout: didPresLogout)
     }
 
     private func makeAddressesModule(apiService: APIService, addSelected: @escaping () -> Void) -> UIViewController {

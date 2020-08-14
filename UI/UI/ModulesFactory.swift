@@ -27,9 +27,12 @@ public enum ModulesFactory {
         return basketVC
     }
 
-    public static func makeProfileModule(profileInteractor: ProfileInteractor) -> UIViewController {
+    public static func makeProfileModule(profileInteractor: ProfileInteractor,
+                                         didPresLogout: @escaping () -> Void) -> UIViewController {
         let profileVC = ProfileViewController.instantiate()
-        let profilePresenter = ProfilePresenter(viewController: profileVC, interactor: profileInteractor)
+        let profilePresenter = ProfilePresenter(viewController: profileVC,
+                                                interactor: profileInteractor,
+                                                didPresLogout: didPresLogout)
 
         profileVC.retainedObject = profilePresenter
 

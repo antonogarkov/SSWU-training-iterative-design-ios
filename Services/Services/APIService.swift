@@ -58,6 +58,12 @@ public final class APIService {
     var addresses = [Address]()
 
     public init() {}
+
+    public func resetSession() {
+        basket = [UUID: Double]()
+        userEmail = nil
+        addresses = [Address]()
+    }
 }
 
 // addresses

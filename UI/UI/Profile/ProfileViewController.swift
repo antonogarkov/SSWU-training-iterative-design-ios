@@ -9,10 +9,12 @@ final class ProfileViewController: UIViewController {
     struct Props {
         let currentUserEmail: String
         let didPressLogout: () -> Void
+        let viewWillAppear: () -> Void
 
         static let defaultValue = Props(
             currentUserEmail: "",
-            didPressLogout: {}
+            didPressLogout: {},
+            viewWillAppear: {}
         )
     }
 
@@ -32,6 +34,12 @@ final class ProfileViewController: UIViewController {
         super.viewDidLoad()
 
         render(props: props)
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        props.viewWillAppear()
     }
 
     @IBAction func didTouchLogout(_ sender: Any) {
