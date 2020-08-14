@@ -44,6 +44,19 @@ public enum ModulesFactory {
         return addressesVC
     }
 
+    public static func makeCheckoutAddressSelectionModule(addressesInteractor: AddressesListInteractor,
+                                                          checkoutInteractor: CheckoutInteractor) -> UIViewController {
+        let addressesVC = AddressesListViewController.instantiate()
+        let addressesPresenter = AddressesListCheckoutPresenter(
+            viewController: addressesVC,
+            addressesListInteractor: addressesInteractor,
+            checkoutInteractor: checkoutInteractor
+        )
+        addressesVC.retainedObject = addressesPresenter
+
+        return addressesVC
+    }
+
     public static func makeDeliveryTimesModule() -> UIViewController {
         return DeliveryTimesVC.instantiate()
     }

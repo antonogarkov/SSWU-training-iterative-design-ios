@@ -68,16 +68,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     private func showCheckout(overViewController viewController: UIViewController, apiService: APIService) {
 
-        let interactor = CheckoutInteractor(
+        let checkoutInteractor = CheckoutInteractor(
             apiService: apiService,
             didSubmitOrder: { [weak viewController] in
                 viewController?.presentedViewController?.dismiss(animated: true, completion: nil)
             }
         )
 
+        let addressesListModule = ModulesFactory.makeCheckoutAddressSelectionModule(
+            addressesInteractor: AddressesListInteractor(apiService: apiService),
+            checkoutInteractor: checkoutInteractor
+        )
+
         let checkoutViewController = ModulesFactory.makeCheckoutModule(
-            interactor: interactor,
-            embeddedViewControllers: []
+            interactor: checkoutInteractor,
+            embeddedViewControllers: [addressesListModule]
         )
 
         viewController.present(checkoutViewController, animated: true, completion: nil)
