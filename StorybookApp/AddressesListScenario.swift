@@ -48,6 +48,7 @@ class AddressesListScenario: TestScenario {
                     state: "CA"
                 )
             ],
+            viewWillAppear: { self.reportEventClosure(DescribeCalledFunction()) },
             showsHeader: false
         )
     }

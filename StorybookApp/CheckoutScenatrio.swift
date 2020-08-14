@@ -41,6 +41,8 @@ class CheckoutScenario: TestScenario {
     }
 
     func makeProps() -> CheckoutViewController.Props {
-        CheckoutViewController.Props()
+        CheckoutViewController.Props(
+            didSelectPlaceOrder: { self.reportEventClosure(DescribeCalledFunction()) }
+        )
     }
 }

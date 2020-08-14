@@ -41,7 +41,8 @@ class BasketScenario: TestScenario {
                 ),
             ],
             showsHeader: false,
-            viewWillAppear: { self.reportEventClosure(DescribeCalledFunction()) }
+            viewWillAppear: { self.reportEventClosure(DescribeCalledFunction()) },
+            didSelectCheckout: { self.reportEventClosure(DescribeCalledFunction()) }
         )
     }
 }
