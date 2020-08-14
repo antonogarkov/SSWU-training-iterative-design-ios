@@ -7,6 +7,11 @@ public final class CheckoutInteractor {
     public var selectedAddressId: UUID?
     public var date: Date?
 
+    public var cardNumber: String?
+    public var cardCVC: String?
+    public var cardExp: String?
+    public var cardPostalCode: String?
+
     public init(apiService: APIService,
                 didSubmitOrder: @escaping () -> Void) {
         self.apiService = apiService

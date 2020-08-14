@@ -44,6 +44,7 @@
 		4570820824E6BC3B00F5F6C1 /* CheckoutPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4570820724E6BC3B00F5F6C1 /* CheckoutPresenter.swift */; };
 		4570820C24E7098D00F5F6C1 /* AddressesListCheckoutPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4570820B24E7098D00F5F6C1 /* AddressesListCheckoutPresenter.swift */; };
 		4570820E24E712FA00F5F6C1 /* DeliveryTimesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4570820D24E712FA00F5F6C1 /* DeliveryTimesPresenter.swift */; };
+		4570821024E717B900F5F6C1 /* CreditCardInputPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4570820F24E717B900F5F6C1 /* CreditCardInputPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +86,7 @@
 		4570820724E6BC3B00F5F6C1 /* CheckoutPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutPresenter.swift; sourceTree = "<group>"; };
 		4570820B24E7098D00F5F6C1 /* AddressesListCheckoutPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressesListCheckoutPresenter.swift; sourceTree = "<group>"; };
 		4570820D24E712FA00F5F6C1 /* DeliveryTimesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryTimesPresenter.swift; sourceTree = "<group>"; };
+		4570820F24E717B900F5F6C1 /* CreditCardInputPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardInputPresenter.swift; sourceTree = "<group>"; };
 		7D744C7653D96E2DFC0F6158 /* Pods-UI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI.debug.xcconfig"; path = "Target Support Files/Pods-UI/Pods-UI.debug.xcconfig"; sourceTree = "<group>"; };
 		E6A547F203517235C0DD48D0 /* Pods_UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F73D8E8B8666C5B093686142 /* Pods-UI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI.release.xcconfig"; path = "Target Support Files/Pods-UI/Pods-UI.release.xcconfig"; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 			children = (
 				456E55BC24DEC92700797AD8 /* CreditCardInputVC.swift */,
 				456E55C024DEC9CE00797AD8 /* CreditCardInput.storyboard */,
+				4570820F24E717B900F5F6C1 /* CreditCardInputPresenter.swift */,
 			);
 			path = "Credit Card Input";
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 				4536D5EC24DA0167001905ED /* CheckoutViewController.swift in Sources */,
 				4536D5FE24DA0194001905ED /* LoginViewController.swift in Sources */,
 				4570820E24E712FA00F5F6C1 /* DeliveryTimesPresenter.swift in Sources */,
+				4570821024E717B900F5F6C1 /* CreditCardInputPresenter.swift in Sources */,
 				45232C3A24E59D09006A85E2 /* ModulesFactory.swift in Sources */,
 				4536D5FC24DA0190001905ED /* AddAddressViewController.swift in Sources */,
 			);

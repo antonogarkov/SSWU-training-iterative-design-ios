@@ -21,8 +21,10 @@ final class CreditCardInputVC: UIViewController {
         )
     }
 
-    private var props = Props.defaultValue
     @IBOutlet weak var textField: STPPaymentCardTextField!
+
+    private var props = Props.defaultValue
+    var retainedObject: AnyObject?
 
     func render(props: Props) {
         self.props = props

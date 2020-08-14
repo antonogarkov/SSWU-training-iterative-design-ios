@@ -82,9 +82,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let timesModule = ModulesFactory.makeDeliveryTimesModule(interactor: checkoutInteractor)
 
+        let creditCardModule = ModulesFactory.makeCreditCardInputModule(interactor: checkoutInteractor)
+
         let checkoutViewController = ModulesFactory.makeCheckoutModule(
             interactor: checkoutInteractor,
-            embeddedViewControllers: [addressesListModule, timesModule]
+            embeddedViewControllers: [addressesListModule, timesModule, creditCardModule]
         )
 
         viewController.present(checkoutViewController, animated: true, completion: nil)
