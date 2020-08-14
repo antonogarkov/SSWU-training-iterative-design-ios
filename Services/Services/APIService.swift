@@ -127,7 +127,7 @@ extension APIService {
     public func decrementProductInBasket(uuid: UUID) -> Basket {
         if let currentAmount = basket[uuid] {
             let newAmount = currentAmount - 0.1
-            if newAmount > 0 {
+            if newAmount >= 0.1 {
                 basket[uuid] = newAmount
             } else {
                 basket[uuid] = nil
