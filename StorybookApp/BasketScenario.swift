@@ -40,7 +40,7 @@ class BasketScenario: TestScenario {
                     didSelectIncrease: { self.reportEventClosure(DescribeCalledFunction()) }
                 ),
             ],
-            showsHeader: false,
+            showsHeaderAndFooter: false,
             viewWillAppear: { self.reportEventClosure(DescribeCalledFunction()) },
             didSelectCheckout: { self.reportEventClosure(DescribeCalledFunction()) }
         )

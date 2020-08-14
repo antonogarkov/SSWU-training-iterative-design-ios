@@ -10,14 +10,15 @@ final class BasketViewController: UITableViewController {
         typealias Item = BasketTableViewCell.Item
 
         let items: [Item]
-        let showsHeader: Bool
+        let showsHeaderAndFooter: Bool
         let viewWillAppear: () -> Void
         let didSelectCheckout: () -> Void
 
-        static let defaultValue = Props(items: [], showsHeader: false, viewWillAppear: {}, didSelectCheckout: {})
+        static let defaultValue = Props(items: [], showsHeaderAndFooter: false, viewWillAppear: {}, didSelectCheckout: {})
     }
 
     private var headerView: UIView?
+    private var footerView: UIView?
 
     private var props = Props.defaultValue
     var retainedObject: AnyObject?
@@ -25,7 +26,8 @@ final class BasketViewController: UITableViewController {
     func render(props: Props) {
         self.props = props
         if isViewLoaded {
-            tableView.tableHeaderView = props.showsHeader ? headerView : nil
+            tableView.tableHeaderView = props.showsHeaderAndFooter ? headerView : nil
+            tableView.tableFooterView = props.showsHeaderAndFooter ? footerView : nil
 
             tableView.reloadData()
         }
@@ -35,6 +37,7 @@ final class BasketViewController: UITableViewController {
         super.viewDidLoad()
 
         headerView = tableView.tableHeaderView
+        footerView = tableView.tableFooterView
 
         render(props: props)
     }
