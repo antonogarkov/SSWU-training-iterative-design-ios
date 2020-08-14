@@ -53,7 +53,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 didAddAddress: { [weak loginNavController] in
                     guard let loginNavController = loginNavController else { return }
 
-                    loginNavController.dismiss(animated: true, completion: nil)
+                    loginNavController.pushViewController(ModulesFactory.makeAddressAddedModule(), animated: true)
+
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                        loginNavController.dismiss(animated: true, completion: nil)
+                    }
                 }
             )
 
