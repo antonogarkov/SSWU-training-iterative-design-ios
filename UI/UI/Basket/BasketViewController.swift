@@ -12,8 +12,9 @@ final class BasketViewController: UITableViewController {
         let items: [Item]
         let showsHeader: Bool
         let viewWillAppear: () -> Void
+        let didSelectCheckout: () -> Void
 
-        static let defaultValue = Props(items: [], showsHeader: false, viewWillAppear: {})
+        static let defaultValue = Props(items: [], showsHeader: false, viewWillAppear: {}, didSelectCheckout: {})
     }
 
     private var headerView: UIView?
@@ -42,6 +43,10 @@ final class BasketViewController: UITableViewController {
         super.viewWillAppear(animated)
 
         props.viewWillAppear()
+    }
+
+    @IBAction func checkoutButtonTouch(_ sender: Any) {
+        props.didSelectCheckout()
     }
 }
 

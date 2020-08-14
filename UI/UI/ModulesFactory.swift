@@ -14,10 +14,11 @@ public enum ModulesFactory {
         return productsVC
     }
 
-    public static func makeBasketModule(basketInteractor: BasketInteractor) -> UIViewController {
+    public static func makeBasketModule(basketInteractor: BasketInteractor, didSelectCheckout: @escaping () -> Void) -> UIViewController {
         let basketVC = BasketViewController.instantiate()
         let basketPresenter = BasketPresenter(viewController: basketVC,
-                                              interactor: basketInteractor)
+                                              interactor: basketInteractor,
+                                              didSelectCheckout: didSelectCheckout)
         basketVC.retainedObject = basketPresenter
 
         return basketVC

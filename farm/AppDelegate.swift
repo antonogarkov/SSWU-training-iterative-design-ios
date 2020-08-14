@@ -25,7 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             makeProductsModule(apiService: apiService, basketInteractor: basketInteractor),
             makeAddressesModule(apiService: apiService),
             makeProfileModule(apiService: apiService),
-            ModulesFactory.makeBasketModule(basketInteractor: basketInteractor)
+            ModulesFactory.makeBasketModule(basketInteractor: basketInteractor,
+                                            didSelectCheckout: {})
         ]
 
         window.rootViewController = tabbarController

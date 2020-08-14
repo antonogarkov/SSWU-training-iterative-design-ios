@@ -35,6 +35,34 @@
                             </constraints>
                             <viewLayoutGuide key="safeArea" id="FSz-Xn-ibx"/>
                         </view>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="beq-t0-red">
+                            <rect key="frame" x="0.0" y="391" width="375" height="64"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lG6-6c-wEA" customClass="RoundedBlueButton" customModule="UI" customModuleProvider="target">
+                                    <rect key="frame" x="60" y="10" width="255" height="44"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="goButton"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="rpL-1z-Z70"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="17"/>
+                                    <state key="normal" title="CHECKOUT">
+                                        <color key="titleColor" name="BrandBlue"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="checkoutButtonTouch:" destination="Sj4-73-OBA" eventType="touchUpInside" id="l5J-u9-yNA"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="lG6-6c-wEA" secondAttribute="trailing" constant="60" id="Ahk-bf-01v"/>
+                                <constraint firstAttribute="bottom" secondItem="lG6-6c-wEA" secondAttribute="bottom" constant="10" id="MFG-pM-Qge"/>
+                                <constraint firstItem="lG6-6c-wEA" firstAttribute="top" secondItem="beq-t0-red" secondAttribute="top" constant="10" id="Ukx-mh-MlF"/>
+                                <constraint firstItem="lG6-6c-wEA" firstAttribute="leading" secondItem="beq-t0-red" secondAttribute="leading" constant="60" id="rou-HW-ZSK"/>
+                            </constraints>
+                            <viewLayoutGuide key="safeArea" id="iE8-wu-zZZ"/>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BasketTableViewCell" rowHeight="141" id="7xP-Rf-5XT" customClass="BasketTableViewCell" customModule="UI" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="222" width="375" height="141"/>
