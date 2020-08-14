@@ -54,30 +54,57 @@ public final class APIService {
         ]
 
     var basket = [UUID: Double]()
+    var userEmail: String?
+    var addresses = [Address]()
 
     public init() {}
 }
 
+// addresses
+extension APIService {
+    public func postAddress(addressFirstLine: String,
+                            addressSecondLine: String,
+                            city: String,
+                            state: String,
+                            zip: String) {
+
+        addresses.append(
+            Address(id: UUID(),
+                    addressFirstLine: addressFirstLine,
+                    addressSecondLine: addressSecondLine,
+                    city: city,
+                    state: state,
+                    zip: zip
+            )
+        )
+    }
+
+    public func getAddresses() -> [Address] {
+        addresses
+    }
+}
+
+// products
 extension APIService {
     public func getProducts() -> [Product] {
         products
     }
+}
 
-    public func getAddresses() -> [Address] {
-        [Address(
-            id: UUID(),
-            addressFirstLine: "Infinite Loop",
-            addressSecondLine: "1",
-            city: "Cupertino",
-            state: "CA",
-            zip: "95014"
-        )]
+// profile
+extension APIService {
+    public func login(email: String, password: String) -> Bool {
+        userEmail = email
+        return true
     }
 
     public func getProfileEmail() -> String {
-        "guest@farm.com"
+        userEmail ?? "guest@farm.com"
     }
+}
 
+// basket
+extension APIService {
     public func getBasket() -> Basket {
         var basketPrice: Double = 0
 
