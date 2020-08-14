@@ -17,6 +17,7 @@ final class AddressesListPresenter {
     private func present() {
         let propsAddresses = interactor.addresses.map { apiAddress -> Props.Address in
             Props.Address(
+                selectionState: nil,
                 zip: apiAddress.zip,
                 line1: apiAddress.addressFirstLine,
                 line2: apiAddress.addressSecondLine,

@@ -13,6 +13,7 @@ class AddressesListScenario: TestScenario {
         return AddressesListViewController.Props(
             addresses: [
                 AddressesListViewController.Props.Address(
+                    selectionState: nil,
                     zip: "95014",
                     line1: "Infinite Loop",
                     line2: "1",
@@ -20,6 +21,7 @@ class AddressesListScenario: TestScenario {
                     state: "CA"
                 ),
                 AddressesListViewController.Props.Address(
+                    selectionState: nil,
                     zip: "11218",
                     line1: "Avenue F",
                     line2: "420",
@@ -27,6 +29,7 @@ class AddressesListScenario: TestScenario {
                     state: "NY"
                 ),
                 AddressesListViewController.Props.Address(
+                    selectionState: nil,
                     zip: "50315",
                     line1: "E Wall Ave",
                     line2: "443",
@@ -34,6 +37,10 @@ class AddressesListScenario: TestScenario {
                     state: "IA"
                 ),
                 AddressesListViewController.Props.Address(
+                    selectionState: AddressesListViewController.Props.Address.SelectionState(
+                        didSelect: { self.reportEventClosure(DescribeCalledFunction()) },
+                        isSelected: false
+                    ),
                     zip: "84634",
                     line1: "N 100 W",
                     line2: "52",
@@ -41,6 +48,10 @@ class AddressesListScenario: TestScenario {
                     state: "UT"
                 ),
                 AddressesListViewController.Props.Address(
+                    selectionState: AddressesListViewController.Props.Address.SelectionState(
+                        didSelect: { self.reportEventClosure(DescribeCalledFunction()) },
+                        isSelected: true
+                    ),
                     zip: "95014",
                     line1: "Infinite Loop",
                     line2: "1",

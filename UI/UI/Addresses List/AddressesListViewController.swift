@@ -61,3 +61,10 @@ extension AddressesListViewController {
         return cell ?? UITableViewCell()
     }
 }
+
+// UITableViewDelegate
+extension AddressesListViewController {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        props.addresses[indexPath.row].selectionState?.didSelect()
+    }
+}
