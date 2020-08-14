@@ -25,6 +25,13 @@ final class AddressesListPresenter {
             )
         }
 
-        viewController?.render(props: Props(addresses: propsAddresses, showsHeader: true))
+        viewController?.render(props: Props(
+            addresses: propsAddresses,
+            viewWillAppear: { [weak self] in
+                self?.interactor.loadAddresses()
+                self?.present()
+            },
+            showsHeader: true
+        ))
     }
 }
