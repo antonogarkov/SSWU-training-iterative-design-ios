@@ -5,12 +5,17 @@ final class BasketPresenter {
 
     private weak var viewController: BasketViewController?
     private let interactor: BasketInteractor
+    private let showsNavigation: Bool
     private let didSelectCheckout: () -> Void
 
-    init(viewController: BasketViewController, interactor: BasketInteractor, didSelectCheckout: @escaping () -> Void) {
+    init(viewController: BasketViewController,
+         interactor: BasketInteractor,
+         showsNavigation: Bool,
+         didSelectCheckout: @escaping () -> Void) {
         self.viewController = viewController
         self.interactor = interactor
         self.didSelectCheckout = didSelectCheckout
+        self.showsNavigation = showsNavigation
 
         interactor.reloadBasket()
         present()
@@ -34,7 +39,7 @@ final class BasketPresenter {
 
         let props = BasketViewController.Props(
             items: propsItems,
-            showsHeaderAndFooter: true,
+            showsHeaderAndFooter: showsNavigation,
             viewWillAppear: { [weak self] in
                 self?.present()
             },

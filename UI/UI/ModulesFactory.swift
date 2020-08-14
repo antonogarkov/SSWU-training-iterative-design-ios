@@ -14,10 +14,13 @@ public enum ModulesFactory {
         return productsVC
     }
 
-    public static func makeBasketModule(basketInteractor: BasketInteractor, didSelectCheckout: @escaping () -> Void) -> UIViewController {
+    public static func makeBasketModule(basketInteractor: BasketInteractor,
+                                        showsNavigation: Bool,
+                                        didSelectCheckout: @escaping () -> Void) -> UIViewController {
         let basketVC = BasketViewController.instantiate()
         let basketPresenter = BasketPresenter(viewController: basketVC,
                                               interactor: basketInteractor,
+                                              showsNavigation: showsNavigation,
                                               didSelectCheckout: didSelectCheckout)
         basketVC.retainedObject = basketPresenter
 
@@ -72,6 +75,15 @@ public enum ModulesFactory {
         creditCardVC.retainedObject = presenter
 
         return creditCardVC
+    }
+
+    public static func titleCheckoutModule(viewController: UIViewController, withTitle title: String) -> UIViewController {
+
+        let wrapper = CheckoutSectionWrapperVC.instantiate()
+        wrapper.embeddedViewController = viewController
+        wrapper.headerTitle = title
+
+        return wrapper
     }
 
     public static func makeCheckoutModule(interactor: CheckoutInteractor,

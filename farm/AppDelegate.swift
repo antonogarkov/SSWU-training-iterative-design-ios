@@ -27,11 +27,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             makeProfileModule(apiService: apiService),
             ModulesFactory.makeBasketModule(
                 basketInteractor: basketInteractor,
-                didSelectCheckout: { [weak self, weak tabbarController, weak apiService] in
-                    guard let self = self, let tabbarController = tabbarController, let apiService = apiService else {
+                showsNavigation: true,
+                didSelectCheckout: { [weak self, weak tabbarController, weak apiService, weak basketInteractor] in
+                    guard let self = self, let tabbarController = tabbarController, let apiService = apiService, let basketInteractor = basketInteractor else {
                         return
                     }
-                    self.showCheckout(overViewController: tabbarController, apiService: apiService)
+                    self.showCheckout(overViewController: tabbarController,
+                                      apiService: apiService,
+                                      basketInteractor: basketInteractor)
                 }
             )
         ]
@@ -66,7 +69,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
-    private func showCheckout(overViewController viewController: UIViewController, apiService: APIService) {
+    private func showCheckout(overViewController viewController: UIViewController, apiService: APIService, basketInteractor: BasketInteractor) {
 
         let checkoutInteractor = CheckoutInteractor(
             apiService: apiService,
@@ -84,9 +87,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let creditCardModule = ModulesFactory.makeCreditCardInputModule(interactor: checkoutInteractor)
 
+        let basketModule = ModulesFactory.makeBasketModule(
+            basketInteractor: basketInteractor,
+            showsNavigation: false,
+            didSelectCheckout: {}
+        )
+
         let checkoutViewController = ModulesFactory.makeCheckoutModule(
             interactor: checkoutInteractor,
-            embeddedViewControllers: [addressesListModule, timesModule, creditCardModule]
+            embeddedViewControllers: [
+                ModulesFactory.titleCheckoutModule(viewController: addressesListModule,
+                                                   withTitle: "SELECT DELIVERY ADDRESS"),
+                ModulesFactory.titleCheckoutModule(viewController: timesModule,
+                                                   withTitle: "SELECT DELIVERY TIME"),
+                ModulesFactory.titleCheckoutModule(viewController: creditCardModule,
+                                                   withTitle: "SPECIFY YOUR PAYMENT CARD"),
+                ModulesFactory.titleCheckoutModule(viewController: basketModule,
+                                                   withTitle: "REVIEW YOUR ORDER")
+            ]
         )
 
         viewController.present(checkoutViewController, animated: true, completion: nil)
