@@ -44,6 +44,7 @@ final class AddAddressViewController: UIViewController {
     @IBOutlet private weak var zipTextField: SkyFloatingLabelTextField!
 
     private var props = Props.defaultValue
+    var retainedObject: AnyObject?
 
     func render(props: Props) {
         self.props = props

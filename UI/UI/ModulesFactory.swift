@@ -55,8 +55,13 @@ public enum ModulesFactory {
         return CheckoutViewController.instantiate()
     }
 
-    public static func makeAddAddressModule() -> UIViewController {
-        return AddAddressViewController.instantiate()
+    public static func makeAddAddressModule(addAddressInteractor: AddAddressInteractor) -> UIViewController {
+        let viewController = AddAddressViewController.instantiate()
+        let presenter = AddAddressPresenter(viewController: viewController,
+                                            interactor: addAddressInteractor)
+        viewController.retainedObject = presenter
+
+        return viewController
     }
 
     public static func makeLoginModule(loginInteractor: LoginInteractor) -> UIViewController {

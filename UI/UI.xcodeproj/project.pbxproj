@@ -40,6 +40,7 @@
 		456E561024E04FBF00797AD8 /* BasketPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456E560F24E04FBF00797AD8 /* BasketPresenter.swift */; };
 		456E561424E06FCD00797AD8 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456E561324E06FCD00797AD8 /* ProfilePresenter.swift */; };
 		4570820024E6939C00F5F6C1 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457081FF24E6939C00F5F6C1 /* LoginPresenter.swift */; };
+		4570820624E6A71400F5F6C1 /* AddAddressPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4570820524E6A71400F5F6C1 /* AddAddressPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,7 @@
 		456E560F24E04FBF00797AD8 /* BasketPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketPresenter.swift; sourceTree = "<group>"; };
 		456E561324E06FCD00797AD8 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		457081FF24E6939C00F5F6C1 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		4570820524E6A71400F5F6C1 /* AddAddressPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAddressPresenter.swift; sourceTree = "<group>"; };
 		7D744C7653D96E2DFC0F6158 /* Pods-UI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI.debug.xcconfig"; path = "Target Support Files/Pods-UI/Pods-UI.debug.xcconfig"; sourceTree = "<group>"; };
 		E6A547F203517235C0DD48D0 /* Pods_UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F73D8E8B8666C5B093686142 /* Pods-UI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI.release.xcconfig"; path = "Target Support Files/Pods-UI/Pods-UI.release.xcconfig"; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 			children = (
 				4536D5DC24DA00BB001905ED /* AddAddressViewController.swift */,
 				4536D5DD24DA00BB001905ED /* AddAddress.storyboard */,
+				4570820524E6A71400F5F6C1 /* AddAddressPresenter.swift */,
 			);
 			path = AddAddress;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				4536D5F524DA0182001905ED /* AddressListTableViewCell.swift in Sources */,
 				456E560C24E04F0000797AD8 /* ProductsListPresenter.swift in Sources */,
 				4570820024E6939C00F5F6C1 /* LoginPresenter.swift in Sources */,
+				4570820624E6A71400F5F6C1 /* AddAddressPresenter.swift in Sources */,
 				4536D5F824DA0185001905ED /* ProductsListCell.swift in Sources */,
 				456E560324E0359600797AD8 /* AddressesListPresenter.swift in Sources */,
 				45232C3C24E5A12A006A85E2 /* RoundedBlueButton.swift in Sources */,

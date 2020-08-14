@@ -31,10 +31,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window.rootViewController = tabbarController
         window.makeKeyAndVisible()
 
-        let loginInteractor = LoginInteractor(apiService: apiService, didLogIn: {})
+        let loginNavController = UINavigationController()
+        loginNavController.setNavigationBarHidden(true, animated: false)
+
+        let loginInteractor = LoginInteractor(apiService: apiService, didLogIn: { [weak apiService, weak loginNavController] in
+            guard let apiService = apiService, let loginNavController = loginNavController else { return }
+
+            let addAddressInteractor = AddAddressInteractor(
+                apiService: apiService,
+                didAddAddress: { [weak loginNavController] in
+                    guard let loginNavController = loginNavController else { return }
+
+                    loginNavController.dismiss(animated: true, completion: nil)
+                }
+            )
+
+            let module = ModulesFactory.makeAddAddressModule(addAddressInteractor: addAddressInteractor)
+            loginNavController.pushViewController(module, animated: true)
+        })
         let loginModule = ModulesFactory.makeLoginModule(loginInteractor: loginInteractor)
 
-        tabbarController.present(loginModule, animated: true, completion: nil)
+        loginNavController.setViewControllers([loginModule], animated: false)
+
+        tabbarController.present(loginNavController, animated: true, completion: nil)
 
         return true
     }
