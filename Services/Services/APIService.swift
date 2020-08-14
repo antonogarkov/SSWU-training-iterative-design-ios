@@ -141,6 +141,7 @@ extension APIService {
 // checkout
 extension APIService {
     public func submitOrder() -> Bool {
+        basket = [:]
         return true
     }
 }

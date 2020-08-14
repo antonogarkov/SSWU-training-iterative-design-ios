@@ -16,6 +16,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let basketInteractor = BasketInteractor(apiService: apiService)
 
+        let addressesNavigationController = UINavigationController()
+        addressesNavigationController.setNavigationBarHidden(true, animated: false)
+
+        let addressesViewController = makeAddressesModule(
+            apiService: apiService,
+            addSelected: {
+                let addAddressInteractor = AddAddressInteractor(
+                    apiService: apiService,
+                    didAddAddress: { [weak addressesNavigationController] in
+                        guard let addressesNavigationController = addressesNavigationController else { return }
+
+                        addressesNavigationController.pushViewController(ModulesFactory.makeAddressAddedModule(), animated: true)
+
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                            addressesNavigationController.popToRootViewController(animated: true)
+                        }
+                    }
+                )
+
+                let module = ModulesFactory.makeAddAddressModule(addAddressInteractor: addAddressInteractor)
+                addressesNavigationController.pushViewController(module, animated: true)
+            }
+        )
+
+        addressesNavigationController.viewControllers = [addressesViewController]
+
         let tabbarController = UITabBarController()
 
         tabbarController.tabBar.tintColor = .black
@@ -23,7 +49,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         tabbarController.viewControllers = [
             makeProductsModule(apiService: apiService, basketInteractor: basketInteractor),
-            makeAddressesModule(apiService: apiService),
+            addressesNavigationController,
             makeProfileModule(apiService: apiService),
             ModulesFactory.makeBasketModule(
                 basketInteractor: basketInteractor,
@@ -126,9 +152,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return ModulesFactory.makeProfileModule(profileInteractor: profileInteractor)
     }
 
-    private func makeAddressesModule(apiService: APIService) -> UIViewController {
+    private func makeAddressesModule(apiService: APIService, addSelected: @escaping () -> Void) -> UIViewController {
         let addressesInteractor = AddressesListInteractor(apiService: apiService)
-        return ModulesFactory.makeAddressesModule(addressesInteractor: addressesInteractor)
+        return ModulesFactory.makeAddressesModule(addressesInteractor: addressesInteractor,
+                                                  addSelected: addSelected)
     }
 }
 

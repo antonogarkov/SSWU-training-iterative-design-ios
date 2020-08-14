@@ -36,11 +36,13 @@ public enum ModulesFactory {
         return profileVC
     }
 
-    public static func makeAddressesModule(addressesInteractor: AddressesListInteractor) -> UIViewController {
+    public static func makeAddressesModule(addressesInteractor: AddressesListInteractor,
+                                           addSelected: @escaping () -> Void) -> UIViewController {
         let addressesVC = AddressesListViewController.instantiate()
         let addressesPresenter = AddressesListPresenter(
             viewController: addressesVC,
-            interactor: addressesInteractor
+            interactor: addressesInteractor,
+            addSelected: addSelected
         )
         addressesVC.retainedObject = addressesPresenter
 

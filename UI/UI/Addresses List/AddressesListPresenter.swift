@@ -5,10 +5,12 @@ final class AddressesListPresenter {
 
     private weak var viewController: AddressesListViewController?
     private let interactor: AddressesListInteractor
+    private let addSelected: () -> Void
 
-    init(viewController: AddressesListViewController, interactor: AddressesListInteractor) {
+    init(viewController: AddressesListViewController, interactor: AddressesListInteractor, addSelected: @escaping () -> Void) {
         self.viewController = viewController
         self.interactor = interactor
+        self.addSelected = addSelected
 
         interactor.loadAddresses()
         present()
@@ -32,6 +34,7 @@ final class AddressesListPresenter {
                 self?.interactor.loadAddresses()
                 self?.present()
             },
+            addSelected: addSelected,
             showsHeader: true
         ))
     }

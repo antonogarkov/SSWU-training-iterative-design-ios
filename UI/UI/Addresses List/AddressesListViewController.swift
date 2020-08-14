@@ -11,9 +11,10 @@ final class AddressesListViewController: UITableViewController {
 
         let addresses: [Address]
         let viewWillAppear: () -> Void
+        let addSelected: () -> Void
         let showsHeader: Bool
 
-        static let defaultValue = Props(addresses: [], viewWillAppear: {}, showsHeader: true)
+        static let defaultValue = Props(addresses: [], viewWillAppear: {}, addSelected: {}, showsHeader: true)
     }
 
     private var headerView: UIView?
@@ -42,6 +43,10 @@ final class AddressesListViewController: UITableViewController {
         super.viewWillAppear(animated)
 
         props.viewWillAppear()
+    }
+
+    @IBAction func addButtonTouch(_ sender: Any) {
+        props.addSelected()
     }
 }
 

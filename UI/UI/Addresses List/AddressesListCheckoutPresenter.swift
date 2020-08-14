@@ -44,6 +44,7 @@ final class AddressesListCheckoutPresenter {
         self.viewController?.render(props: Props(
             addresses: propsAddresses,
             viewWillAppear: {},
+            addSelected: {},
             showsHeader: false
         ))
     }
