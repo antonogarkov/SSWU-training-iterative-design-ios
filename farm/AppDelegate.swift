@@ -25,8 +25,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             makeProductsModule(apiService: apiService, basketInteractor: basketInteractor),
             makeAddressesModule(apiService: apiService),
             makeProfileModule(apiService: apiService),
-            ModulesFactory.makeBasketModule(basketInteractor: basketInteractor,
-                                            didSelectCheckout: {})
+            ModulesFactory.makeBasketModule(
+                basketInteractor: basketInteractor,
+                didSelectCheckout: { [weak self, weak tabbarController, weak apiService] in
+                    guard let self = self, let tabbarController = tabbarController, let apiService = apiService else {
+                        return
+                    }
+                    self.showCheckout(overViewController: tabbarController, apiService: apiService)
+                }
+            )
         ]
 
         window.rootViewController = tabbarController
@@ -57,6 +64,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         tabbarController.present(loginNavController, animated: true, completion: nil)
 
         return true
+    }
+
+    private func showCheckout(overViewController viewController: UIViewController, apiService: APIService) {
+
+        let interactor = CheckoutInteractor(
+            apiService: apiService,
+            didSubmitOrder: { [weak viewController] in
+                viewController?.presentedViewController?.dismiss(animated: true, completion: nil)
+            }
+        )
+
+        let checkoutViewController = ModulesFactory.makeCheckoutModule(
+            interactor: interactor,
+            embeddedViewControllers: []
+        )
+
+        viewController.present(checkoutViewController, animated: true, completion: nil)
     }
 
     private func makeProductsModule(apiService: APIService,

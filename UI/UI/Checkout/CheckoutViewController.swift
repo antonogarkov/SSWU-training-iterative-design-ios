@@ -27,7 +27,9 @@ extension CheckoutViewController: StoryboardInstantiatable {
 
 final class CheckoutViewController: UIViewController {
     struct Props {
-        static let defaultValue = Props()
+        let didSelectPlaceOrder: () -> Void
+
+        static let defaultValue = Props(didSelectPlaceOrder: {})
     }
 
     @IBOutlet private weak var generalStackView: UIStackView!
@@ -35,6 +37,7 @@ final class CheckoutViewController: UIViewController {
     private var sectionViews = [SectionView]()
 
     private var props = Props.defaultValue
+    var retainedObject: AnyObject?
 
     var embeddedViewControllers: [UIViewController] = [] {
         willSet {
@@ -68,6 +71,10 @@ final class CheckoutViewController: UIViewController {
         applyEmbeddedVCs(embeddedViewControllers: embeddedViewControllers)
 
         render(props: props)
+    }
+
+    @IBAction func placeOrderButtonTouch(_ sender: Any) {
+        props.didSelectPlaceOrder()
     }
 
     private func applyEmbeddedVCs(embeddedViewControllers: [UIViewController]) {

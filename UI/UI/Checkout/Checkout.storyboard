@@ -29,6 +29,9 @@
                                         <state key="normal" title="PLACE THE OOOOOORDER">
                                             <color key="titleColor" name="BrandBlue"/>
                                         </state>
+                                        <connections>
+                                            <action selector="placeOrderButtonTouch:" destination="SBD-sn-Bvq" eventType="touchUpInside" id="QXP-mJ-um8"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

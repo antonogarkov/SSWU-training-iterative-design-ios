@@ -137,3 +137,10 @@ extension APIService {
         return getBasket()
     }
 }
+
+// checkout
+extension APIService {
+    public func submitOrder() -> Bool {
+        return true
+    }
+}

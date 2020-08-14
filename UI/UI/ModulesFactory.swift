@@ -52,8 +52,16 @@ public enum ModulesFactory {
         return CreditCardInputVC.instantiate()
     }
 
-    public static func makeCheckoutModule() -> UIViewController {
-        return CheckoutViewController.instantiate()
+    public static func makeCheckoutModule(interactor: CheckoutInteractor,
+                                          embeddedViewControllers: [UIViewController]) -> UIViewController {
+        let viewController = CheckoutViewController.instantiate()
+
+        viewController.embeddedViewControllers = embeddedViewControllers
+
+        let presenter = CheckoutPresenter(viewController: viewController,
+                                          interactor: interactor)
+        viewController.retainedObject = presenter
+        return viewController
     }
 
     public static func makeAddAddressModule(addAddressInteractor: AddAddressInteractor) -> UIViewController {
