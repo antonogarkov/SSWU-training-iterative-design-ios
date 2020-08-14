@@ -26,6 +26,7 @@ final class LoginViewController: UIViewController {
     }
 
     private var props = Props.defaultValue
+    var retainedObject: AnyObject?
 
     @IBOutlet private weak var mailTextField: SkyFloatingLabelTextField!
     @IBOutlet private weak var passwordTextField: SkyFloatingLabelTextField!

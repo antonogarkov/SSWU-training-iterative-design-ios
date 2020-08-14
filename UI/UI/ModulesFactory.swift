@@ -59,7 +59,11 @@ public enum ModulesFactory {
         return AddAddressViewController.instantiate()
     }
 
-    public static func makeLoginModule() -> UIViewController {
-        return LoginViewController.instantiate()
+    public static func makeLoginModule(loginInteractor: LoginInteractor) -> UIViewController {
+        let viewController = LoginViewController.instantiate()
+        let presenter = LoginPresenter(viewController: viewController,
+                                       interactor: loginInteractor)
+        viewController.retainedObject = presenter
+        return viewController
     }
 }

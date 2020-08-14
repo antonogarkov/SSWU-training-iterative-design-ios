@@ -29,8 +29,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ]
 
         window.rootViewController = tabbarController
-
         window.makeKeyAndVisible()
+
+        let loginInteractor = LoginInteractor(apiService: apiService, didLogIn: {})
+        let loginModule = ModulesFactory.makeLoginModule(loginInteractor: loginInteractor)
+
+        tabbarController.present(loginModule, animated: true, completion: nil)
 
         return true
     }
