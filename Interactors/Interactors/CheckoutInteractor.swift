@@ -5,6 +5,7 @@ public final class CheckoutInteractor {
     private let didSubmitOrder: () -> Void
 
     public var selectedAddressId: UUID?
+    public var date: Date?
 
     public init(apiService: APIService,
                 didSubmitOrder: @escaping () -> Void) {

@@ -80,9 +80,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             checkoutInteractor: checkoutInteractor
         )
 
+        let timesModule = ModulesFactory.makeDeliveryTimesModule(interactor: checkoutInteractor)
+
         let checkoutViewController = ModulesFactory.makeCheckoutModule(
             interactor: checkoutInteractor,
-            embeddedViewControllers: [addressesListModule]
+            embeddedViewControllers: [addressesListModule, timesModule]
         )
 
         viewController.present(checkoutViewController, animated: true, completion: nil)

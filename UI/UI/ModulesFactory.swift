@@ -57,8 +57,12 @@ public enum ModulesFactory {
         return addressesVC
     }
 
-    public static func makeDeliveryTimesModule() -> UIViewController {
-        return DeliveryTimesVC.instantiate()
+    public static func makeDeliveryTimesModule(interactor: CheckoutInteractor) -> UIViewController {
+        let timesViewController = DeliveryTimesVC.instantiate()
+        let presenter = DeliveryTimesPresenter(viewController: timesViewController, checkoutInteractor: interactor)
+        timesViewController.retainedObject = presenter
+
+        return timesViewController
     }
 
     public static func makeCreditCardInputModule() -> UIViewController {

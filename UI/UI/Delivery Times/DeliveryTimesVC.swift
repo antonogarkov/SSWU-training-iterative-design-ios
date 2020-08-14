@@ -19,6 +19,7 @@ final class DeliveryTimesVC: UIViewController {
     @IBOutlet weak var datePicker: UIDatePicker!
 
     private var props = Props.defaultValue
+    var retainedObject: AnyObject?
 
     func render(props: Props) {
         self.props = props
