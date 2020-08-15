@@ -60,6 +60,7 @@ class AddressesListScenario: TestScenario {
                 )
             ],
             viewWillAppear: { self.reportEventClosure(DescribeCalledFunction()) },
+            addSelected: { self.reportEventClosure(DescribeCalledFunction()) },
             showsHeader: false
         )
     }

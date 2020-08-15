@@ -12,7 +12,8 @@ class ProfileScenario: TestScenario {
     func makeProps() -> ProfileViewController.Props {
         ProfileViewController.Props(
             currentUserEmail: "mega_zayats100500@gmail.com",
-            didPressLogout: { self.reportEventClosure(DescribeCalledFunction()) }
+            didPressLogout: { self.reportEventClosure(DescribeCalledFunction()) },
+            viewWillAppear: { self.reportEventClosure(DescribeCalledFunction()) }
         )
     }
 }
