@@ -28,8 +28,6 @@ final class LoginRouter {
 
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                         self?.didFinish()
-
-                        //loginNavController.dismiss(animated: true, completion: nil)
                     }
                 }
             )
