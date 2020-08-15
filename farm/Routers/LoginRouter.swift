@@ -7,6 +7,8 @@ final class LoginRouter {
     private let apiService: APIService
     private let didFinish: () -> Void
 
+    private var addAddressFlow: AddAddressFlow?
+
     init(apiService: APIService, didFinish: @escaping () -> Void) {
         self.apiService = apiService
         self.didFinish = didFinish
@@ -16,24 +18,18 @@ final class LoginRouter {
         let loginNavController = UINavigationController()
         loginNavController.setNavigationBarHidden(true, animated: false)
 
-        let loginInteractor = LoginInteractor(apiService: apiService, didLogIn: { [weak apiService, weak loginNavController] in
-            guard let apiService = apiService, let loginNavController = loginNavController else { return }
+        let loginInteractor = LoginInteractor(apiService: apiService, didLogIn: { [weak self, weak loginNavController] in
+            guard let self = self, let loginNavController = loginNavController else { return }
 
-            let addAddressInteractor = AddAddressInteractor(
-                apiService: apiService,
-                didAddAddress: { [weak loginNavController, weak self] in
-                    guard let loginNavController = loginNavController else { return }
-
-                    loginNavController.pushViewController(ModulesFactory.makeAddressAddedModule(), animated: true)
-
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                        self?.didFinish()
-                    }
+            let addAddressFlow = AddAddressFlow(
+                embeddingNavController: loginNavController,
+                apiService: self.apiService,
+                didFinish: { [weak self] in
+                    self?.didFinish()
                 }
             )
-
-            let module = ModulesFactory.makeAddAddressModule(addAddressInteractor: addAddressInteractor)
-            loginNavController.pushViewController(module, animated: true)
+            self.addAddressFlow = addAddressFlow
+            addAddressFlow.start()
         })
         let loginModule = ModulesFactory.makeLoginModule(loginInteractor: loginInteractor)
 
