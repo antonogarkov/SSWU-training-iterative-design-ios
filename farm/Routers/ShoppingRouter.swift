@@ -4,7 +4,6 @@ import Interactors
 import UI
 
 final class ShoppingRouter {
-    private let tabbar = UITabBarController()
     private let basketInteractor: BasketInteractor
     private let apiService: APIService
     private let onShowLogin: () -> Void
