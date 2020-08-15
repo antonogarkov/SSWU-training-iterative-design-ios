@@ -52,6 +52,7 @@
 		456E560124E01B0E00797AD8 /* Services.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 456E55FD24E019BF00797AD8 /* Services.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4570821624E79DDD00F5F6C1 /* ShoppingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4570821524E79DDD00F5F6C1 /* ShoppingRouter.swift */; };
 		4570821B24E7A9DE00F5F6C1 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4570821A24E7A9DE00F5F6C1 /* LoginRouter.swift */; };
+		4570821D24E7AC4500F5F6C1 /* CheckoutRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4570821C24E7AC4500F5F6C1 /* CheckoutRouter.swift */; };
 		45C0316C24CCA0B2000F32D0 /* LoginScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C2041C24CC07B700CF45D1 /* LoginScenario.swift */; };
 		45C0316F24CCB2C8000F32D0 /* TestScenario.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459FABCB24C7869D00613F0D /* TestScenario.framework */; };
 		45C0317E24CDE8BA000F32D0 /* AddAddressScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C0317D24CDE8BA000F32D0 /* AddAddressScenario.swift */; };
@@ -143,6 +144,7 @@
 		456E55FD24E019BF00797AD8 /* Services.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Services.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4570821524E79DDD00F5F6C1 /* ShoppingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingRouter.swift; sourceTree = "<group>"; };
 		4570821A24E7A9DE00F5F6C1 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		4570821C24E7AC4500F5F6C1 /* CheckoutRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutRouter.swift; sourceTree = "<group>"; };
 		459FABC924C7869D00613F0D /* TestScenarioUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestScenarioUI.framework; sourceTree = "<group>"; };
 		459FABCA24C7869D00613F0D /* TestScenarioUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestScenarioUtils.framework; sourceTree = "<group>"; };
 		459FABCB24C7869D00613F0D /* TestScenario.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestScenario.framework; sourceTree = "<group>"; };
@@ -268,6 +270,7 @@
 			children = (
 				4570821524E79DDD00F5F6C1 /* ShoppingRouter.swift */,
 				4570821A24E7A9DE00F5F6C1 /* LoginRouter.swift */,
+				4570821C24E7AC4500F5F6C1 /* CheckoutRouter.swift */,
 			);
 			path = Routers;
 			sourceTree = "<group>";
@@ -612,6 +615,7 @@
 				45544BC224AB06BB00ECDF86 /* ViewController.swift in Sources */,
 				4570821B24E7A9DE00F5F6C1 /* LoginRouter.swift in Sources */,
 				45544BBE24AB06BB00ECDF86 /* AppDelegate.swift in Sources */,
+				4570821D24E7AC4500F5F6C1 /* CheckoutRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

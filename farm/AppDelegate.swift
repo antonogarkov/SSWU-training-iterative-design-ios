@@ -8,6 +8,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let window = UIWindow(frame: UIScreen.main.bounds)
     var shoppingRouter: ShoppingRouter?
     var loginRouter: LoginRouter?
+    var checkoutRouter: CheckoutRouter?
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -49,8 +50,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func showLogin(overViewController viewController: UIViewController, apiService: APIService) {
         let loginRouter = LoginRouter(
             apiService: apiService,
-            didFinish: { [weak viewController] in
+            didFinish: { [weak viewController, weak self] in
                 viewController?.presentedViewController?.dismiss(animated: true, completion: nil)
+                self?.loginRouter = nil
             }
         )
         self.loginRouter = loginRouter
@@ -59,44 +61,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     private func showCheckout(overViewController viewController: UIViewController, apiService: APIService, basketInteractor: BasketInteractor) {
-
-        let checkoutInteractor = CheckoutInteractor(
+        let checkoutRouter = CheckoutRouter(
             apiService: apiService,
-            didSubmitOrder: { [weak viewController] in
+            basketInteractor: basketInteractor,
+            didFinish: { [weak viewController, weak self] in
                 viewController?.presentedViewController?.dismiss(animated: true, completion: nil)
+                self?.checkoutRouter = nil
             }
         )
+        self.checkoutRouter = checkoutRouter
 
-        let addressesListModule = ModulesFactory.makeCheckoutAddressSelectionModule(
-            addressesInteractor: AddressesListInteractor(apiService: apiService),
-            checkoutInteractor: checkoutInteractor
-        )
-
-        let timesModule = ModulesFactory.makeDeliveryTimesModule(interactor: checkoutInteractor)
-
-        let creditCardModule = ModulesFactory.makeCreditCardInputModule(interactor: checkoutInteractor)
-
-        let basketModule = ModulesFactory.makeBasketModule(
-            basketInteractor: basketInteractor,
-            showsNavigation: false,
-            didSelectCheckout: {}
-        )
-
-        let checkoutViewController = ModulesFactory.makeCheckoutModule(
-            interactor: checkoutInteractor,
-            embeddedViewControllers: [
-                ModulesFactory.titleCheckoutModule(viewController: addressesListModule,
-                                                   withTitle: "SELECT DELIVERY ADDRESS"),
-                ModulesFactory.titleCheckoutModule(viewController: timesModule,
-                                                   withTitle: "SELECT DELIVERY TIME"),
-                ModulesFactory.titleCheckoutModule(viewController: creditCardModule,
-                                                   withTitle: "SPECIFY YOUR PAYMENT CARD"),
-                ModulesFactory.titleCheckoutModule(viewController: basketModule,
-                                                   withTitle: "REVIEW YOUR ORDER")
-            ]
-        )
-
-        viewController.present(checkoutViewController, animated: true, completion: nil)
+        viewController.present(checkoutRouter.start(), animated: true, completion: nil)
     }
 }
 
