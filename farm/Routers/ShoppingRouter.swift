@@ -8,18 +8,21 @@ final class ShoppingRouter {
     private let apiService: APIService
     private let onShowLogin: () -> Void
     private let onShowCheckout: () -> Void
+    private let onLogout: () -> Void
 
     private var addAddressFlow: AddAddressFlow?
 
     init(basketInteractor: BasketInteractor,
          apiService: APIService,
          onShowLogin: @escaping () -> Void,
+         onLogout: @escaping () -> Void,
          onShowCheckout: @escaping () -> Void) {
         self.basketInteractor = basketInteractor
         self.apiService = apiService
 
         self.onShowLogin = onShowLogin
         self.onShowCheckout = onShowCheckout
+        self.onLogout = onLogout
     }
 
     func start() -> UIViewController {
@@ -54,9 +57,8 @@ final class ShoppingRouter {
             makeProductsModule(apiService: apiService, basketInteractor: basketInteractor),
             addressesNavigationController,
             makeProfileModule(apiService: apiService, didPresLogout: { [weak self] in
-                print("PANIC! I DON'T KNOW WHAT TO DO HERE!!")
-                self?.apiService.resetSession()
-                self?.onShowLogin()
+
+                self?.onLogout()
             }),
             ModulesFactory.makeBasketModule(
                 basketInteractor: basketInteractor,

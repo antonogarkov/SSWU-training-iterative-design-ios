@@ -54,6 +54,7 @@
 		4570821B24E7A9DE00F5F6C1 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4570821A24E7A9DE00F5F6C1 /* LoginRouter.swift */; };
 		4570821D24E7AC4500F5F6C1 /* CheckoutRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4570821C24E7AC4500F5F6C1 /* CheckoutRouter.swift */; };
 		4570822024E7B6F200F5F6C1 /* AddAddressFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4570821F24E7B6F200F5F6C1 /* AddAddressFlow.swift */; };
+		4570822224E7C96300F5F6C1 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4570822124E7C96300F5F6C1 /* Application.swift */; };
 		45C0316C24CCA0B2000F32D0 /* LoginScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C2041C24CC07B700CF45D1 /* LoginScenario.swift */; };
 		45C0316F24CCB2C8000F32D0 /* TestScenario.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459FABCB24C7869D00613F0D /* TestScenario.framework */; };
 		45C0317E24CDE8BA000F32D0 /* AddAddressScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C0317D24CDE8BA000F32D0 /* AddAddressScenario.swift */; };
@@ -147,6 +148,7 @@
 		4570821A24E7A9DE00F5F6C1 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		4570821C24E7AC4500F5F6C1 /* CheckoutRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutRouter.swift; sourceTree = "<group>"; };
 		4570821F24E7B6F200F5F6C1 /* AddAddressFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAddressFlow.swift; sourceTree = "<group>"; };
+		4570822124E7C96300F5F6C1 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		459FABC924C7869D00613F0D /* TestScenarioUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestScenarioUI.framework; sourceTree = "<group>"; };
 		459FABCA24C7869D00613F0D /* TestScenarioUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestScenarioUtils.framework; sourceTree = "<group>"; };
 		459FABCB24C7869D00613F0D /* TestScenario.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestScenario.framework; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 		45544BBC24AB06BB00ECDF86 /* farm */ = {
 			isa = PBXGroup;
 			children = (
+				4570822124E7C96300F5F6C1 /* Application.swift */,
 				4570821E24E7B6D700F5F6C1 /* Flows */,
 				4570821424E79DC400F5F6C1 /* Routers */,
 				45232BC224E56FEF006A85E2 /* Assets.xcassets */,
@@ -623,6 +626,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4570821624E79DDD00F5F6C1 /* ShoppingRouter.swift in Sources */,
+				4570822224E7C96300F5F6C1 /* Application.swift in Sources */,
 				45544BC224AB06BB00ECDF86 /* ViewController.swift in Sources */,
 				4570821B24E7A9DE00F5F6C1 /* LoginRouter.swift in Sources */,
 				45544BBE24AB06BB00ECDF86 /* AppDelegate.swift in Sources */,
