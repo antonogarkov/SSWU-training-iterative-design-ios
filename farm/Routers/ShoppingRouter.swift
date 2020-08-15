@@ -9,6 +9,8 @@ final class ShoppingRouter {
     private let onShowLogin: () -> Void
     private let onShowCheckout: () -> Void
 
+    private var addAddressFlow: AddAddressFlow?
+
     init(basketInteractor: BasketInteractor,
          apiService: APIService,
          onShowLogin: @escaping () -> Void,
@@ -26,24 +28,18 @@ final class ShoppingRouter {
 
         let addressesViewController = makeAddressesModule(
             apiService: apiService,
-            addSelected: { [weak self] in
-                guard let self = self else { return }
+            addSelected: { [weak self, weak addressesNavigationController] in
+                guard let self = self, let addressesNavigationController = addressesNavigationController else { return }
 
-                let addAddressInteractor = AddAddressInteractor(
+                let addAddressFlow = AddAddressFlow(
+                    embeddingNavController: addressesNavigationController,
                     apiService: self.apiService,
-                    didAddAddress: { [weak addressesNavigationController] in
-                        guard let addressesNavigationController = addressesNavigationController else { return }
-
-                        addressesNavigationController.pushViewController(ModulesFactory.makeAddressAddedModule(), animated: true)
-
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                            addressesNavigationController.popToRootViewController(animated: true)
-                        }
+                    didFinish: { [weak addressesNavigationController] in
+                        addressesNavigationController?.popToRootViewController(animated: true)
                     }
                 )
-
-                let module = ModulesFactory.makeAddAddressModule(addAddressInteractor: addAddressInteractor)
-                addressesNavigationController.pushViewController(module, animated: true)
+                self.addAddressFlow = addAddressFlow
+                addAddressFlow.start()
             }
         )
 
