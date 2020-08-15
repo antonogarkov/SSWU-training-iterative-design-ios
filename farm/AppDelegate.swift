@@ -7,6 +7,7 @@ import Interactors
 class AppDelegate: UIResponder, UIApplicationDelegate {
     let window = UIWindow(frame: UIScreen.main.bounds)
     var shoppingRouter: ShoppingRouter?
+    var loginRouter: LoginRouter?
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -46,33 +47,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     private func showLogin(overViewController viewController: UIViewController, apiService: APIService) {
-        let loginNavController = UINavigationController()
-        loginNavController.setNavigationBarHidden(true, animated: false)
+        let loginRouter = LoginRouter(
+            apiService: apiService,
+            didFinish: { [weak viewController] in
+                viewController?.presentedViewController?.dismiss(animated: true, completion: nil)
+            }
+        )
+        self.loginRouter = loginRouter
 
-        let loginInteractor = LoginInteractor(apiService: apiService, didLogIn: { [weak apiService, weak loginNavController] in
-            guard let apiService = apiService, let loginNavController = loginNavController else { return }
-
-            let addAddressInteractor = AddAddressInteractor(
-                apiService: apiService,
-                didAddAddress: { [weak loginNavController] in
-                    guard let loginNavController = loginNavController else { return }
-
-                    loginNavController.pushViewController(ModulesFactory.makeAddressAddedModule(), animated: true)
-
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                        loginNavController.dismiss(animated: true, completion: nil)
-                    }
-                }
-            )
-
-            let module = ModulesFactory.makeAddAddressModule(addAddressInteractor: addAddressInteractor)
-            loginNavController.pushViewController(module, animated: true)
-        })
-        let loginModule = ModulesFactory.makeLoginModule(loginInteractor: loginInteractor)
-
-        loginNavController.setViewControllers([loginModule], animated: false)
-
-        viewController.present(loginNavController, animated: true, completion: nil)
+        viewController.present(loginRouter.start(), animated: true, completion: nil)
     }
 
     private func showCheckout(overViewController viewController: UIViewController, apiService: APIService, basketInteractor: BasketInteractor) {
