@@ -50,6 +50,7 @@
 		456E55FC24E019BA00797AD8 /* Interactors.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 456E55FA24E019BA00797AD8 /* Interactors.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		456E560024E01B0E00797AD8 /* Services.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456E55FD24E019BF00797AD8 /* Services.framework */; };
 		456E560124E01B0E00797AD8 /* Services.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 456E55FD24E019BF00797AD8 /* Services.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4570821624E79DDD00F5F6C1 /* ShoppingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4570821524E79DDD00F5F6C1 /* ShoppingRouter.swift */; };
 		45C0316C24CCA0B2000F32D0 /* LoginScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C2041C24CC07B700CF45D1 /* LoginScenario.swift */; };
 		45C0316F24CCB2C8000F32D0 /* TestScenario.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459FABCB24C7869D00613F0D /* TestScenario.framework */; };
 		45C0317E24CDE8BA000F32D0 /* AddAddressScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C0317D24CDE8BA000F32D0 /* AddAddressScenario.swift */; };
@@ -139,6 +140,7 @@
 		456E55C724DF099C00797AD8 /* DeliveryTimesScenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryTimesScenario.swift; sourceTree = "<group>"; };
 		456E55FA24E019BA00797AD8 /* Interactors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Interactors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		456E55FD24E019BF00797AD8 /* Services.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Services.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4570821524E79DDD00F5F6C1 /* ShoppingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingRouter.swift; sourceTree = "<group>"; };
 		459FABC924C7869D00613F0D /* TestScenarioUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestScenarioUI.framework; sourceTree = "<group>"; };
 		459FABCA24C7869D00613F0D /* TestScenarioUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestScenarioUtils.framework; sourceTree = "<group>"; };
 		459FABCB24C7869D00613F0D /* TestScenario.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestScenario.framework; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 		45544BBC24AB06BB00ECDF86 /* farm */ = {
 			isa = PBXGroup;
 			children = (
+				4570821424E79DC400F5F6C1 /* Routers */,
 				45232BC224E56FEF006A85E2 /* Assets.xcassets */,
 				45544BBD24AB06BB00ECDF86 /* AppDelegate.swift */,
 				45544BC124AB06BB00ECDF86 /* ViewController.swift */,
@@ -256,6 +259,14 @@
 				45544BCB24AB06BF00ECDF86 /* Info.plist */,
 			);
 			path = farm;
+			sourceTree = "<group>";
+		};
+		4570821424E79DC400F5F6C1 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				4570821524E79DDD00F5F6C1 /* ShoppingRouter.swift */,
+			);
+			path = Routers;
 			sourceTree = "<group>";
 		};
 		459FABC824C7866D00613F0D /* ThirdParty */ = {
@@ -594,6 +605,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4570821624E79DDD00F5F6C1 /* ShoppingRouter.swift in Sources */,
 				45544BC224AB06BB00ECDF86 /* ViewController.swift in Sources */,
 				45544BBE24AB06BB00ECDF86 /* AppDelegate.swift in Sources */,
 			);
